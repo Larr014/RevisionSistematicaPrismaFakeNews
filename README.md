@@ -2,7 +2,7 @@
 ## Una Revisión Sistemática de Literatura Asistida por LLM (2020–2026)
 
 **Autor:** Luis Rojas Rubio  
-**Afiliación:** Doctorado en Informática, Universidad Americana de Europa (UDAEU) | INACAP Copiapó  
+**Afiliación:** Doctorado en Informática, Universidad Americana de Europa   
 **Estado:** Paper en revisión  
 
 ---
