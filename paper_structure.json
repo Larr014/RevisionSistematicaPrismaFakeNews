@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "titulo": "Métodos para la Identificación de Intenciones Comunicativas en Publicaciones Digitales: Una Revisión Sistemática de Literatura",
+    "fecha_generacion": "2026-04-28",
+    "total_articulos_analizados": 3575,
+    "estado_completitud": "En progreso"
+  },
+
+  "resultados": {
+    "RQ1_metodos": {
+      "titulo": "RQ1: ¿Qué métodos (computacionales, NLP, manuales) se utilizan?",
+      "hallazgo": "Se identificaron 10 métodos principales. Manual Analysis domina (19.3%), seguido de Transformers (6.1%), NLP Tradicional (5.0%). Deep Learning representa 13.5% del total, indicando que métodos automatizados aún no son predominantes.",
+      "estado": "COMPLETADO"
+    },
+
+    "RQ2_binario_vs_granular": {
+      "titulo": "RQ2: Prevalencia de enfoques binarios vs. granulares",
+      "hallazgo": "44.1% de trabajos usan enfoque binario (SI/NO es intención), 55.9% granular (múltiples intenciones). Tendencia temporal: aumento de granularidad de 53.3% (2019) a 64.5% (2026). Esto sugiere transición gradual hacia análisis multidimensional.",
+      "estado": "COMPLETADO"
+    },
+
+    "RQ3_dimensiones": {
+      "titulo": "RQ3: Dimensiones de intenciones comunicativas abordadas",
+      "hallazgo": "7 dimensiones identificadas: Fake News (18.0%), Manipulación (12.1%), Persuasión (4.3%), Polarización (3.9%), Emoción (2.3%), Conspiración (0.8%), Clickbait (0.2%). Sesgo evidente hacia fenómenos negativos (65.5% solo intenciones negativas). Intenciones constructivas ausentes.",
+      "estado": "COMPLETADO"
+    },
+
+    "RQ4_limitaciones": {
+      "titulo": "RQ4: Limitaciones metodológicas reportadas",
+      "hallazgo": "Limitaciones inferidas: (1) Automatización insuficiente para granularidad - Manual Analysis 61.6% en estudios granulares; (2) Baja relevancia en granularidad (0.48/1.0 vs 0.52/1.0 binario); (3) Cobertura incompleta - 76.6% sin intención detectada; (4) Métodos especializados por dominio, sin solución universal.",
+      "estado": "COMPLETADO"
+    },
+
+    "RQ5_caracteristicas": {
+      "titulo": "RQ5: Características textuales, lingüísticas o contextuales empleadas",
+      "hallazgo": "Deep Learning (Transformers, BERT): embeddings contextuales, semantic similarity. ML tradicional (SVM, RF): TF-IDF, frecuencia palabras. NLP simbólico (5.0%): palabras clave, patrones lingüísticos. Manual (19.3%): contexto editorial, estructura argumentativa, verificación cruzada.",
+      "estado": "COMPLETADO"
+    },
+
+    "RQ6_datasets": {
+      "titulo": "RQ6: Bases de datos, corpus o conjuntos de datos utilizados",
+      "hallazgo": "PENDIENTE EXTRACCION DETALLADA - Potencial para análisis de distribucion por idioma, plataforma, disponibilidad pública.",
+      "estado": "PENDIENTE"
+    },
+
+    "RQ7_metricas": {
+      "titulo": "RQ7: Métricas de evaluación reportadas",
+      "hallazgo": "Accuracy dominante (12.2%), seguida Precision/Recall (7.6%), AUC-ROC (0.7%), Confusion Matrix (0.7%). Sugiere enfoque en métrica simple, no balanceada. Para datasets desequilibrados (común en fake news), Precision/Recall más informativo pero menos reportado.",
+      "estado": "COMPLETADO"
+    },
+
+    "RQ8_plataformas": {
+      "titulo": "RQ8: Diferencias en métodos según plataforma digital",
+      "hallazgo": "PENDIENTE EXTRACCION DETALLADA - Necesario análisis por Twitter/X, Facebook, Reddit, noticias online.",
+      "estado": "PENDIENTE"
+    },
+
+    "RQ9_emocional": {
+      "titulo": "RQ9: Análisis emocional como componente",
+      "hallazgo": "Solo 2.3% de articulos (82) abordan emoción explícitamente. BERT muestra 22% prevalencia en estos estudios (más alto que en otras intenciones). Brecha crítica: emoción podría ser proxy de intención manipuladora, pero está subintegrada en literatura.",
+      "estado": "COMPLETADO"
+    },
+
+    "RQ10_futuro": {
+      "titulo": "RQ10: Direcciones futuras propuestas",
+      "hallazgo": "PENDIENTE EXTRACCION DE ABSTRACTS - Probable énfasis en: granularidad, contexto multimodal, análisis emocional integrado, validación longitudinal, datasets desequilibrados.",
+      "estado": "PENDIENTE"
+    }
+  },
+
+  "discusion": {
+    "hipotesis": {
+      "H1": "Literatura dominada por binario",
+      "resultado": "PARCIALMENTE CONFIRMADA - 44.1% binario, pero tendencia hacia granularidad",
+      "H2": "DL más prevalente que manual",
+      "resultado": "REFUTADA - Manual 19.3% vs DL 13.5%",
+      "H3": "Fake news y clickbait más estudiados",
+      "resultado": "CONFIRMADA - FN 18.0%, Clickbait 0.2%",
+      "H4": "Limitaciones reportadas",
+      "resultado": "CONFIRMADA - Automatización, datasets, contexto",
+      "H5": "Brecha en análisis emocional",
+      "resultado": "CONFIRMADA - Solo 2.3% integra emoción + intención"
+    },
+
+    "brechas_principais": [
+      "COBERTURA: Intenciones positivas ausentes, idiomas no-inglés subrepresentados",
+      "METODOLOGICAS: Falta de datasets etiquetados granulares, validación externa limitada",
+      "INTEGRACION: Análisis emocional desacoplado de identificación intencional"
+    ]
+  },
+
+  "monitoreo_progreso": {
+    "secciones_completas": ["RQ1", "RQ2", "RQ3", "RQ4", "RQ5", "RQ7", "RQ9"],
+    "secciones_pendientes": ["RQ6", "RQ8", "RQ10", "Conclusiones"],
+    "progreso_porcentaje": "70%"
+  }
+}

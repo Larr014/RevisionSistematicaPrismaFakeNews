@@ -1,0 +1,421 @@
+{
+  "meta": {
+    "descripcion": "Síntesis temática de hallazgos de la revisión sistemática. Organizado por ejes que emergen inductivamente de los hallazgos, con identificación de tendencias, limitaciones y brechas. Materia prima para la sección de discusión del paper.",
+    "fuente": "hallazgos_relevantes_tesis.json (relevancia > 0.4)",
+    "total_hallazgos_base": 520,
+    "total_articulos_base": 225,
+    "ejes": 6
+  },
+  "ejes_tematicos": [
+    {
+      "id": "E1",
+      "eje": "Clasificación de desinformación: predominio binario y emergencia de enfoques granulares",
+      "descripcion": "La mayoría de los sistemas de detección de desinformación operan bajo esquemas binarios (verdadero/falso, real/fake). Sin embargo, un conjunto creciente de trabajos identifica las limitaciones de este enfoque y propone categorías más finas.",
+      "hallazgos_representativos": [
+        {
+          "articulo_id": "ref_credibility_signals",
+          "year": 2023,
+          "hallazgo": "Distinción entre credibility signals (evidencia granular) y credibility indicators (comunicación a usuario final) como dos niveles distintos que los sistemas actuales no diferencian.",
+          "rol": "limitacion"
+        },
+        {
+          "articulo_id": "ref_23_intent_categories",
+          "year": 2022,
+          "hallazgo": "23 categorías de intención fine-grained: Fake expertise, Financial fraud, Social engineering, Comedy, Drama/storytelling, Fear-mongering, entre otras — evidenciando que la intención del emisor es multidimensional.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_granularity_levels",
+          "year": 2023,
+          "hallazgo": "Detección de sesgo mediático a distintos niveles de granularidad: sentence-level, article-level, journalist-level y media outlet-level — mostrando que la granularidad del análisis cambia radicalmente los resultados.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_coarse_to_fine",
+          "year": 2024,
+          "hallazgo": "Extracción de intención no estructurada via LLM (coarse-to-fine intent modeling) en lugar de clasificación fija — señalando la insuficiencia de esquemas de categorías rígidas.",
+          "rol": "brecha"
+        },
+        {
+          "articulo_id": "ref_propaganda_token",
+          "year": 2022,
+          "hallazgo": "Detección de técnicas de propaganda a nivel de carácter/token (fine-grained propaganda detection) — mostrando que la intención se manifiesta en unidades lingüísticas menores a la oración.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_binary_taxonomy",
+          "year": 2023,
+          "hallazgo": "Taxonomía coarse-grain/fine-grain/cross-domain/cross-lingual de sentiment analysis evidencia que la misma tensión binario vs. granular se replica en dominios adyacentes.",
+          "rol": "tendencia"
+        }
+      ],
+      "sintesis": {
+        "tendencias": [
+          "El paradigma dominante sigue siendo la clasificación binaria (fake/real), presente en la mayoría de los datasets y benchmarks consolidados.",
+          "Una corriente emergente propone esquemas multiclase o fine-grained, con categorías que van desde 8 hasta 23 tipos de intención distintos.",
+          "La granularidad del análisis (token, oración, artículo, fuente) influye sustancialmente en la capacidad discriminativa de los modelos.",
+          "Los sistemas de verificación de credibilidad están comenzando a separar la evidencia granular de la comunicación al usuario final."
+        ],
+        "limitaciones_identificadas": [
+          "Los esquemas binarios agrupan fenómenos comunicativos cualitativamente distintos (sátira, propaganda, alarmismo) bajo una misma etiqueta.",
+          "No existe consenso entre los trabajos revisados sobre cuántas categorías de intención son necesarias ni cuáles son mutuamente excluyentes.",
+          "Los modelos fine-grained existentes raramente validan la exhaustividad o exclusividad mutua de sus categorías mediante procedimientos formales.",
+          "La mayoría de las propuestas de categorías de intención no están sustentadas en marcos teóricos comunicacionales o psicológicos."
+        ],
+        "brechas": [
+          "No se identifica en la literatura un framework validado formalmente que defina un conjunto mínimo, completo y mutuamente excluyente de intenciones comunicativas maliciosas.",
+          "La transición del paradigma binario a uno multiclase carece de un proceso sistemático de validación taxonómica (p. ej., juicio de expertos con métricas de acuerdo).",
+          "Los enfoques coarse-to-fine emergentes son ad hoc y no generalizables a nuevos dominios o plataformas."
+        ],
+        "preguntas_que_emergen": [
+          "¿Cuál es el conjunto mínimo de categorías de intención comunicativa que permite una clasificación completa, mutuamente excluyente y operacionalizable?",
+          "¿Qué criterio metodológico garantiza que una taxonomía de intenciones sea válida y no arbitraria?",
+          "¿Es posible un sistema de clasificación granular que supere métricas de sistemas binarios del estado del arte?"
+        ]
+      }
+    },
+    {
+      "id": "E2",
+      "eje": "Las emociones como señal infrautilizada en la detección de desinformación",
+      "descripcion": "Múltiples trabajos incorporan señales emocionales como características auxiliares en sus modelos, con resultados positivos. Sin embargo, el rol de las emociones como mecanismo central de clasificación —y su relación estructural con los tipos de contenido— no ha sido formalizado.",
+      "hallazgos_representativos": [
+        {
+          "articulo_id": "ref_ILER",
+          "year": 2023,
+          "hallazgo": "ILER (Intermediate-Layer Emotional Representation): embeddings emocionales extraídos de una capa intermedia mejoran la detección de fake news cuando se integran como features adicionales al clasificador principal.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_EIN",
+          "year": 2022,
+          "hallazgo": "EIN (Emotionally-Infused Neural network): arquitectura LSTM + atención + features emocionales para clasificar noticias falsas en 5 categorías — mejora sobre baseline sin emociones.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_logit_fusion",
+          "year": 2023,
+          "hallazgo": "Fusión a nivel de logits entre un clasificador BERT de contenido y un MLP de señales emocionales combinadas logra mejoras consistentes en F1 sobre modelos unimodales.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_emotion_reasoning",
+          "year": 2024,
+          "hallazgo": "Tarea auxiliar de razonamiento emocional (emotion reasoning) basada en la hipótesis de que fake news tiende a expresar emociones negativas o extremas — validada empíricamente en el trabajo.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_emoji_emotion",
+          "year": 2022,
+          "hallazgo": "Uso de emojis retenidos en el texto como señal emocional para mejorar detección de fake news — evidencia de que señales emocionales no léxicas también son discriminativas.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_intent_emotion_taxonomy",
+          "year": 2023,
+          "hallazgo": "Taxonomía de intenciones de propagación con componente emocional (Emotion Venting como una de las intenciones) — sugiere que emoción e intención están entrelazadas en la estructura del contenido.",
+          "rol": "oportunidad"
+        }
+      ],
+      "sintesis": {
+        "tendencias": [
+          "Las señales emocionales mejoran consistentemente el rendimiento de los modelos de detección cuando se incorporan como características auxiliares.",
+          "El uso de emociones como feature adicional (fusión tardía o intermedia) es el patrón dominante: las emociones complementan al clasificador principal pero no lo estructuran.",
+          "Existe evidencia empírica de que el contenido falso o malicioso tiene patrones emocionales distintos al contenido verídico (mayor intensidad negativa, emociones extremas).",
+          "Las señales emocionales se extraen de múltiples fuentes: léxico (NRC, LIWC), representaciones intermedias de redes neuronales, emojis, análisis facial en imágenes."
+        ],
+        "limitaciones_identificadas": [
+          "Ningún trabajo revisado formaliza la relación entre tipos de emoción y tipos de intención comunicativa como un mecanismo causal o de regularización.",
+          "Las emociones son tratadas como features de entrada sin un modelo teórico que explique por qué ciertos contenidos maliciosos explotan ciertas emociones.",
+          "La mayoría de los trabajos usan modelos de emoción de valencia binaria (positivo/negativo) o simplificados, ignorando modelos más ricos como el de Plutchik.",
+          "La integración de emociones es post-hoc y no está guiada por hipótesis sobre la intención del emisor."
+        ],
+        "brechas": [
+          "No existe en la literatura revisada una matriz empírica validada que relacione tipos de emoción con tipos de intención comunicativa maliciosa.",
+          "El uso de emociones como capa intermedia de un pipeline de clasificación intencional (emoción → intención) no ha sido explorado sistemáticamente.",
+          "Los modelos de emoción enriquecidos (8 emociones básicas, rueda de emociones) no han sido integrados en frameworks de detección de intención comunicativa."
+        ],
+        "preguntas_que_emergen": [
+          "¿Existe una asociación sistemática y empíricamente validable entre tipos de emoción (según modelos como el de Plutchik) y tipos de intención comunicativa maliciosa?",
+          "¿Puede una representación emocional intermedia actuar como mecanismo de regularización en un clasificador de intenciones, mejorando su generalización?",
+          "¿Qué modelo de emoción (dimensional, categórico, circumplex) es más adecuado como capa intermedia para clasificación intencional?"
+        ]
+      }
+    },
+    {
+      "id": "E3",
+      "eje": "Fragmentación y falta de consenso en taxonomías de intención comunicativa",
+      "descripcion": "La literatura propone múltiples tipologías de desinformación con distintos niveles de granularidad, fundamentos teóricos y criterios de categorización. Esta fragmentación dificulta la comparabilidad entre estudios y la acumulación de conocimiento.",
+      "hallazgos_representativos": [
+        {
+          "articulo_id": "ref_mis_dis_mal",
+          "year": 2021,
+          "hallazgo": "Tipología de intenciones: Misinformation vs Disinformation vs Malinformation — basada en intencionalidad y daño como ejes de clasificación.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_8_categories",
+          "year": 2022,
+          "hallazgo": "Categorías de fake news por intento/impacto: Sarcasmo, Sátira, Clickbait, Propaganda, Hoax, Yellow Journalism, Rumor, False News — 8 categorías sin validación formal de exhaustividad.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_7dim_annotation",
+          "year": 2023,
+          "hallazgo": "Esquema de anotación de 7 dimensiones (factualidad, intención del difusor, método de creación o manipulación, etc.) como alternativa multidimensional a clasificaciones planas.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_media_bias_17",
+          "year": 2023,
+          "hallazgo": "Taxonomía de 17 formas de sesgo mediático (spin bias, ideology bias, coverage bias, gatekeeping bias, statement bias) — evidenciando la complejidad de las intenciones detrás del contenido.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_tax2vec",
+          "year": 2022,
+          "hallazgo": "tax2vec: algoritmo de vectorización de espacio semántico basado en taxonomías — muestra que las taxonomías pueden operacionalizarse computacionalmente una vez definidas.",
+          "rol": "oportunidad"
+        },
+        {
+          "articulo_id": "ref_chatgpt_9reasons",
+          "year": 2024,
+          "hallazgo": "Taxonomía de nueve razones explicativas para caracterizar fake news generadas por ChatGPT (sesgo emocional, intención engañosa, etc.) — propuesta no validada formalmente.",
+          "rol": "limitacion"
+        }
+      ],
+      "sintesis": {
+        "tendencias": [
+          "La literatura no converge en una taxonomía única: coexisten propuestas de 3, 7, 8, 9, 17 y 23 categorías, con criterios de clasificación distintos (intención, impacto, método, dimensión).",
+          "Las taxonomías más citadas (Mis/Dis/Malinformation) operan a nivel macro y no descienden a intenciones comunicativas específicas accionables.",
+          "Existe un movimiento hacia esquemas multidimensionales que combinan intención, método y daño, pero sin validación formal de sus dimensiones.",
+          "Las propuestas de categorías finas (>8 categorías) carecen de evidencia de acuerdo entre anotadores o validación por expertos."
+        ],
+        "limitaciones_identificadas": [
+          "La mayoría de las taxonomías son propuestas ad hoc sin proceso formal de validación (Content Validity Index, kappa entre expertos, etc.).",
+          "Las categorías no son comparables entre estudios por diferencia en definiciones operacionales de cada tipo.",
+          "Pocas taxonomías distinguen explícitamente la intención del emisor de los efectos en el receptor.",
+          "No se identificó ningún trabajo que valide empíricamente la mutua exclusividad y exhaustividad de sus categorías de intención."
+        ],
+        "brechas": [
+          "Ausencia de una taxonomía de intenciones comunicativas maliciosas validada formalmente mediante juicio de expertos interdisciplinario.",
+          "No existe un conjunto de intenciones que haya sido sometido a prueba de validez de contenido (CVI) en la literatura revisada.",
+          "La operacionalización computacional de las taxonomías existentes no ha sido sistemáticamente evaluada en benchmarks comparables."
+        ],
+        "preguntas_que_emergen": [
+          "¿Cuál es el nivel óptimo de granularidad para una taxonomía de intenciones que sea a la vez teóricamente fundada y computacionalmente operacionalizable?",
+          "¿Qué proceso de validación garantiza que las categorías propuestas sean exhaustivas, mutuamente excluyentes y consistentes entre anotadores?",
+          "¿Es posible construir una taxonomía unificada que integre la perspectiva del emisor (intención) y del contenido (efecto esperado)?"
+        ]
+      }
+    },
+    {
+      "id": "E4",
+      "eje": "Arquitecturas secuenciales y por capas: potencial no explotado para clasificación intencional",
+      "descripcion": "Los enfoques de procesamiento secuencial (pipelines, cadenas, capas jerárquicas) han demostrado utilidad en tareas NLP complejas, pero su aplicación sistemática a la clasificación de intenciones comunicativas maliciosas es incipiente.",
+      "hallazgos_representativos": [
+        {
+          "articulo_id": "ref_keyphrase_pipeline",
+          "year": 2022,
+          "hallazgo": "Keyphrase Extractor Algorithm: pipeline de 7 pasos (POS tagging, tokenización, lematización, chunking, filtrado y scoring de sentimiento) muestra que la información léxica puede enriquecerse secuencialmente.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_chain_of_thought",
+          "year": 2023,
+          "hallazgo": "Chain-of-Thought (CoT) Prompting como estrategia de activación de capacidades zero-shot en LLMs — el razonamiento paso a paso mejora tareas de clasificación complejas.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_hierarchical_attention",
+          "year": 2022,
+          "hallazgo": "Atención jerárquica multi-escala (multi-scale convolutional layers) captura representaciones a distintos niveles de abstracción lingüística.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_VRP",
+          "year": 2024,
+          "hallazgo": "Visual Reasoning Prompting (VRP) via LLM/LVLM chain-of-thought — la cadena razonamiento intermedio → conclusión final muestra mejoras en tareas de clasificación multimodal.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_ILER_pipeline",
+          "year": 2023,
+          "hallazgo": "ILER extrae representación emocional intermedia antes de la clasificación final — modelo de dos etapas que separa el procesamiento emocional del intencional.",
+          "rol": "oportunidad"
+        },
+        {
+          "articulo_id": "ref_CSI_framework",
+          "year": 2022,
+          "hallazgo": "Framework CSI (Capture-Score-Integrate) como arquitectura híbrida que combina features temporales, textuales y de comportamiento en etapas secuenciales.",
+          "rol": "tendencia"
+        }
+      ],
+      "sintesis": {
+        "tendencias": [
+          "Los pipelines de múltiples etapas (extracción → representación → clasificación) muestran ventajas sobre modelos end-to-end en tareas que requieren razonamiento intermedio.",
+          "El paradigma chain-of-thought en LLMs valida la hipótesis de que el procesamiento secuencial explícito mejora la capacidad de clasificación en tareas complejas.",
+          "Las arquitecturas jerárquicas capturan representaciones a múltiples niveles de abstracción, lo que es especialmente relevante para análisis de intención.",
+          "Modelos de dos etapas (representación emocional → clasificación) emergen como patrón prometedor pero no consolidado."
+        ],
+        "limitaciones_identificadas": [
+          "Los pipelines existentes son diseñados para tareas específicas (extracción de keyphrases, multimodalidad) y no generalizan a clasificación de intención comunicativa.",
+          "No existe un framework secuencial diseñado explícitamente para el camino léxico → emocional → intencional en texto de redes sociales.",
+          "La mayor parte de las arquitecturas secuenciales no incorporan la dimensión emocional como capa intermedia entre el análisis léxico y la clasificación final.",
+          "Los estudios de ablación que miden la contribución individual de cada capa son escasos, dificultando entender qué etapa aporta más discriminación."
+        ],
+        "brechas": [
+          "No se identifica en la literatura un framework secuencial de clasificación donde las emociones actúen como capa de mediación entre el análisis léxico y la clasificación de intención.",
+          "La formalización de un pipeline palabras → emociones → intenciones con capas entrenadas conjunta o secuencialmente no ha sido propuesta ni evaluada.",
+          "Los estudios de ablación en pipelines de detección de desinformación son insuficientes para determinar la contribución individual de componentes emocionales."
+        ],
+        "preguntas_que_emergen": [
+          "¿Una arquitectura secuencial que procese explícitamente el plano léxico, luego el emocional y finalmente el intencional supera a modelos end-to-end en clasificación de intenciones comunicativas?",
+          "¿Cuál es la contribución individual de cada capa en un pipeline léxico → emocional → intencional, medida mediante estudios de ablación?",
+          "¿Cómo puede la capa emocional actuar como mecanismo de regularización para mejorar la generalización del clasificador de intenciones?"
+        ]
+      }
+    },
+    {
+      "id": "E5",
+      "eje": "Construcción de corpus y anotación: el auge de los LLMs y los desafíos de confiabilidad",
+      "descripcion": "La construcción de datasets anotados para desinformación es uno de los cuellos de botella del campo. El uso de LLMs para anotación emerge como alternativa escalable, pero su confiabilidad y validez no están suficientemente establecidas.",
+      "hallazgos_representativos": [
+        {
+          "articulo_id": "ref_LLM_annotation",
+          "year": 2024,
+          "hallazgo": "LLM-based FND: Knowledge Graph augmented LLM, Retrieval-Augmented Generation (RAG), Prompt Engineering — LLMs usados para generar o verificar anotaciones en datasets de fake news.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_PWS",
+          "year": 2024,
+          "hallazgo": "Prompted Weak Supervision (PWS): señales de credibilidad predichas por LLM como método de agregación de etiquetas débiles — alternativa a anotación manual con resultados prometedores.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_LLM_bias",
+          "year": 2024,
+          "hallazgo": "Discusión de sesgos implícitos de LLMs al evaluar sesgo político o factualidad externa — señalando que la anotación LLM no es neutral.",
+          "rol": "limitacion"
+        },
+        {
+          "articulo_id": "ref_snorkel_snuba",
+          "year": 2022,
+          "hallazgo": "Comparación de frameworks de etiquetado débil Snorkel vs Snuba — muestra que la selección del método de agregación de etiquetas débiles impacta significativamente en la calidad del corpus.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_NLI_pseudo",
+          "year": 2023,
+          "hallazgo": "Pseudo-etiquetado estilo NLI (entailment/contradiction) para generar pares de tweets y sobremuestrear datasets pequeños — solución a escasez de datos anotados.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_perplexity_detection",
+          "year": 2024,
+          "hallazgo": "Uso de perplejidad (GPT-2-XL) como métrica para evaluar evasión de detección de texto parafraseado por IA — evidencia de que los LLMs pueden subvertir sus propias anotaciones.",
+          "rol": "limitacion"
+        }
+      ],
+      "sintesis": {
+        "tendencias": [
+          "Los LLMs se están consolidando como herramienta de anotación escalable para tareas de detección de desinformación, reemplazando o complementando la anotación humana.",
+          "El etiquetado débil (weak supervision) con agregación de múltiples fuentes de señal emerge como alternativa práctica a la anotación gold-standard.",
+          "La generación sintética de datos mediante LLMs (parafraseo, augmentation) permite sobremuestrear categorías minoritarias en datasets desbalanceados.",
+          "El uso de LLMs sin fine-tuning (zero-shot, few-shot) para anotación es cada vez más común en trabajos recientes."
+        ],
+        "limitaciones_identificadas": [
+          "Los LLMs exhiben sesgos implícitos (político, cultural, lingüístico) que afectan la calidad de las anotaciones generadas.",
+          "No existe un estándar metodológico para validar la confiabilidad de anotaciones generadas por LLMs en comparación con juicio humano experto.",
+          "El uso de un único LLM como anotador introduce el sesgo específico de ese modelo sin mecanismo de corrección.",
+          "La confiabilidad inter-anotador (kappa, Krippendorff) raramente se reporta cuando el anotador es un LLM."
+        ],
+        "brechas": [
+          "No se identifica en la literatura un método de consenso multi-LLM con fundamento teórico formal para garantizar la confiabilidad de las anotaciones.",
+          "Ausencia de marcos que combinen la escalabilidad de los LLMs con la validación por expertos humanos para construir corpus de alta confiabilidad.",
+          "Los criterios de calidad para corpus anotados con LLMs no están estandarizados: falta de métricas comparables entre estudios."
+        ],
+        "preguntas_que_emergen": [
+          "¿Puede un sistema de consenso entre múltiples LLMs reducir los sesgos individuales de cada modelo y mejorar la confiabilidad de las anotaciones?",
+          "¿Qué umbral de acuerdo entre LLMs es equivalente a un kappa aceptable en anotación humana?",
+          "¿Cómo integrar la validación por expertos humanos como paso de verificación de corpus anotados con LLMs de manera eficiente y escalable?"
+        ]
+      }
+    },
+    {
+      "id": "E6",
+      "eje": "Dominio de transformers y modelos de lenguaje: rendimiento alto, interpretabilidad baja",
+      "descripcion": "Los modelos basados en transformers (BERT, RoBERTa, variantes) dominan el estado del arte en tareas de detección de desinformación. Sin embargo, su naturaleza de caja negra limita la comprensión de los mecanismos de clasificación y la generalización entre dominios.",
+      "hallazgos_representativos": [
+        {
+          "articulo_id": "ref_bert_variants",
+          "year": 2023,
+          "hallazgo": "DistilBERT, XLM-RoBERTa, DeBERTa, ERNIE 2.0, ELECTRA, AlBERT, ELMO como variantes específicas de transformers no cubiertas por la categoría genérica — multiplicación de modelos sin comparación sistemática.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_CT_BERT",
+          "year": 2022,
+          "hallazgo": "CT-BERT (COVID-Twitter-BERT): modelo BERT pre-entrenado específicamente en tweets sobre Covid-19 — muestra que el fine-tuning en dominio específico mejora resultados.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_frozen_LLM",
+          "year": 2024,
+          "hallazgo": "Uso de LLMs congelados (sin entrenamiento/fine-tuning) como alternativa a arquitecturas GNN para detección de astroturfing — señala que incluso sin ajuste los LLMs son competitivos.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_LoRA",
+          "year": 2024,
+          "hallazgo": "LoRA (Low-Rank Adaptation) para fine-tuning eficiente de FLAN-T5 — reduce 84% de parámetros entrenables manteniendo rendimiento comparable al fine-tuning completo.",
+          "rol": "tendencia"
+        },
+        {
+          "articulo_id": "ref_POLITICS",
+          "year": 2023,
+          "hallazgo": "Framework POLITICS (Pretraining Objective Leveraging Inter-article Triplet-loss): preentrenamiento específico para sesgo político — los modelos de propósito general tienen limitaciones en dominios especializados.",
+          "rol": "limitacion"
+        },
+        {
+          "articulo_id": "ref_SBERT_community",
+          "year": 2023,
+          "hallazgo": "Combinación de comunidades de usuarios (user-follower social networks) con similitud textual (contrastive learning vía SBERT) — muestra que las señales textuales solas son insuficientes para detección robusta.",
+          "rol": "limitacion"
+        }
+      ],
+      "sintesis": {
+        "tendencias": [
+          "BERT y sus variantes (RoBERTa, DeBERTa, XLM-R, etc.) se han convertido en el baseline estándar para cualquier tarea de detección de desinformación.",
+          "El fine-tuning en dominio específico (plataforma, idioma, tema) mejora consistentemente el rendimiento sobre modelos de propósito general.",
+          "Los LLMs de gran escala (GPT-4, Llama, FLAN-T5) están desplazando a BERT en tareas zero-shot y few-shot, especialmente en datasets pequeños.",
+          "La eficiencia en el ajuste (LoRA, adaptadores) permite competir con fine-tuning completo a fracción del costo computacional."
+        ],
+        "limitaciones_identificadas": [
+          "Los modelos transformer operan como cajas negras: su alta precisión no explica el mecanismo por el cual distinguen tipos de contenido.",
+          "El rendimiento de transformers en clasificación multiclase de intenciones comunicativas no ha sido sistemáticamente evaluado en la literatura revisada.",
+          "La transferencia de modelos entre dominios (Twitter → Facebook, inglés → español) sigue siendo un problema sin solución robusta.",
+          "Los transformers no incorporan explícitamente razonamiento emocional o intencional como paso intermedio, lo que limita su interpretabilidad."
+        ],
+        "brechas": [
+          "No existe evaluación sistemática y comparable del rendimiento de modelos BERT/transformer en clasificación multiclase de intenciones comunicativas específicas.",
+          "La comparación entre modelos end-to-end (transformers) y arquitecturas secuenciales con capas interpretables (léxica → emocional → intencional) no ha sido realizada.",
+          "La contribución del razonamiento emocional intermedio sobre el rendimiento de clasificadores de intención no ha sido cuantificada frente a transformers puros."
+        ],
+        "preguntas_que_emergen": [
+          "¿Un pipeline secuencial con capas interpretables (léxica, emocional, intencional) puede igualar o superar el rendimiento de transformers end-to-end en clasificación de intenciones?",
+          "¿La incorporación explícita de razonamiento emocional mejora la generalización de los modelos a nuevos dominios o plataformas?",
+          "¿Qué arquitectura ofrece el mejor balance entre rendimiento, interpretabilidad y transferibilidad para clasificación de intención comunicativa?"
+        ]
+      }
+    }
+  ],
+  "convergencias_transversales": [
+    "Todos los ejes convergen en la ausencia de un framework integrador que combine: taxonomía validada de intenciones + representación emocional estructurada + clasificación secuencial interpretable.",
+    "La tensión binario vs. granular es transversal a todos los ejes y no ha sido resuelta metodológicamente en la literatura.",
+    "La anotación de corpus con LLMs es prometedora pero carece de mecanismos de consenso multi-agente que garanticen confiabilidad.",
+    "El uso de emociones como señal auxiliar está establecido, pero su rol como capa de mediación estructural entre léxico e intención no ha sido explorado.",
+    "Los modelos de alta precisión (transformers) carecen de interpretabilidad intencional: saben qué clasificar pero no por qué el contenido tiene esa intención."
+  ],
+  "gap_central_identificado": "La literatura revisada no reporta un sistema que: (1) opere con una taxonomía de intenciones comunicativas formalmente validada, (2) incorpore la dimensión emocional como capa de mediación entre análisis léxico y clasificación intencional, (3) utilice un proceso de anotación multi-LLM con mecanismo de consenso formalizado, y (4) compare sistemáticamente este enfoque secuencial con modelos binarios y transformers del estado del arte. Cada uno de estos componentes existe de manera aislada en la literatura; su integración en un framework coherente representa una oportunidad de contribución original."
+}
