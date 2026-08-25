@@ -1,0 +1,117 @@
+{
+  "version": "2.0",
+  "name": "batch_article_screening_agent",
+  "input_formats": ["txt", "ris"],
+  "processing_mode": "batch",
+  "pipeline": [
+    {
+      "step": "parse_input",
+      "description": "Extraer artículos desde archivo TXT o RIS",
+      "rules": {
+        "ris_parsing": {
+          "fields": {
+            "title": "TI",
+            "abstract": "AB",
+            "keywords": "KW",
+            "authors": "AU",
+            "year": "PY",
+            "journal": "JO",
+            "doi": "DO"
+          }
+        },
+        "txt_parsing": {
+          "strategy": "heuristic_segmentation",
+          "expected_fields": ["title", "abstract", "keywords"]
+        }
+      }
+    },
+    {
+      "step": "normalize_data",
+      "description": "Estandarizar campos mínimos",
+      "required_fields": ["title", "abstract"],
+      "fallbacks": {
+        "missing_abstract": "mark_as_uncertain"
+      }
+    },
+    {
+      "step": "article_screening",
+      "description": "Aplicar reglas de inclusión/exclusión por artículo",
+      "decision_strategy": {
+        "type": "sequential_gating",
+        "default_on_uncertainty": "uncertain"
+      },
+      "rules": [
+        {
+          "id": "R1",
+          "question": "¿Analiza contenido digital?",
+          "if_no": { "decision": "exclude", "code": "EC1" }
+        },
+        {
+          "id": "R2",
+          "question": "¿Aborda intenciones comunicativas?",
+          "if_no": { "decision": "exclude", "code": "EC1" }
+        },
+        {
+          "id": "R3",
+          "question": "¿Propone o evalúa un método?",
+          "if_no": {
+            "decision": "exclude",
+            "code": "EC3_or_EC4"
+          }
+        },
+        {
+          "id": "R4",
+          "question": "¿Texto completo disponible?",
+          "if_no": {
+            "decision": "action_required",
+            "action": "contact_author",
+            "fallback": { "decision": "exclude", "code": "EC5" }
+          }
+        },
+        {
+          "id": "R5",
+          "question": "¿Publicación científica formal?",
+          "if_no": { "decision": "exclude", "code": "EC9" }
+        },
+        {
+          "id": "R6",
+          "question": "¿Duplicado?",
+          "if_yes": { "decision": "exclude", "code": "EC7" }
+        },
+        {
+          "id": "R7",
+          "question": "¿Idioma válido (EN/ES)?",
+          "if_no": { "decision": "exclude", "code": "EC6" }
+        },
+        {
+          "id": "R8",
+          "question": "¿Formato analizable?",
+          "if_no": { "decision": "exclude", "code": "EC10" }
+        }
+      ]
+    }
+  ],
+  "exclusion_criteria": {
+    "EC1": "No contenido digital o sin intenciones comunicativas",
+    "EC2": "Solo fake news sin intención",
+    "EC3": "Sin método",
+    "EC4": "Método no relevante",
+    "EC5": "Sin texto completo",
+    "EC6": "Idioma no permitido",
+    "EC7": "Duplicado",
+    "EC8": "Tema tangencial",
+    "EC9": "No publicación científica",
+    "EC10": "Formato no analizable"
+  },
+  "output_format": {
+    "type": "array",
+    "item_schema": {
+      "id": "string",
+      "title": "string",
+      "decision": "include | exclude | uncertain | action_required",
+      "exclusion_code": "string|null",
+      "justification": "string",
+      "confidence": "low | medium | high"
+    }
+  }
+}

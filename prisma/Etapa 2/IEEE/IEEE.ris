@@ -1,0 +1,2844 @@
+TY  - JOUR
+TI  - Automatic Identification of Narratives: Evaluation Framework, Annotation Methodology, and Dataset Creation
+AU  - J. M. Fraile-Hernández
+AU  - A. Peńas
+AU  - P. Moral
+T2  - IEEE Access
+AB  - One of the fundamental components of understanding online discourse in social networks is the identification of narratives. For example, the analysis of disinformation campaigns requires some inference about their communication goals that, in turn, requires the identification of the narratives that they promote. The research in this task involves a number of challenges such as the limited availability of labelled datasets, the subjectivity of the annotators and the time cost of annotation. This article present a definition of the Narrative Identification task, proposes an evaluation framework for Narrative Identification, and a methodology for the creation and annotation of Narrative Identification datasets taking into account the subjectivity of the task. Keeping in mind the goal of comparing systems performance, we explore how to reduce the annotation time while maintaining the reliability of the evaluation. Following this methodology, a set of eight tasks for narrative identification in the political domain has been developed in Spanish and English. Finally, we validated the evaluation framework by analysing its application to DIPROMATS 2024 shared task, together with the performance analysis of baseline and participant systems.
+DA  - 2025///
+PY  - 2025
+DO  - 10.1109/ACCESS.2024.3475579
+VL  - 13
+SP  - 11734
+EP  - 11753
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - natural language processing
+KW  - social media analysis
+KW  - Natural language processing
+KW  - datasets
+KW  - Annotations
+KW  - Blogs
+KW  - Costs
+KW  - evaluation methodology
+KW  - Labeling
+KW  - Measurement
+KW  - Media
+KW  - Narrative identification
+KW  - Object recognition
+KW  - Performance evaluation
+KW  - Social networking (online)
+KW  - System performance
+KW  - Upper bound
+ER  - 
+
+TY  - CONF
+TI  - Visual Persuasion: Inferring Communicative Intents of Images
+AU  - J. Joo
+AU  - W. Li
+AU  - F. F. Steen
+AU  - S. -C. Zhu
+T2  - 2014 IEEE Conference on Computer Vision and Pattern Recognition
+AB  - In this paper we introduce the novel problem of understanding visual persuasion. Modern mass media make extensive use of images to persuade people to make commercial and political decisions. These effects and techniques are widely studied in the social sciences, but behavioral studies do not scale to massive datasets. Computer vision has made great strides in building syntactical representations of images, such as detection and identification of objects. However, the pervasive use of images for communicative purposes has been largely ignored. We extend the significant advances in syntactic analysis in computer vision to the higher-level challenge of understanding the underlying communicative intent implied in images. We begin by identifying nine dimensions of persuasive intent latent in images of politicians, such as "socially dominant, " "energetic, " and "trustworthy, " and propose a hierarchical model that builds on the layer of syntactical attributes, such as "smile" and "waving hand, " to predict the intents presented in the images. To facilitate progress, we introduce a new dataset of 1, 124 images of politicians labeled with ground-truth intents in the form of rankings. This study demonstrates that a systematic focus on visual persuasion opens up the field of computer vision to a new class of investigations around mediated images, intersecting with media analysis, psychology, and political communication.
+C3  - 2014 IEEE Conference on Computer Vision and Pattern Recognition
+DA  - 2014/06/23/28
+PY  - 2014
+DO  - 10.1109/CVPR.2014.35
+SP  - 216
+EP  - 223
+SN  - 1063-6919
+KW  - Visualization
+KW  - Media
+KW  - Communicative Intents
+KW  - Computer vision
+KW  - Context
+KW  - Correlation
+KW  - Face
+KW  - Human Attributes
+KW  - Media Application
+KW  - Syntactics
+KW  - Visual Persuasion
+KW  - Visual Sentiment Analysis
+ER  - 
+
+TY  - CONF
+TI  - Workshop on human-X haptic collaboration
+AU  - A. Peer
+T2  - 2011 IEEE World Haptics Conference
+AB  - While haptic interaction with real, virtual, and remote environments is in the focus of the haptic community already since many years and implies the exchange of motion and force signals between two systems, haptic collaboration additionally requires the communication and negotiation of intentions, the building of mental models as well as the mutual adaptation of collaborating partners. Typical applications for haptic collaboration range from the manipulation and handling of heavy and large objects as required in industrial settings, the guidance of human limbs in rehabilitation, the assistance of humans in walking or performing complex manipulation tasks, the teaching of motor skills, to social interaction with virtual agents. This workshop will focus on haptic collaboration in human-X constellations where X stands for human, robot, or agent. Topics like haptic guidance, haptic shared control, mutual adaptation, learning as well as intention recognition and negotiation in haptically collaborating human-human, human-robot, and human-agent dyads will be discussed.
+C3  - 2011 IEEE World Haptics Conference
+DA  - 2011/06/21/24
+PY  - 2011
+DO  - 10.1109/WHC.2011.5945561
+SP  - 1
+EP  - 2
+ER  - 
+
+TY  - CONF
+TI  - Automated Testing and Virtual Commissioning of Automation Networks
+AU  - D. SchulzPaulo
+AU  - A. Shahraki
+T2  - 2024 IEEE 29th International Workshop on Computer Aided Modeling and Design of Communication Links and Networks (CAMAD)
+AB  - Automation networks are a core component of the mission-critical infrastructure in a distributed control system (DeS) as they connect all equipment and services of a DeS. Today, DeS network testing is typically done indirectly by evaluating the primary automation and system functions. However, the convergence of information (IT) and operation technology (OT) networking and the adoption of IP-based protocols have led to increasingly complex software configurations and cyber security risks. These developments demand more thorough and explicit testing of the infrastructure, akin to the testing conducted for applications. Performing this testing is traditionally limited as not all parts of the DeS are available during factory acceptance testing (FAT). In this study, we describe the requirements and solution approach for the systematic and automated testing of converged automation networks. This approach has three key components: re-using communication intents from automation engineering to generate comprehensive test cases, auto-configuring virtualized packet manipulation tools to act as traffic generators and analyzers and executing these tests on segments of a real or emulated network. We then demonstrate the feasibility of this approach using the Mininet network emulator in conjunction with the Scapy packet manipulation tool. While this method may be applied to cover all network logic, it is inherently limited in addressing performance aspects such as bandwidth guarantees, latency bounds, or failover speed. Additionally, we find that we cannot quantitatively measure the fidelity of our testing approaches. Based on these findings we finally identify concrete gaps in the state of the art of automated network testing, proposing concrete activities toward a formal theory of network testing and a standardized/open testing framework.
+C3  - 2024 IEEE 29th International Workshop on Computer Aided Modeling and Design of Communication Links and Networks (CAMAD)
+DA  - 2024/10/21/23
+PY  - 2024
+DO  - 10.1109/CAMAD62243.2024.10943016
+SP  - 01
+EP  - 08
+SN  - 2378-4873
+KW  - Automation
+KW  - Generators
+KW  - IBN
+KW  - Intent-Based Networking
+KW  - Logic
+KW  - Mininet
+KW  - Mission critical systems
+KW  - Network Emulation
+KW  - Network Testing
+KW  - Production facilities
+KW  - Protocols
+KW  - Software
+KW  - Software defined networking
+KW  - Software Defined Networking
+KW  - Systematics
+KW  - Test Automation
+KW  - Testing
+ER  - 
+
+TY  - CONF
+TI  - Detecting Intents of Fake News Using Uncertainty-Aware Deep Reinforcement Learning
+AU  - Z. Guo
+AU  - Q. Zhang
+AU  - Q. Zhang
+AU  - L. M. Kaplan
+AU  - A. Jøsang
+AU  - F. Chen
+AU  - D. H. Jeong
+AU  - J. -H. Cho
+T2  - 2023 IEEE International Conference on Web Services (ICWS)
+AB  - Intent mining is critical for controlling the spread of false information across online social networks (OSNs). To this end, we develop deep reinforcement learning (DRL) agents guided by a delayed reward based on intent prediction using a classifier of long short-term memory (LSTM). Additionally, we incorporate an uncertainty-aware function that leverages subjective opinions derived from Subjective Logic (SL). Through evaluation using an annotated fake news tweet dataset, our results demonstrate that our intent classification framework surpasses competing methods in terms of intent accuracy. Our intent mining solutions using DRL algorithms can support effective and efficient intervention strategies for fake news spreading on OSNs.
+C3  - 2023 IEEE International Conference on Web Services (ICWS)
+DA  - 2023/07/02/8
+PY  - 2023
+DO  - 10.1109/ICWS60048.2023.00097
+SP  - 722
+EP  - 724
+SN  - 2836-3868
+KW  - Classification algorithms
+KW  - Deep learning
+KW  - deep reinforcement learning
+KW  - fake news
+KW  - Fake news
+KW  - Intent mining
+KW  - Long short term memory
+KW  - Long Short-Term Memory
+KW  - online social network
+KW  - Reinforcement learning
+KW  - Social networking (online)
+KW  - Web services
+ER  - 
+
+TY  - CONF
+TI  - An Awareness About Phishing Attack And Fake News Using Machine Learning Technique
+AU  - K. R. K
+AU  - C. K. A
+T2  - 2022 IEEE International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE)
+AB  - In this decade Social Media platforms and online websites plays an important role in bringing people together, gathering information and easy way for transferring the information. Social media news consumption provides both positive and negative impacts to this world. News is spreading rapidly using social media. On the other hand, it facilitates the spread of fake news. Wrong, and untruthful information. The phishing is one of the serious cyber threats to people's everyday lives and the internet environment in these attacks, the attacker impersonates a trusted entity with the intent of stealing sensitive information or the user's digital identity, such as account information, credit card and debit card numbers, CVV, pin and other user details. Therefore, Phishing website and fake news detection is an important need in our society. In this project phishing website detection is proposed using Logistic Regression and Naïve Bayes machine learning algorithms. Tf-idfVectorizer, CountVectorizer, Logistic Regression, Decision Tree Classifier and Random Forest Classifier are used for detecting the fake news.
+C3  - 2022 IEEE International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE)
+DA  - 2022/04/23/24
+PY  - 2022
+DO  - 10.1109/ICDCECE53908.2022.9793225
+SP  - 1
+EP  - 5
+KW  - CountVectorizer
+KW  - Decision Tree Classifier
+KW  - Distributed computing
+KW  - Fake news
+KW  - Fake News
+KW  - Forestry
+KW  - Logistic Regression
+KW  - Machine learning algorithms
+KW  - Naïve Bayes
+KW  - Phishing
+KW  - Phishing website
+KW  - Pins
+KW  - Random Forest Classifier
+KW  - Social networking (online)
+KW  - Tf-idfVectorizer
+ER  - 
+
+TY  - CONF
+TI  - An Empirical Study on Theories of Sentiment Analysis in Relation to Fake News Detection
+AU  - I. Mannan
+AU  - S. N. Nova
+T2  - 2023 International Conference on Information and Communication Technology for Sustainable Development (ICICT4SD)
+AB  - With the speedy growth and prominence of social media, the way people interact and share information has been changed forever. This has led to an increased influence of social media platforms on people and led to rise of various issues in regards to fake news and misinformation spreading through various social media platforms. While fake news detection methodologies and techniques have advanced, fake news has also evolved to become more contextual and intent-driven, requiring a more sentiment-analytical approach. This research aims to carry out a comprehensive study of fake news detection theories, techniques, and insights in relation to sentiment analysis. It analyzes various sentiment analysis theories and fake news detection theories through studying existing research and information. This research emphasizes the importance of sentiment analysis for more effective detection of fake news.
+C3  - 2023 International Conference on Information and Communication Technology for Sustainable Development (ICICT4SD)
+DA  - 2023/09/21/23
+PY  - 2023
+DO  - 10.1109/ICICT4SD59951.2023.10303372
+SP  - 79
+EP  - 83
+KW  - fake news
+KW  - Fake news
+KW  - fake news detection
+KW  - Information and communication technology
+KW  - sentiment analysis
+KW  - Sentiment analysis
+KW  - Smart devices
+KW  - social media
+KW  - Social networking (online)
+KW  - Sustainable development
+ER  - 
+
+TY  - CONF
+TI  - Modeling Social Networks With Graph Databases for Information Security Analysis
+AU  - P. Y. Filyak
+AU  - V. Y. Latkin
+AU  - L. A. Vitkova
+T2  - 2025 International Ural Conference on Electrical Power Engineering (UralCon)
+AB  - This paper presents an approach to modeling social networks with graph databases for information security analysis. The study focuses on representing individuals and their interactions as nodes and edges within graph structures, enabling the explicit encoding of both formal and informal relationships. This representation improves the visibility of social dynamics that may influence security, including cooperation, conflict, and malicious intent. The proposed methodology, implemented using the Neo4j graph database and its Cypher query language, encompasses computational schematization, network decomposition, and graph construction with verification of relationships. Beyond individual networks, the approach extends to metagraphs that integrate heterogeneous social, organizational, and socio-technical systems. The results demonstrate that graph-based models can effectively support the analysis of information flows and the detection of fake news, providing a practical foundation for information security management and future large-scale applications.
+C3  - 2025 International Ural Conference on Electrical Power Engineering (UralCon)
+DA  - 2025/09/25/28
+PY  - 2025
+DO  - 10.1109/UralCon67204.2025.11206653
+SP  - 719
+EP  - 723
+KW  - Analytical models
+KW  - Ciphers
+KW  - Computational modeling
+KW  - Context modeling
+KW  - Cypher query language
+KW  - Database languages
+KW  - Databases
+KW  - Encoding
+KW  - Fake news
+KW  - Fake news detection
+KW  - Graph databases
+KW  - Information security
+KW  - Network modeling
+KW  - Social network analysis
+KW  - Social networking (online)
+ER  - 
+
+TY  - CONF
+TI  - A Comprehensive Review of Fake News on Social Media and its Influence on Modern Society
+AU  - N. Tyagi
+AU  - T. Gupta
+AU  - N. Chhabra
+T2  - 2025 3rd International Conference on Communication, Security, and Artificial Intelligence (ICCSAI)
+AB  - In this day and age, no matter what age or gender or country the people globally use smartphones and gadgets in their daily lives. Many a times life over social media amuses us with creative content and also connects with virtual society seems to be all the time available to us. The people, agencies, and platforms responsible for sharing verified and positive content are defeated by over inflated count of fake which might have surfaced due to incompetent or slow response from authorities and people looking to take political or financial mileage from these. A fake news might have been shared with the mere purpose of joke or pleasure but could have resulted in panic among people resulting in loss of lives, impact on mental health and financial security. Our objective here is to define fake news and its consequences over social media. We start with basic definition of fake news and its various sources. Further, discussed various intents and contents of spreading fake news over social media. It is followed up with few cases/incidents where positive and negative impacts are realized. At the end concludes with an understanding on overall impact of the fake news over social media, including gaps and the countermeasures.
+C3  - 2025 3rd International Conference on Communication, Security, and Artificial Intelligence (ICCSAI)
+DA  - 2025/04/04/6
+PY  - 2025
+DO  - 10.1109/ICCSAI64074.2025.11064462
+VL  - 3
+SP  - 1672
+EP  - 1677
+KW  - covid19
+KW  - Fake news
+KW  - Mental health
+KW  - Message systems
+KW  - Open area test sites
+KW  - Public policy
+KW  - Reviews
+KW  - Security
+KW  - Smart phones
+KW  - social media
+KW  - Social networking (online)
+KW  - Sources of fake news
+KW  - Voting
+ER  - 
+
+TY  - JOUR
+TI  - Utilization Strategy of User Engagements in Korean Fake News Detection
+AU  - M. Kang
+AU  - J. Seo
+AU  - C. Park
+AU  - H. Lim
+T2  - IEEE Access
+AB  - Fake News (disinformation with malicious intent) has emerged as a major social problem. To address this issue, previous studies mainly utilized single information, the news content, to detect fake news. However, using only news content in training is insufficient. Moreover, most studies did not consider the propagation aspect of fake news as a training feature. Thus, in an attempt to incorporate the ability to learn representation based on textual information and social context, this study proposed a fake news detection algorithm that thoroughly utilizes user graph in Korean fake news and dataset construction methods. In addition, a training strategy was proposed for utilizing user graph in Korean fake news detection through comparative and ablation studies. The experimental results showed that K-FANG outperformed the baseline in detecting fake news. Moreover, user engagements were found to be useful for detecting fake news even if the data contained hate speech. Finally, the validity of using stance information by expanding its class and controlling the class imbalance issues was also verified. This study provided useful implications for utilizing user information in fake news detection.
+DA  - 2022///
+PY  - 2022
+DO  - 10.1109/ACCESS.2022.3194269
+VL  - 10
+SP  - 79516
+EP  - 79525
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Blogs
+KW  - Deep learning
+KW  - fake news
+KW  - Fake news
+KW  - Flowcharts
+KW  - graph representation
+KW  - natural language processing
+KW  - Natural language processing
+KW  - Social networking (online)
+ER  - 
+
+TY  - CONF
+TI  - Improved Uni-Modal Chinese Fake News Detection Leveraging User Comments
+AU  - L. Zhang
+AU  - X. Zhao
+T2  - 2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)
+AB  - Relying solely on the textual content of news pieces is often insufficient for effective fake news detection (FND), as misleading information is frequently crafted with the intent to deceive readers. However, related discussions on social media platforms such as Weibo and X (formerly Twitter) often provide valuable context through user comments. These responses can serve as a critical signal in evaluating the authenticity of news. In this paper, we demonstrate that incorporating user comments into a uni-modal FND pipeline significantly enhances its performance. Specifically, we leverage the [CLS] token representation obtained from a BERT-based encoder for the target news piece and combine it with the vector representations of associated user comments using a Transformer-Based fusion module. This simple yet effective integration sets a new state-of-the-art on the largest Chinese FND dataset, Weibo-21, improving the previous best macro F1-score from 0.943 (BERT-EMO) to 0.97748. Code is at https://github.com/lezhang-thu/Chinese-Fnd-weibo21 to facilitate further research.
+C3  - 2025 6th International Conference on Computer Vision and Data Mining (ICCVDM)
+DA  - 2025/09/12/14
+PY  - 2025
+DO  - 10.1109/ICCVDM66874.2025.11290361
+SP  - 318
+EP  - 322
+KW  - BERT
+KW  - Bidirectional control
+KW  - Blogs
+KW  - Encoding
+KW  - Fake news
+KW  - Fake News Detection
+KW  - Neural networks
+KW  - Neural Networks
+KW  - Pipelines
+KW  - Sentence Transformer
+KW  - Social networking (online)
+KW  - Standards
+KW  - Transformers
+KW  - Vectors
+ER  - 
+
+TY  - CONF
+TI  - Manually Classified Real and Fake News Articles
+AU  - N. Snell
+AU  - W. Fleck
+AU  - T. Traylor
+AU  - J. Straub
+T2  - 2019 International Conference on Computational Science and Computational Intelligence (CSCI)
+AB  - News articles that are written with an intent to deliberately deceive or manipulate readers are inherently problematic. These so-called 'fake news' articles are believed to have contributed to election manipulation and even resulted in severe injury and death, by actions that they have triggered. Identifying intentionally deceptive and manipulative news article and alerting human readers is key to mitigating the damage that they can produce. The dataset presented in this paper includes manually identified and classified news stories that can be used for the training and testing of classification systems that identify legitimate versus fake and manipulative news stories.
+C3  - 2019 International Conference on Computational Science and Computational Intelligence (CSCI)
+DA  - 2019/12/05/7
+PY  - 2019
+DO  - 10.1109/CSCI49370.2019.00262
+SP  - 1405
+EP  - 1407
+KW  - Computer science
+KW  - Databases
+KW  - deceptive news
+KW  - election manipulation
+KW  - fake news
+KW  - information warfare
+KW  - manipulative news
+KW  - Social network services
+KW  - Testing
+KW  - Training
+KW  - Uniform resource locators
+KW  - Voting
+ER  - 
+
+TY  - JOUR
+TI  - Beyond Real versus Fake Towards Intent-Aware Video Analysis
+AU  - S. Atreya
+AU  - N. Quignon
+AU  - B. Chopin
+AU  - A. Das
+AU  - A. Dantcheva
+T2  - IEEE Transactions on Biometrics, Behavior, and Identity Science
+AB  - The rapid advancement of generative models has led to increasingly realistic deepfake videos, posing significant societal and security risks. While existing detection methods have focused on distinguishing real from fake videos, such approaches fail to address a fundamental question: What is the intent behind a manipulated video? Towards addressing this question, we introduce IntentHQ: the first benchmark for human-centered intent analysis, shifting the paradigm from authenticity verification to contextual understanding of videos. IntentHQ consists of 5168 videos that have been meticulously collected and annotated with 23 fine-grained intent-categories, including ’Financial fraud’, ’Indirect marketing’, ’Political propaganda’, as well as ’Fear mongering’. We perform intent recognition with supervised and self-supervised multi-modality models that integrate spatiotemporal video features, audio processing, and text analysis to infer underlying motivation and goals behind videos. Our proposed model is streamlined to differentiate between a wide range of intent-categories. This work establishes intent recognition as a new research direction beyond authenticity verification, enabling richer contextual understanding of video. The IntentHQ dataset is available under https://github.com/atrey-a/intent-hq.
+DA  - 2026///
+PY  - 2026
+DO  - 10.1109/TBIOM.2026.3663642
+SP  - 1
+EP  - 1
+J2  - IEEE Transactions on Biometrics, Behavior, and Identity Science
+SN  - 2637-6407
+KW  - Analytical models
+KW  - Benchmark testing
+KW  - Deepfakes
+KW  - intent recognition
+KW  - Intent recognition
+KW  - Multimodal video analysis
+KW  - Three-dimensional displays
+KW  - Training
+KW  - Transformers
+KW  - Video on demand
+KW  - Visualization
+KW  - Web sites
+ER  - 
+
+TY  - CONF
+TI  - A Teacher-Student Model for Multimodal Fake News Detection
+AU  - Y. Ma
+AU  - L. Vaiani
+AU  - L. Cagliero
+T2  - 2025 IEEE 19th International Conference on Application of Information and Communication Technologies (AICT)
+AB  - The massive spread of fake news on social media platforms has brought their influence on public opinion and social habits into the spotlight. Today, fake contents appear in both visual and textual sources, thus their early detection and filtering requires the adoption of multimodal learning systems. Multimodal fake news detection involving processing text-image news sources. The main challenge is that features that can be used to effectively discriminate real from fake contents, such as creators’ emotions and intents, are conveyed by a mix of modalities and their extraction requires highly specialized models. In this paper, we explore the use of knowledge distillation to address multimodal fake news detection in text-image news sources. Specifically, we propose a teacher-student model in which student models encoding modality-specific contents distill knowledge from multimodal teachers to accurately detect emotions and intents. The experiments run on the Fakeddit and TI-CNN benchmark datasets evaluate the performance of the fake news classifier based on knowledge distillation, demonstrating its superior performance compared to various baselines.
+C3  - 2025 IEEE 19th International Conference on Application of Information and Communication Technologies (AICT)
+DA  - 2025/10/29/31
+PY  - 2025
+DO  - 10.1109/AICT67988.2025.11268687
+SP  - 1
+EP  - 6
+SN  - 2472-8586
+KW  - Benchmark testing
+KW  - Encoding
+KW  - Fake news
+KW  - Feature extraction
+KW  - Filtering
+KW  - Information and communication technology
+KW  - Knowledge Distillation
+KW  - Learning systems
+KW  - Multimodal Fake News Detection
+KW  - Multimodal Learning
+KW  - Social networking (online)
+KW  - Teacher-Student Model
+KW  - Visualization
+ER  - 
+
+TY  - CONF
+TI  - Multilevel Annotation Model for Detecting Fake News in Kazakh-Language Media
+AU  - A. Nekessova
+AU  - A. Nazymkhan
+AU  - M. Sambetbayeva
+AU  - Z. Darkhan
+T2  - 2025 10th International Conference on Computer Science and Engineering (UBMK)
+AB  - With the exponential growth of disinformation in digital media, especially in multilingual societies, there is an increasing need to develop formalized annotation models that can accurately reflect both the content and the pragmatic structure of fake news. The present study presents a multi-level annotation scheme focused on Kazakh language media content and aimed at improving the interpretability and automatibility of fake news detection processes. Unlike the dominant binary approaches (REAL/FAKE), the developed model includes nine key categories (including CLAIM, EVIDENCE, SOURCE, AUTHOR_INTENT, TARGET_AUDIENCE, etc.) and twenty-three subtypes reflecting manipulative techniques, author's motivations, and the typology of target audiences. The manually annotated corpus of 5,000 texts covers news reports in Kazakh and demonstrates high values of inter - editorial agreement (k = 0.72-0.89). The annotation methodology is implemented in Label Studio with a further formalized description of the semantic relationships between entities. The results of the study emphasize both the scientific novelty of the proposed scheme and its applied significance in the tasks of constructing explicable models in the field of media literacy, information security and linguistically adapted NLP.
+C3  - 2025 10th International Conference on Computer Science and Engineering (UBMK)
+DA  - 2025/09/17/21
+PY  - 2025
+DO  - 10.1109/UBMK67458.2025.11206945
+SP  - 17
+EP  - 22
+SN  - 2521-1641
+KW  - Adaptation models
+KW  - Analytical models
+KW  - Annotations
+KW  - Context modeling
+KW  - corpus linguistics
+KW  - disinformation
+KW  - explicable AI
+KW  - fake news
+KW  - Fake news
+KW  - interannotational agreement
+KW  - Kazakh language
+KW  - Pragmatics
+KW  - Robustness
+KW  - Scalability
+KW  - semantic relations
+KW  - Semantics
+KW  - Training
+ER  - 
+
+TY  - CONF
+TI  - Tracing the Source of Fake News using a Scalable Blockchain Distributed Network
+AU  - A. D. Dwivedi
+AU  - R. Singh
+AU  - S. Dhall
+AU  - G. Srivastava
+AU  - S. K. Pal
+T2  - 2020 IEEE 17th International Conference on Mobile Ad Hoc and Sensor Systems (MASS)
+AB  - In the news industry, as well as in social media, fake news detection and identification of news sources has become a central topic of discussion. In the era of digitization, anyone can easily generate or manipulate digital content and publish them on social media websites. On the one hand, these social networking platforms provide ample ease in modern-day communication but on the other hand, using such platforms has posed new challenges to real-world implementation like viral spreading of false/fake information with malicious intentions. In this paper, a naive blockchain and watermarking based social media framework is proposed to control the fake news propagation. We postulate a new blockchain model to mitigate existing challenges in this field. Moreover, the novel solution can help in reducing the spread of fake news by tracing the root or origin of the fake news on social media. Through our experimental results, we show that our blockchain-based solution is able to immediately stream data through a bloXroute server that can propagate data up to 100 times faster than conventional solutions.
+C3  - 2020 IEEE 17th International Conference on Mobile Ad Hoc and Sensor Systems (MASS)
+DA  - 2020/12/10/13
+PY  - 2020
+DO  - 10.1109/MASS50613.2020.00015
+SP  - 38
+EP  - 43
+SN  - 2155-6814
+KW  - Blockchain
+KW  - Digital Watermarking
+KW  - Distributed Network
+KW  - Encryption
+KW  - Fake News
+KW  - Mathematical model
+KW  - Overlay Network
+KW  - Scalability
+KW  - Scalable Blockchain
+KW  - Servers
+KW  - Social networking (online)
+KW  - Watermarking
+ER  - 
+
+TY  - CONF
+TI  - Emotion-Aware Cross Lingual Vision Fake News Detection Using Affective Computing
+AU  - A. V
+AU  - G. S
+AU  - D. J. MJ
+T2  - 2026 5th International Conference on Communication, Computing and Electronics Systems (ICCCES)
+AB  - The fast spread of emotionally-driven misinformation on social media poses a risk to misleading people and digital health. This paper introduces Emotion-Aware CrossLingualVision (ECLV), which is a model combining affective computing and cross-lingual vision-language analysis to detect fake news. It uses textual embeddings that are multilingual and textual clues of rich language that reflects emotions and CNN-based visual feature of emotion used to capture literal meaning as well as emotions intent of misleading information. Through the derivation of sentiment scores, affective signals and facial expressionbased visual emotions, ECLV creates rich emotionoriented multimodal representations. The joint embeddings are sent through an affectadaptive classifier to separate emotionally influencing fake news content, and that of credible material. Experiments on multilingual data show that the affective features significantly enhance the accuracy of detection of the traditional multimodal models. The findings are clear indications of the capability of ECLV in discovering emotionally misleading tales, crosslinguistic dissonance, and inappropriate sentiments relative to images, which are typically off-radar.
+C3  - 2026 5th International Conference on Communication, Computing and Electronics Systems (ICCCES)
+DA  - 2026/01/21/23
+PY  - 2026
+DO  - 10.1109/ICCCES62661.2026.11437173
+SP  - 01
+EP  - 08
+KW  - Accuracy
+KW  - Affective computing
+KW  - Affective Computing
+KW  - Analytical models
+KW  - Computational modeling
+KW  - Cross lingual
+KW  - Cross-Lingual Multimodal Learning
+KW  - Data models
+KW  - Emotion-Aware Fake News Detection
+KW  - Fake news
+KW  - Multilingual
+KW  - Multilingual Social Media Misinformation
+KW  - Social networking (online)
+KW  - Visual-Text Emotion Analysis
+KW  - Visualization
+ER  - 
+
+TY  - JOUR
+TI  - Topological and Sequential Neural Network Model for Detecting Fake News
+AU  - D. Jung
+AU  - E. Kim
+AU  - Y. -S. Cho
+T2  - IEEE Access
+AB  - Fake news can be easily propagated through social media and cause negative societal effects. Since fake news is disinformation with malicious intent, manual fact-checking requires great effort. In order to cope with these challenges, many automatic fake news detection models have been introduced. Recent studies have shown that social network information along with news content can be used effectively for detecting fake news. In this paper, we propose a Topological and Sequential Neural Network model (TSNN) for detecting fake news by capturing the diffusion patterns between source news and users in social networks. We employ the supernode approach instead of simple graph pooling methods to extract representative features in graph topological structure. To better learn the representations in the supernode, we design two-staged graph neural networks reflecting the heterogeneity between news and Twitter users. Our model additionally captures sequential information on news diffusion path by using a transformer. We evaluate our model with two fake news benchmark datasets annotated by fact-checking websites: PolitiFact and GossipCop. TSNN achieves 92.15% accuracy and 92.11% F1-score on PolitiFact, and 97.91% accuracy and 97.88% F1-score on GossipCop. These results demonstrate that our model significantly outperforms other baselines, establishing it as a state-of-the-art solution for fake news detection. To verify the effectiveness following model configuration, we perform ablation studies to demonstrate how each component among our two-stage graph neural networks, and sequential information modules contribute to the performance improvements.
+DA  - 2023///
+PY  - 2023
+DO  - 10.1109/ACCESS.2023.3343843
+VL  - 11
+SP  - 143925
+EP  - 143935
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Blogs
+KW  - Convolutional neural networks
+KW  - Fake news
+KW  - Fake news detection
+KW  - Feature extraction
+KW  - graph classification
+KW  - graph neural network
+KW  - Graph neural networks
+KW  - Social networking (online)
+KW  - Task analysis
+ER  - 
+
+TY  - CONF
+TI  - Intelligent Framework to Detection of Fake News Using Deep Learning Approach
+AU  - N. Janu
+AU  - Anjali
+T2  - 2024 IEEE International Conference on Information Technology, Electronics and Intelligent Communication Systems (ICITEICS)
+AB  - In the vast realm of social media, the insidious spread of fake news has become an unsettling reality, blurring the lines between fact and fiction. Misleading narratives and fabricated stories on social platforms can sway public opinion, erode trust, and hinder informed decision-making. The swift escalation of false information through likes, shares, and retweets underscores the pressing need for media literacy and critical thinking in the digital age. Fake news not only undermines the credibility of reputable sources but also poses significant challenges to the integrity of democratic discourse and societal cohesion. To combat the menace of fake news, a collective effort is required from users, platforms, and authorities to verify, share responsibly, and uphold the truth in the online landscape. Fake news is misinformation that is spread with the intent of personal benefit. It may be political or financial gain. Fake news has even influenced public opinion to a large extent in recent years. With the negative impact created by false information on gullible people's lives, we are prompted to develop systems to takle the issue of fake news's proliferation. Through this paper, we have done a comprehensive study of existing tools and techniques and further employed classification as multi-class and binary with help of many algorithms of Machine Learning like Random Forest, Support Vector Machine, Naive Bayes, Decision Tree, Logistic Regression(LR) and models of Deep Learning as Convolutional Neural Network, Long Short Term Memory. By utilizing the Convolutional Neural Network Algorithm, we achieved the maximum accuracy in our experiments.
+C3  - 2024 IEEE International Conference on Information Technology, Electronics and Intelligent Communication Systems (ICITEICS)
+DA  - 2024/06/28/29
+PY  - 2024
+DO  - 10.1109/ICITEICS61368.2024.10625287
+SP  - 1
+EP  - 16
+KW  - accuracy
+KW  - Accuracy
+KW  - Convolutional neural networks
+KW  - Deep Learning
+KW  - Fake news
+KW  - Information age
+KW  - LSTM
+KW  - Machine Learning
+KW  - Machine learning algorithms
+KW  - Performance Matrices
+KW  - Pressing
+KW  - Recurrent neural networks
+KW  - Support vector machines
+ER  - 
+
+TY  - CONF
+TI  - A Proposal for a novel approach to analyze and detect the fake news using AI techniques
+AU  - A. Rao
+AU  - A. Shetty
+AU  - A. Uphade
+AU  - P. Thawani
+AU  - P. RL
+T2  - 2020 3rd International Conference on Intelligent Sustainable Systems (ICISS)
+AB  - Fake news is a type of news that contains deliberately incorrect information and is spread with malicious intent in fields that include and are not limited to politics, finance and entertainment. Fake news and misinformation are abundant these days due to increased access to the internet and social media websites and other sharing platforms. These can have harmful effects on society and its spread must be contained. The first step in containing the proliferation of fake news is to identify a piece of news as fake or real. The goal of our system is to train it with articles using reliable news sources using web mining techniques and subsequently analyze a piece of news using natural language processing and machine learning algorithms to classify it as fake or real.
+C3  - 2020 3rd International Conference on Intelligent Sustainable Systems (ICISS)
+DA  - 2020/12/03/5
+PY  - 2020
+DO  - 10.1109/ICISS49785.2020.9316056
+SP  - 582
+EP  - 589
+KW  - Deep Learning
+KW  - Fake news classification
+KW  - Natural Language Processing
+KW  - Neural networks
+KW  - Optical character recognition software
+KW  - Optical imaging
+KW  - Predictive models
+KW  - Proposals
+KW  - Reliability
+KW  - Social networking (online)
+KW  - Web mining
+ER  - 
+
+TY  - CONF
+TI  - Fake News Detection on English News Article's Title
+AU  - J. M. Castillo
+AU  - K. D. F. Fadera
+AU  - A. A. A. Ladao
+AU  - J. G. Go
+AU  - M. B. Tamayo
+AU  - M. V. Octaviano
+T2  - 2021 1st International Conference in Information and Computing Research (iCORE)
+AB  - A power of an online user can start on a single click. It is now easier to spread news on cyberspace. This can be done on social media or any other websites online. But not everything online is real. Fake news emerges with a malicious intent that might harm and cause trouble. Primarily online wherein it is easy to publish and spread false information in seconds. This paper presents the development of a fake news detection on English news article's title using Machine learning algorithm as fake news continuously spread worldwide. With the use of ensembling method, Naïve Bayes achieved 54%. Similarly, ensembling technique is applied to another algorithm, XGBoost that garnered 80%. Furthermore, SVM was also added on feature combinations that are also explored to further understand which feature combination can give a better performance. Findings of the study shows that the ensemble learning techniques can be used to identify the accuracy of fake news in title alone.
+C3  - 2021 1st International Conference in Information and Computing Research (iCORE)
+DA  - 2021/12/11/12
+PY  - 2021
+DO  - 10.1109/iCORE54267.2021.00046
+SP  - 151
+EP  - 156
+KW  - Cyberspace
+KW  - Ensemble bagging
+KW  - Fake News Detection
+KW  - Machine learning
+KW  - Machine learning algorithms
+KW  - Naïve Bayes
+KW  - Organizations
+KW  - Pandemics
+KW  - Social networking (online)
+KW  - Support vector machines
+KW  - SVM
+KW  - XGBoost
+ER  - 
+
+TY  - CONF
+TI  - An Ontological Model for Classification and Detection of Information Attacks in Social Media
+AU  - B. Abdygalym
+AU  - E. Adalı
+AU  - M. Sambetbayeva
+AU  - A. Yerimbetova
+AU  - D. Kemelova
+AU  - G. Yespaev
+T2  - 2025 10th International Conference on Computer Science and Engineering (UBMK)
+AB  - The proliferation of information operations on social media, such as disinformation and psychological manipulation, necessitates intelligent tools for their identification and classification. This paper presents an ontological model aimed at the semantic detection of information operations within digital communication platforms. The model formalizes key entities (e.g., source, target audience, emotion, and fake claims) and interrelations (e.g., aimed_at, has_emotion, claims_fakeness), providing a comprehensive framework for analyzing the intent and structure of harmful content. Integrated with natural language processing methods and a military thesaurus (MIL_TERM), the model supports the classification of message types including Disinformation, Provocation, and Intimidation. The ontology is validated using SPARQL queries and reasoning tools (OOPS!, OntoMetric, Pellet), achieving high F1-scores (0.79–0.89) for key categories. Furthermore, the model’s implementation in an annotation platform (Label Studio) accelerates manual labeling and ensures consistency. This work contributes to the development of intelligent monitoring systems by enabling formal, interpretable, and scalable analysis of information threats in multilingual digital environments.
+C3  - 2025 10th International Conference on Computer Science and Engineering (UBMK)
+DA  - 2025/09/17/21
+PY  - 2025
+DO  - 10.1109/UBMK67458.2025.11207077
+SP  - 1554
+EP  - 1557
+SN  - 2521-1641
+KW  - Analytical models
+KW  - cybersecurity
+KW  - Fake news
+KW  - fake news detection
+KW  - information operations
+KW  - Monitoring
+KW  - Multilingual
+KW  - natural language processing
+KW  - Natural language processing
+KW  - Ontologies
+KW  - ontology
+KW  - semantic web
+KW  - Semantic Web
+KW  - Semantics
+KW  - social media analysis
+KW  - Social networking (online)
+KW  - Thesauri
+ER  - 
+
+TY  - CONF
+TI  - Malicious Intent Detection Framework for Social Networks
+AU  - A. R. Fausak
+AU  - C. Tunc
+AU  - A. T. Fausak
+T2  - 2024 IEEE/ACS 21st International Conference on Computer Systems and Applications (AICCSA)
+AB  - Many people have online social accounts (OSAs) in online communities (OCs) such as Facebook (Meta), Twitter (X), Instagram (Meta), Mastodon, and Nostr. OCs enable quick and easy interaction with friends, family, and even online communities to share information about. However, there is also a dark side to OCs, where users with malicious intent join OC platforms with the purpose of criminal activities such as spreading fake news/information, cyberbullying, propaganda, phishing, stealing, and unjust enrichment. These criminal activities are especially concerning when harming minors. Detection and mitigation are needed to protect and help OCs by detecting, stopping, and preventing such criminals from harming others. To answer this challenge, we propose the first steps of a framework for analyzing and identifying malicious intent in OCs, which we refer to as the malicious intent detection framework (MIDF). MIDF is an extensible proof-of-concept that uses machine learning techniques to enable detection and mitigation. The framework will first be used to detect malicious users using only relationships. Then it can be leveraged to create a suite of malicious intent vector detection models, including phishing, propaganda, scams, cyberbullying, racism, spam, and bots for open-source online social networks, such as Mastodon, and Nostr,
+C3  - 2024 IEEE/ACS 21st International Conference on Computer Systems and Applications (AICCSA)
+DA  - 2024/10/22/26
+PY  - 2024
+DO  - 10.1109/AICCSA63423.2024.10912555
+SP  - 1
+EP  - 6
+SN  - 2161-5330
+KW  - artificial intelligence
+KW  - Biological system modeling
+KW  - Blogs
+KW  - Computational modeling
+KW  - Cyberbullying
+KW  - machine learning
+KW  - malicious intent detection
+KW  - online behavior analysis
+KW  - Phishing
+KW  - Prevention and mitigation
+KW  - Safety
+KW  - social engineering
+KW  - Training
+KW  - Vectors
+KW  - Web sites
+ER  - 
+
+TY  - CONF
+TI  - Unveiling Utopia of False Information in The Digital Era through The Lens of Bibliometric Analysis
+AU  - M. I. Wijaya
+AU  - Suzanna
+AU  - W. Budiharto
+AU  - D. Utomo
+AU  - J. Ivana
+T2  - 2024 26th International Multi-Topic Conference (INMIC)
+AB  - With the rapid development of technology and wide exchange of information, false information or fake news can easily be spread. The challenge not only comes from content that is easily created and manipulated using AI technology such as the Deep fake algorithm, but the presence of social media can spread misinformation throughout the world in a matter of seconds. There are various motivations for creating fake news, such as economic gain and politics. This paper aims to analyze current research on false information using bibliometric methods. Trends in research, as well as links between studies, are evaluated in depth. Emerging research themes is also elaborated. Based on the analysis, the trend on the theme of fake information is currently increasing. Various research are published to understand the phenomenon and to find the potential solutions. Generally two research streams are emerged in this topic. The first stream is focused on the human factors such as educating society to be more critical in responding to the information, and studying human behavior towards the fake news. The second stream is focused on how technology able to help to tackle fake news. Several technologies are often mentioned, such as blockchain to store and trace the spread of fake news, artificial intelligence to categotize true and false information automatically, and social network analysis to analyze chain and distribution of fake news. Based on the literature study, a framework of solution built that combined both human and technological measure to combate the fake news.
+C3  - 2024 26th International Multi-Topic Conference (INMIC)
+DA  - 2024/12/30/31
+PY  - 2024
+DO  - 10.1109/INMIC64792.2024.11004361
+SP  - 1
+EP  - 6
+SN  - 2835-8864
+KW  - AI
+KW  - Artificial intelligence
+KW  - Behavioral sciences
+KW  - Bibliometrics
+KW  - Big Data
+KW  - COVID-19
+KW  - Fake news
+KW  - False Information
+KW  - Market research
+KW  - Pandemics
+KW  - Social Media
+KW  - Social networking (online)
+KW  - Streams
+KW  - Subject matter experts
+ER  - 
+
+TY  - CONF
+TI  - A Review on Fake News Detection Techniques
+AU  - K. Mandal
+AU  - A. Malik
+T2  - 2023 Third International Conference on Secure Cyber Computing and Communication (ICSCCC)
+AB  - In the modern era, digital communication has become an integral part of our lives. The way we consume news has also evolved, with the internet providing various platforms to access news content such as websites, applications, and web page pop-ups. However, with the increased availability of news sources, it has become more challenging to determine which sources are trustworthy and which ones are not. Some news outlets are recognized and trusted by millions of people around the world, while others disseminate fake news with the intent of creating disharmony in society. Spreading false information can have negative effects on public sentiment and decision-making. Therefore, many researchers have developed ways to detect and segregate news based on its truthfulness. These techniques aim to differentiate between fake news and genuine news. This review paper summarizes some of the methods developed over the years that can help verify news and distinguish between fake and original or real news. The paper provides a useful overview of the tools available for individuals to verify news content and make informed decisions about the credibility of news sources.
+C3  - 2023 Third International Conference on Secure Cyber Computing and Communication (ICSCCC)
+DA  - 2023/05/26/28
+PY  - 2023
+DO  - 10.1109/ICSCCC58608.2023.10176530
+SP  - 611
+EP  - 616
+KW  - Bidirectional Encoder Representations from Transformers (BERT)
+KW  - Convolutional Neural Network (CNN)
+KW  - Decision making
+KW  - Digital communication
+KW  - Long short-term memory network(LSTM)
+KW  - Machine Learning (ML)
+KW  - Naive Bayes Classifier (NBC)
+KW  - Natural Language Processing (NLP)
+KW  - Neural networks
+KW  - Recurrent neural network (RNN)
+KW  - Support vector machine classification
+KW  - Support vector machines (SVMs)
+KW  - term frequency-inverse document frequency (TF-IDF)
+KW  - Training
+KW  - Transformers
+KW  - Web pages
+ER  - 
+
+TY  - CONF
+TI  - Machine Learning Based Approach to Disinformation Detection Using Twitter Data
+AU  - S. Yadav
+AU  - C. Kumar
+T2  - 2023 International Conference for Advancement in Technology (ICONAT)
+AB  - Fake news detection on social media has assumed enhanced importance and is a trending research topics for data analysts around the world. While most of fake news may be aimed at commercial or personal gains, some of it may cause deliberate harm to a nation’s progress. Twitter, as part of social media platforms (SMPs) is a leading portal being used by everyone for gaining access and giving out information. Leading the spread of disinformation propagation via fake news, twitter has emerged as one of the leading SMPs. The sheer quantum of tweets makes it very challenging to sort the news and remove anomalies. Various machine learning techniques have been devised to identify fake tweets. This report aims at studying prominent machine learning techniques for detection of disinformation propagation on Twitter. Generally, researchers have identified detection of fake tweets as a classification problem but some unsupervised and unconventional learning models are also available. Major effort for any supervised learning technique is creation of data corpus. The paper highlights some techniques for the same. Consequently, inclusion of context as part of feature extraction has been achieved to align the intent behind the tweet with the text. As a first step towards the solution, a sentiment analysis of tweets from a set of users has been recommended details have been illustrated in subsequent sections. Various context based technique have been studied and implemented on data corpus and results produced have been compared. The report also studies various NLP techniques for data pre-processing and feature extraction before using classifiers to draw the outcome.
+C3  - 2023 International Conference for Advancement in Technology (ICONAT)
+DA  - 2023/01/24/26
+PY  - 2023
+DO  - 10.1109/ICONAT57137.2023.10080790
+SP  - 1
+EP  - 5
+KW  - BERT
+KW  - Blogs
+KW  - BoW
+KW  - Doc2Vec
+KW  - Fake news
+KW  - Feature extraction
+KW  - Machine learning
+KW  - NLP
+KW  - Sentiment analysis
+KW  - SMPs
+KW  - Social networking (online)
+KW  - Supervised learning
+KW  - TF-IDF
+KW  - W2V
+ER  - 
+
+TY  - CONF
+TI  - Does Explanation Matter? An Exploratory Study on the Effects of Covid–19 Misinformation Warning Flags on Social Media
+AU  - D. Barman
+AU  - O. Colan
+T2  - 2023 10th International Conference on Behavioural and Social Computing (BESC)
+AB  - Digital platforms have employed flagging techniques to tackle misinformation as they offer a promising means of informing users about harmful content without resorting to censorship. However, their effectiveness depends on the user’s understanding of the flags. Fact-checkers have been crucial in tackling misinformation online, but interestingly, fact-checked explanations have rarely been incorporated directly into the warning flags. They have usually been linked and directed towards their websites. Therefore, this study investigates user responses to misinformation flags in a hypothetical social media setting. It focuses on whether warnings influence users’ perceived accuracy judgement and sharing intent of the false headlines. We also investigate whether adding specific explanations from fact-checking websites enhances trust in these flags. We conducted an experiment with 348 American participants, exposing them to a randomised order of true and false news headlines related to COVID-19, with and without warning flags and explanation text. Our findings suggest that warning flags, whether alone or accompanied by explanatory text, effectively reduce the perceived accuracy of fake news and the intent to share such headlines. Interestingly, our study also suggests that incorporating explanatory text in misinformation warning systems could significantly enhance their trustworthiness, emphasising the importance of transparency and user comprehension in combating fake news on social media.
+C3  - 2023 10th International Conference on Behavioural and Social Computing (BESC)
+DA  - 2023/11/30/Oct.-1
+PY  - 2023
+DO  - 10.1109/BESC59560.2023.10386371
+SP  - 1
+EP  - 7
+KW  - Alarm systems
+KW  - Behaviours
+KW  - Censorship
+KW  - Covid-19
+KW  - COVID-19
+KW  - Fake news
+KW  - Fake News Flags
+KW  - Misinformation
+KW  - Social computing
+KW  - Social Media
+KW  - Social networking (online)
+ER  - 
+
+TY  - CONF
+TI  - Text Monitoring with NLP for Covid Related Data
+AU  - V. M. Gayathri
+AU  - A. H. Victoria
+AU  - P. Supraja
+T2  - 2022 1st International Conference on Computational Science and Technology (ICCST)
+AB  - Since the adoption of the internet as a medium of communication of information, fake or false information or news has always been a major issue. Incidents of false information have always increased at times of crisis on national or international scales. The world witnessed a global pandemic from the Coronavirus, causing a complete disruption in the functioning of society. News of bogus cures, home remedies, and medicines started to make their way around the world. The number of incidents of such false news only increased as the pandemic worsened and more people were falling sick and dying. In times of desperation, people can easily be persuaded to try unverified and possibly dangerous medicines or cures, that can cost them their money as well as health. In this paper, natural language processing is used to first identify and differentiate text that has information regarding Covid 19 from the text that does not contain information regarding Covid 19. Word frequency scores like TF and IDF scores are then calculated. The intent of the text is then analyzed by observing the mannerisms detected in false news. With this analysis, the potential of the text to be false or fake is then determined. This research intends to explore the linguistics of false news and to get one step ahead in identifying fake news. The same methodology can be used to analyze data related to other specific topics.
+C3  - 2022 1st International Conference on Computational Science and Technology (ICCST)
+DA  - 2022/11/09/10
+PY  - 2022
+DO  - 10.1109/ICCST55948.2022.10040371
+SP  - 821
+EP  - 824
+KW  - Classifiers
+KW  - Costs
+KW  - COVID-19
+KW  - Fake news
+KW  - Linguistics
+KW  - Natural language processing
+KW  - Normalization
+KW  - Pandemic
+KW  - Pandemics
+KW  - Scientific computing
+KW  - Text Processing
+KW  - Tokenization
+ER  - 
+
+TY  - CONF
+TI  - A Hybrid Approach for Identifying Authentic News Using Deep Learning Methods on Popular Twitter Threads
+AU  - Abdullah All Tanvir
+AU  - E. M. Mahir
+AU  - S. M. A. Huda
+AU  - S. Barua
+T2  - 2020 International Conference on Artificial Intelligence and Signal Processing (AISP)
+AB  - Now a day’s social networks have become a crucial part and parcel in our day to day life. The gradual rise of the amount of information available in different kind of social media is the sole reason behind this impact. However, having the scope of accessing this huge amount of information so easily has made it complicated to find the contrast between counterfeit and an actual news. Some group of people often grabs this chance to share manipulated information to a huge number of people with an intent of destroying the image of any people, person or any specific groups. This results in creating such agendas which creates havoc to social welfare and peacefulness. Due to this fast circulation in such a small amount of time, it is almost impossible to manually detect the sources and authenticity of fake news effectively and efficiently. This is where computational and automated methods come handy to detect such kind of act in social media. We can decide whether any piece of text is either fabricated or not based on previously experienced real or fabricated news. In this study our contribution has three principal parts. First, we introduce our manually collected dataset and its details, then we go on to use some significant concepts of Natural Language Processing and Machine Learning models to train our model and lastly, we provided some comparison with the existing algorithms from different machine learning techniques which proves the superiority of our proposed model. Our model achieved a highest accuracy of 80% using Bayesian Classifier and 77% using a Hybrid Long Short-Term Memory Neural Network Architecture.
+C3  - 2020 International Conference on Artificial Intelligence and Signal Processing (AISP)
+DA  - 2020/01/10/12
+PY  - 2020
+DO  - 10.1109/AISP48273.2020.9073583
+SP  - 1
+EP  - 6
+SN  - 2640-5768
+KW  - Blogs
+KW  - Deep learning
+KW  - Faces
+KW  - Fake news
+KW  - Fake News
+KW  - Instruction sets
+KW  - Logistic Regression
+KW  - LSTM
+KW  - Machine Learning
+KW  - Memory architecture
+KW  - Natural language processing
+KW  - Neural networks
+KW  - Recurrent Neural Network
+KW  - Signal processing
+KW  - Social networking (online)
+KW  - SVM
+ER  - 
+
+TY  - CHAP
+TI  - 7 PRIVACY AND THE OTHER USUAL SUSPECTS
+AU  - Mark Coeckelbergh
+T2  - AI Ethics
+AB  - Many ethical problems with AI are known from the area of the ethics of robotics and automation or, more generally, from the area of the ethics of digital information and communication technologies. But this by itself does not render them any less important. Moreover, because of the technology and the way it is connected to other technologies, these issues take on a new dimension and become even more urgent.
+DA  - 2020///
+PY  - 2020
+SP  - 97
+EP  - 108
+PB  - MIT Press
+SN  - 978-0-262-35706-7
+UR  - http://ieeexplore.ieee.org.inacap.idm.oclc.org/document/9056697
+ER  - 
+
+TY  - CONF
+TI  - Fine-Tuning Language Models for Social Engineering: A Technical Feasibility Study
+AU  - N. Kumar
+AU  - D. Deshkar
+AU  - N. Patel
+T2  - 2025 IEEE 7th International Conference on Computing, Communication and Automation (ICCCA)
+AB  - The explosive growth of large language models (LLMs) has transformed the landscape of natural language generation, unlocking incredible capabilities—but also creating new avenues for misuse. This study delves into the darker side of LLMs, specifically their potential to generate highly convincing social engineering content, such as phishing schemes and impersonation tactics. By exploring the techniques of prompt engineering and fine-tuning, we demonstrate how these models can be manipulated to produce surprisingly realistic and contextually accurate malicious content. Our experiments show that open-source models can be exploited with alarming success, while fine-tuning further sharpens their ability to deceive. On the other hand, commercial models equipped with advanced safeguards do better at blocking harmful inputs—but even these systems are not foolproof. Drawing on these findings, we propose a risk framework and offer actionable recommendations for securing LLMs in real-world applications. This research underscores the urgent need for strong oversight, proactive security measures, and continuous adaptation to mitigate the dual-use risks posed by this powerful technology.
+C3  - 2025 IEEE 7th International Conference on Computing, Communication and Automation (ICCCA)
+DA  - 2025/11/28/30
+PY  - 2025
+DO  - 10.1109/ICCCA66364.2025.11325128
+SP  - 1
+EP  - 6
+KW  - Large language models
+KW  - Fake news
+KW  - Watermarking
+KW  - Prompt Engineering
+KW  - GPT-4
+KW  - Large Language Models (LLMs)
+KW  - Phishing
+KW  - Computational modeling
+KW  - Filtering
+KW  - Adaptation models
+KW  - Claude
+KW  - Fine-Tuning
+KW  - Hands
+KW  - LLaMA
+KW  - Natural language generation
+KW  - Prompt engineering
+KW  - Social Engineering
+ER  - 
+
+TY  - CONF
+TI  - The Spread of Disinformation on the Web: An Examination of Memes on Social Networking
+AU  - M. J. Dupuis
+AU  - A. Williams
+T2  - 2019 IEEE SmartWorld, Ubiquitous Intelligence & Computing, Advanced & Trusted Computing, Scalable Computing & Communications, Cloud & Big Data Computing, Internet of People and Smart City Innovation (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)
+AB  - Social media has become a potent vector for political disinformation and propaganda, often spread by malicious actors such as trolls or even foreign intelligence services, as famously occurred during the 2016 United States election. However, what makes social media a particularly potent vector for disinformation is not so much the behavior of malicious actors themselves, but rather, ordinary users, who play a vital role in spreading and magnifying this disinformation. In order to understand and combat the spread of disinformation, we conduct two surveys examining the patterns of user behavior in sharing different types of disinformation. The first survey classifies a variety of image memes based on user reaction and interpretation. The second survey will be evaluating user behavior toward those memes with additional measures in place to assess the personality and trait affect of users. The goal is to help understand how ordinary social media users behave in regards to political propaganda and disinformation.
+C3  - 2019 IEEE SmartWorld, Ubiquitous Intelligence & Computing, Advanced & Trusted Computing, Scalable Computing & Communications, Cloud & Big Data Computing, Internet of People and Smart City Innovation (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)
+DA  - 2019/08/19/23
+PY  - 2019
+DO  - 10.1109/SmartWorld-UIC-ATC-SCALCOM-IOP-SCI.2019.00256
+SP  - 1412
+EP  - 1418
+KW  - disinformation, propaganda, fake news, social media, memes, information integrity, cybersecurity
+KW  - Facebook
+KW  - Internet
+KW  - Media
+KW  - Software systems
+KW  - Twitter
+KW  - Voting
+ER  - 
+
+TY  - CONF
+TI  - Debunking Technology and Efforts in Combating Dis/Misinformation
+AU  - A. Luthfia
+AU  - M. Muslikhin
+AU  - V. Prahassacitta
+AU  - B. P. Wahyuningtyas
+AU  - A. R. Condrobimo
+T2  - 2025 19th International Conference on Ubiquitous Information Management and Communication (IMCOM)
+AB  - The pervasive spread of dis/misinformation in Indonesia, particularly via social media and instant messaging applications, has emerged as a major concern due to its societal challenges. This study investigates the roles of various stakeholders and the interplay between stakeholders in combating dis/misinformation in Indonesia. By understanding the roles of various stakeholders, this research provides insights for improving strategies to counter dis/misinformation. Using a qualitative research design, data was collected through interviews with stakeholders and analyzed using coding and thematic analysis. The results highlight the use of technologies such as WhatsApp Business API, Hoax Buster Tools, and AI-based verification tools by organizations like Mafindo and Cekfakta.com. This study also explores the importance of public engagement and digital literacy campaigns in Indonesia, including grassroots initiatives like Lentera Litera and TurnbackHoax.id. This research underscores the roles and challenges faced by journalists, media organizations, fact-checking platforms, and NGOs in enhancing digital literacy and efforts in combating dis/misinformation. The findings suggest that a multi-faceted approach involving regulation, technology, public engagement, and international collaboration is essential for combating dis/misinformation effectively. This research enhances understanding of dis/misinformation dynamics and provides actionable recommendations for Indonesian stakeholders, emphasizing the need for collaborative efforts, technology use, and public engagement to create a truthful information ecosystem.
+C3  - 2025 19th International Conference on Ubiquitous Information Management and Communication (IMCOM)
+DA  - 2025/01/03/5
+PY  - 2025
+DO  - 10.1109/IMCOM64595.2025.10857576
+SP  - 1
+EP  - 7
+KW  - artificial intelligent
+KW  - Collaboration
+KW  - debunking
+KW  - Digital intelligence
+KW  - Ecosystems
+KW  - fake news
+KW  - Freeware
+KW  - Indonesia
+KW  - Instant messaging
+KW  - Internet telephony
+KW  - Media
+KW  - misinformation
+KW  - Organizations
+KW  - Social networking (online)
+KW  - Stakeholders
+ER  - 
+
+TY  - JOUR
+TI  - DR-DGRNet: A Model for Intent-Based Disinformation Recognition Using Dynamic Graph Representation Learning
+AU  - Z. Yang
+AU  - Y. Pang
+AU  - B. Yang
+AU  - H. Zhang
+AU  - Y. Xiao
+T2  - IEEE Transactions on Computational Social Systems
+AB  - The rapid development of social platforms has enabled users to easily manipulate machine-controlled spammer accounts powered by large language models (LLMs) to spread misinformation for ulterior motives. To address this, it is crucial to model the dissemination space of intent-based events and detect them early. This article proposes a model for recognizing intent-based disinformation using dynamic graph representation learning, named DR-DGR. First, a group behavior quantification algorithm based on the attention mechanism is introduced. This algorithm incorporates relative position encoding into the attention mechanism to extract subspace user group features. Second, an algorithm for user behavior representation is proposed. Considering the importance of both group and individual behaviors in the subspace, convolutional and attention-based components are employed to mine individual and group behavioral features, which are then fused to represent the dissemination subspace. Finally, to account for the varying importance of features over time, key dissemination features are dynamically extracted using an attention component. Moreover, to mitigate early-stage data sparsity, source content is incorporated to enhance early recognition performance. Evaluations on large-scale public datasets and real-world environments demonstrate that DR-DGR effectively identifies disinformation.
+DA  - 2026///
+PY  - 2026
+DO  - 10.1109/TCSS.2026.3654553
+SP  - 1
+EP  - 10
+J2  - IEEE Transactions on Computational Social Systems
+SN  - 2329-924X
+KW  - Aerospace electronics
+KW  - Attention mechanism
+KW  - Attention mechanisms
+KW  - Computational modeling
+KW  - disinformation recognition
+KW  - dynamic fusion
+KW  - Electronic mail
+KW  - Encoding
+KW  - Fake news
+KW  - Feature extraction
+KW  - Heuristic algorithms
+KW  - Nickel
+KW  - Representation learning
+KW  - space representation
+ER  - 
+
+TY  - JOUR
+TI  - Machine Learning Approach to Classification of Online Users by Exploiting Information Seeking Behavior
+AU  - M. Kanwal
+AU  - M. A. Khan
+AU  - N. Ismat
+AU  - N. A. Khan
+AU  - A. A. Khan
+T2  - IEEE Access
+AB  - In today’s world, technology has engulfed the internet with an excessive amount of unfiltered, spontaneous, and incessant data from multiple sources. Complex algorithms are designed to present information effectively based on user intent. The online experience of users is a combination of various behaviors exhibited to seek information, including searching, sharing, and verifying information. However, this multifaceted user behavior is yet to be explored comprehensively. This research contributes towards proposing a user intent-machine learning model for classifying users based on their online search, share, and verification behavior, identifying different types of users based on their online engagement, and demonstrating that dynamic online interactions can be classified based on their searching, sharing, and verifying behavior. User feedback on online behavior and practices is gathered through a questionnaire, encompassing participants from diverse gender, occupational, and age demographics. Following the extensive feature engineering, the significant features are presented to K-Mean clustering to identify user intent classes or profiles and their characteristics. A supervised learning Linear Discriminant Analysis Classifier (LDAC) is then trained on data to classify these classes. The proposed framework successfully predicted the user intent class with 80% accuracy. The model is further tested on users’ dynamic interaction data gathered through a second user study. The information search, share, and verify activity data is transformed to fit the model and labeled by human raters using the user profiles resulting from clustering. The research achieves an Inter-rater reliability (IRR) of 60%, whereas the model predicted the user with 67% accuracy. This research indicates that a user’s purpose in seeking information, their willingness to share information on social media, and their inclination to view information as credible can all contribute to understanding their intentions, identifying behavioral similarities, and can be used to recognize intent through dynamic interactions that can be used in targeted marketing, and search engine optimization.
+DA  - 2024///
+PY  - 2024
+DO  - 10.1109/ACCESS.2024.3383444
+VL  - 12
+SP  - 53234
+EP  - 53249
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - browsing preference
+KW  - cluster
+KW  - Data models
+KW  - Fake news
+KW  - human behavior
+KW  - information sharing
+KW  - Machine learning
+KW  - Predictive models
+KW  - Reliability
+KW  - search reasons
+KW  - Social networking (online)
+KW  - Surveys
+KW  - user behavior
+KW  - User intent
+ER  - 
+
+TY  - CONF
+TI  - A Needle in a Haystack? Harnessing Onomatopoeia and User-specific Stylometrics for Authorship Attribution of Micro-messages
+AU  - A. Theóphilo
+AU  - L. A. M. Pereira
+AU  - A. Rocha
+T2  - ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+AB  - The world is facing a new era in which social media communication plays a fundamental role in people’s lives. Along with irrefutable benefits, several collateral drawbacks have risen, one being the wide spread of false information with malicious intents, what is now commonly called "Fake News". The fight against this problem is not easy, especially when taking into account the nature of text messages involved on social media platforms (a sea of small messages and myriad users). In this work, we cope with the challenging problem of authorship attribution of small text messages posted on social media platforms. Differently from what has been done with longer texts, we rely upon data-driven approaches, exploiting recent advances of deep neural networks in the field of pattern recognition. By viewing small texts usually employed in social media as unidimensional signals, we devise modern deep-learning techniques tailored for this kind of data to find the author of these posts with promising results.
+C3  - ICASSP 2019 - 2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)
+DA  - 2019/05/12/17
+PY  - 2019
+DO  - 10.1109/ICASSP.2019.8683747
+SP  - 2692
+EP  - 2696
+SN  - 2379-190X
+KW  - Artificial neural networks
+KW  - Authorship Attribution
+KW  - Deep learning
+KW  - Deep Learning
+KW  - Fake news
+KW  - Forensics
+KW  - Information Forensics
+KW  - Natural language processing
+KW  - Natural Language Processing
+KW  - Needles
+KW  - Pattern recognition
+KW  - Signal processing
+KW  - Social Media Data
+KW  - Social networking (online)
+KW  - Speech processing
+ER  - 
+
+TY  - JOUR
+TI  - Artificial Intelligence Crime: An Overview of Malicious Use and Abuse of AI
+AU  - T. F. Blauth
+AU  - O. J. Gstrein
+AU  - A. Zwitter
+T2  - IEEE Access
+AB  - The capabilities of Artificial Intelligence (AI) evolve rapidly and affect almost all sectors of society. AI has been increasingly integrated into criminal and harmful activities, expanding existing vulnerabilities, and introducing new threats. This article reviews the relevant literature, reports, and representative incidents which allows to construct a typology of the malicious use and abuse of systems with AI capabilities. The main objective is to clarify the types of activities and corresponding risks. Our starting point is to identify the vulnerabilities of AI models and outline how malicious actors can abuse them. Subsequently, we explore AI-enabled and AI-enhanced attacks. While we present a comprehensive overview, we do not aim for a conclusive and exhaustive classification. Rather, we provide an overview of the risks of enhanced AI application, that contributes to the growing body of knowledge on the issue. Specifically, we suggest four types of malicious abuse of AI (integrity attacks, unintended AI outcomes, algorithmic trading, membership inference attacks) and four types of malicious use of AI (social engineering, misinformation/fake news, hacking, autonomous weapon systems). Mapping these threats enables advanced reflection of governance strategies, policies, and activities that can be developed or improved to minimize risks and avoid harmful consequences. Enhanced collaboration among governments, industries, and civil society actors is vital to increase preparedness and resilience against malicious use and abuse of AI.
+DA  - 2022///
+PY  - 2022
+DO  - 10.1109/ACCESS.2022.3191790
+VL  - 10
+SP  - 77110
+EP  - 77122
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Artificial intelligence
+KW  - artificial intelligence typology
+KW  - computer crime
+KW  - Computer crime
+KW  - Data models
+KW  - Legislation
+KW  - Machine learning
+KW  - malicious artificial intelligence
+KW  - security
+KW  - social implications of technology
+KW  - Taxonomy
+KW  - Training data
+ER  - 
+
+TY  - CONF
+TI  - AI and Security - What Changes with Generative AI
+AU  - R. Sasaki
+T2  - 2023 IEEE 23rd International Conference on Software Quality, Reliability, and Security Companion (QRS-C)
+AB  - The authors clarified in 2020 that the relationship between AI and security can be classified into four categories: (a) attacks using AI, (b) attacks by AI itself, (c) attacks to AI, and (d) security measures using AI, and summarized research trends for each. Subsequently, ChatGPT became available in November 2022, and the various potential applications of ChatGPT and other generative AIs and the associated risks have attracted attention. In this study, we examined how the emergence of generative AI affects the relationship between AI and security. The results show that (a) the need for the four perspectives of AI and security remains unchanged in the era of generative AI, (b) The generalization of AI targets and automatic program generation with the birth of generative AI will greatly increase the risk of attacks by the AI itself, (c) The birth of generative AI will make it possible to generate easy-to-understand answers to various questions in natural language, which may lead to the spread of fake news and phishing e-mails that can easily fool many people and an increase in AI-based attacks. In addition, it became clear that (1) attacks using AI and (2) responses to attacks by AI itself are highly important. Among these, the analysis of attacks by AI itself, using an attack tree, revealed that the following measures are needed: (a) establishment of penalties for developing inappropriate programs, (b) introduction of a reporting system for signs of attacks by AI, (c) measures to prevent AI revolt by incorporating Asimov's three principles of robotics, and (d) establishment of a mechanism to prevent AI from attacking humans even when it becomes confused.
+C3  - 2023 IEEE 23rd International Conference on Software Quality, Reliability, and Security Companion (QRS-C)
+DA  - 2023/10/22/26
+PY  - 2023
+DO  - 10.1109/QRS-C60940.2023.00043
+SP  - 208
+EP  - 215
+SN  - 2693-9371
+KW  - AI and Security
+KW  - Artificial Intelligence
+KW  - Attack Tree
+KW  - Chatbots
+KW  - Generative AI
+KW  - Machine Learning
+KW  - Phishing
+KW  - Research Issues
+KW  - Robots
+KW  - Security
+KW  - Software quality
+KW  - Software reliability
+ER  - 
+
+TY  - CONF
+TI  - On the (In)Security of LLM App Stores
+AU  - X. Hou
+AU  - Y. Zhao
+AU  - H. Wang
+T2  - 2025 IEEE Symposium on Security and Privacy (SP)
+AB  - LLM app stores have seen rapid growth, leading to the proliferation of numerous custom LLM apps. However, this expansion raises security concerns. In this study, we propose a three-layer concern framework to identify the potential security risks of LLM apps, i.e., LLM apps with abusive potential, LLM apps with malicious intent, and LLM apps with backdoors. Over five months, we collected 786,036 LLM apps from six major app stores: GPT Store, FlowGPT, Poe, Coze, Cici, and Character.AI. Our research integrates static and dynamic analysis, and uses a complementary approach to detect harmful content, combining a self-refining LLM-based toxic content detector with rule-based pattern matching. Additionally, we constructed a large-scale toxic word dictionary (i.e., ToxicDict) comprising over 31,783 entries. We used these methods to uncover that 15,414 apps had misleading descriptions, 1,366 collected sensitive personal information against their privacy policies, and 15,996 generated harmful content such as hate speech, self-harm, extremism, etc. Additionally, we evaluated the potential for LLM apps to facilitate malicious activities, finding that 616 apps could be used for malware generation, phishing, etc. We reported these security risks to relevant platforms, including OpenAI and Quora, which acknowledged and appreciated our findings. The platforms are actively investigating the flagged apps; as of the submission of this paper, 1,643 apps have been removed from the GPT Store.
+C3  - 2025 IEEE Symposium on Security and Privacy (SP)
+DA  - 2025/05/12/15
+PY  - 2025
+DO  - 10.1109/SP61157.2025.00117
+SP  - 317
+EP  - 335
+SN  - 2375-1207
+KW  - Detectors
+KW  - Dictionaries
+KW  - Ecosystems
+KW  - Hate speech
+KW  - large language models
+KW  - llm
+KW  - llm app
+KW  - Malware
+KW  - Pattern matching
+KW  - Phishing
+KW  - Privacy
+KW  - security
+KW  - Security
+ER  - 
+
+TY  - CONF
+TI  - Fraudulent Information Prediction using Block Chain Technology and Machine Learning
+AU  - R. V
+AU  - S. K. R
+AU  - M. V
+AU  - S. M. M
+AU  - M. B
+T2  - 2022 International Conference on Applied Artificial Intelligence and Computing (ICAAIC)
+AB  - Social media has proven to be the most effective tool for disseminating knowledge in recent years. As the amount of information available expands, it becomes more vital to read the right news, and recognizing fake news that provides wrong or incomplete information becomes more important. It takes a long time for individuals to check the accuracy of news. The collection of phony word data assists in the detection of spam tendencies in the news. By altering the content of a real news feed in fake news, those with malicious intent spread misleading information. In order to spot fake news, it's necessary to understand how rumors spread. Under the current system, people must quickly assess a rumor and decide whether or not to spread it. Nonetheless, it is difficult to make an informed decision and select the greatest choice without a thorough investigation. People do not have the time to learn more or reason. In addition, if the rumor remains, the user will become suffocated and will never change. People may have different viewpoints on the same incident, such as favorable, dubious, and negative. People who have doubts about their convictions, on the other hand, have a limited vocabulary. To address this problem, it is critical to employ decentralized technologies. This functionality is generally available in block chain technology. Block chain can be used to track and control information flow. The proposed model utilizes the credible news sources, such as a real-time search engine. Block chain technology ensures the integrity of news submitted on social media. In the real-time system, users can upload news in the form of images, material, and hash tags. These facts are passed on to the validator, who will determine if the data is fraudulent or not. To protect the data, the information is subsequently converted to a block chain. This approach aids in determining the authenticity of the news by using real-time synchronization.
+C3  - 2022 International Conference on Applied Artificial Intelligence and Computing (ICAAIC)
+DA  - 2022/05/09/11
+PY  - 2022
+DO  - 10.1109/ICAAIC53929.2022.9793073
+SP  - 1319
+EP  - 1325
+KW  - Blockchain
+KW  - Blockchains
+KW  - Fake media
+KW  - Natural language processing
+KW  - Real-time systems
+KW  - Reinforcement learning
+KW  - Search engines
+KW  - Smart contracts
+KW  - Social networking (online)
+KW  - Vocabulary
+ER  - 
+
+TY  - CONF
+TI  - Large Language Model AI Text Generation Detection based on Transformer Deep Fast Quantum Convolutional Neural Networks
+AU  - S. M
+AU  - G. S. Prasanna kiruba
+AU  - S. J
+AU  - M. Aishwarya
+AU  - S. Sathya
+AU  - K. Geetha
+T2  - 2025 6th International Conference on Inventive Research in Computing Applications (ICIRCA)
+AB  - As the use of AI-generated text increases, so does the need to identify such content and prevent such inappropriative intents such as misinformation, plagiarism, and unauthorized content generation. The Deep Fast Quantum Convolutional Neural Network (DF-QCNN) has become a promising model for such a use as quantum computing can help improve feature extraction and classification. But for the DF-QCNN, it is somewhat complex in the sense that the weight parameters optimization has to be done on a high dimension, non-concave space. Previous optimization approaches including first and second order gradient descent techniques often take long time for convergence, are sensitive to local minimum and thus provide low accuracy. To overcome these limitations, it is proposed to use a novel metaheuristic algorithm called the Crayfish Optimization Algorithm (CFO) based on the movement behavior of crayfish in a complex environment. CFO is well structured to exercise both exploration and exploitation and maintain efficient optimization of weight parameters. The integration of CFO with the proposed DF-QCNN enhances text detection accuracy, shortens convergence time as well as increases computational efficiency than by using of traditional approaches of optimization.
+C3  - 2025 6th International Conference on Inventive Research in Computing Applications (ICIRCA)
+DA  - 2025/06/25/27
+PY  - 2025
+DO  - 10.1109/ICIRCA65293.2025.11089509
+SP  - 997
+EP  - 1003
+KW  - Accuracy
+KW  - AI-generated text
+KW  - Computational modeling
+KW  - Convergence
+KW  - Convolutional neural networks
+KW  - Deep Fast Quantum Convolutional Neural Network
+KW  - Fake news
+KW  - Feature extraction
+KW  - Optimization
+KW  - Plagiarism
+KW  - Quantum computing
+KW  - Tuning
+ER  - 
+
+TY  - JOUR
+TI  - SENADA: A Stacked Ensemble Learning for Native Advertisement Detection in Electronic News
+AU  - B. Rizqi Paradisiaca Darnoto
+AU  - D. O. Siahaan
+AU  - D. Purwitasari
+T2  - IEEE Access
+AB  - Native advertisements are increasingly common as hybrid commercial content embedded within digital news platforms. Although these ads can enhance user engagement, they often elicit negative reactions due to their concealed commercial intent. A key challenge in detecting native advertisements lies in their lack of explicit labeling, which can mislead readers and compromise the perceived credibility of news content. Prior studies have struggled to accurately identify native ads because of their inability to capture the implicit characteristics embedded in editorial-like text, such as positive sentiment, persuasive language, one-sided perspectives, and references to specific products or companies. To address this issue, this study proposes a deep learning architecture called SENADA (Stacked Ensemble for Native Advertising Analysis). The model integrates BERT-based contextual representations, ensemble learning strategies, and a BiLSTM with an attention mechanism. This design enables the model to effectively identify subtle patterns and contextual cues associated with native advertisements. In addition, we introduce a newly constructed Indonesian-language dataset of news articles, annotated based on the four implicit characteristics of native ads. The dataset was collected from six major e-news portals and manually labeled by trained annotators. Experimental evaluations, based on confusion matrix analysis, demonstrate that SENADA achieves an accuracy of 0.93, along with high values for precision, recall, and F1-score. The model is compared against several well-established baselines, including CNN, BiLSTM, BiGRU, and transformer-based architectures, which were selected based on their widespread use and proven effectiveness in prior text classification studies. The proposed model consistently outperforms these baselines, particularly in minimizing misclassification of borderline content, defined as news articles that exhibit some but not all native ad characteristics, such as persuasive tone without explicit product mention or positive sentiment without clear promotional framing. These borderline cases were validated through manual annotation and cross-checking among annotators to ensure reliability. These results confirm the model’s effectiveness in detecting native advertisements that exhibit complex and implicit textual patterns. While the model shows promising results, future work is needed to reduce architectural complexity and training time. Further research could explore explainability methods and cross-lingual adaptation to extend the model’s applicability across languages and media contexts.
+DA  - 2025///
+PY  - 2025
+DO  - 10.1109/ACCESS.2025.3609713
+VL  - 13
+SP  - 165527
+EP  - 165547
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Accuracy
+KW  - Advertising
+KW  - Bidirectional long short term memory
+KW  - BiLSTM
+KW  - Context modeling
+KW  - Deep learning
+KW  - electronic news portal
+KW  - ensemble deep learning
+KW  - Ensemble learning
+KW  - Fake news
+KW  - Machine learning
+KW  - native ads
+KW  - news
+KW  - Portals
+KW  - Social networking (online)
+ER  - 
+
+TY  - JOUR
+TI  - Visual User-Generated Content Verification in Journalism: An Overview
+AU  - S. A. Khan
+AU  - G. Sheikhi
+AU  - A. L. Opdahl
+AU  - F. Rabbi
+AU  - S. Stoppel
+AU  - C. Trattner
+AU  - D. -T. Dang-Nguyen
+T2  - IEEE Access
+AB  - Over the past few years, social media has become an indispensable part of the news generation and dissemination cycle on the global stage. These digital channels along with the easy-to-use editing tools have unfortunately created a medium for spreading mis-/disinformation containing visual content. Media practitioners and fact-checkers continue to struggle with scrutinising and debunking visual user-generated content (UGC) quickly and thoroughly as verification of visual content requires a high level of expertise and could be exceedingly complex amid the existing computational tools employed in newsrooms. The aim of this study is to present a forward-looking perspective on how visual UGC verification in journalism can be transformed by multimedia forensics research. We elaborate on a comprehensive overview of the five elements of the UGC verification and propose multimedia forensics as the sixth element. In addition, different types of visual content forgeries and detection approaches proposed by the computer science research community are explained. Finally, a mapping of the available verification tools media practitioners rely on is created along with their limitations and future research directions to gain the confidence of media professionals in using multimedia forensics tools in their day-to-day routine.
+DA  - 2023///
+PY  - 2023
+DO  - 10.1109/ACCESS.2023.3236993
+VL  - 11
+SP  - 6748
+EP  - 6769
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - disinformation detection
+KW  - Fake news
+KW  - Forensics
+KW  - Forgery
+KW  - Journalism
+KW  - journalistic verification
+KW  - Media
+KW  - misinformation detection
+KW  - multimedia forensics
+KW  - Social networking (online)
+KW  - Visual misinformation
+KW  - Visualization
+ER  - 
+
+TY  - JOUR
+TI  - LGB: Language Model and Graph Neural Network-Driven Social Bot Detection
+AU  - M. Zhou
+AU  - D. Zhang
+AU  - Y. Wang
+AU  - Y. -a. Geng
+AU  - Y. Dong
+AU  - J. Tang
+T2  - IEEE Transactions on Knowledge and Data Engineering
+AB  - Malicious social bots achieve their malicious purposes by spreading misinformation and inciting social public opinion, seriously endangering social security, making their detection a critical concern. Recently, graph-based bot detection methods have achieved state-of-the-art (SOTA) performance. However, our research finds many isolated and poorly linked nodes in social networks, which graph-based methods cannot effectively detect. To address this problem, our research focuses on effectively utilizing node semantics and network structure to jointly detect sparsely linked nodes. Given the excellent performance of language models (LMs) in natural language understanding (NLU), we propose a novel social bot detection framework LGB, which consists of two main components: language model (LM) and graph neural network (GNN). Specifically, the social account information is first extracted into unified user textual sequences, which is then used to perform supervised fine-tuning (SFT) of the language model to improve its ability to understand social account semantics. Next, the semantically enriched node representation is fed into the pre-trained GNN to further enhance the node representation by aggregating information from neighbors. Finally, LGB fuses the information from both modalities to improve the detection performance of sparsely linked nodes. Extensive experiments on two real-world datasets demonstrate that LGB consistently outperforms state-of-the-art baseline models by up to 10.95%. LGB is already online: https://botdetection.aminer.cn/robotmain.
+DA  - 2025/08//
+PY  - 2025
+DO  - 10.1109/TKDE.2025.3573748
+VL  - 37
+IS  - 8
+SP  - 4728
+EP  - 4742
+J2  - IEEE Transactions on Knowledge and Data Engineering
+SN  - 1558-2191
+KW  - Chatbots
+KW  - Data mining
+KW  - Fake news
+KW  - Feature extraction
+KW  - Graph neural network
+KW  - Graph neural networks
+KW  - large language model
+KW  - multimodal
+KW  - Security
+KW  - Semantics
+KW  - social bot detection
+KW  - Social networking (online)
+KW  - social networks
+KW  - Training
+KW  - Voting
+ER  - 
+
+TY  - CONF
+TI  - Multirelational Twitter Bot Detection Using Graph Neural Networks
+AU  - K. Jadhav
+AU  - P. Potikas
+AU  - C. Pollett
+AU  - K. Potika
+T2  - 2025 IEEE 11th International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)
+AB  - Social media is an important means of modern communication and information exchange. Ease of access and global reach are the primary factors contributing to the popularity of several social media platforms. Apart from human (real) users, they also have bots, automated programs developed to facilitate online engagement and interaction. However, these bots are increasingly being exploited for malicious purposes, such as disseminating false information and manipulating public opinion. Detecting and removing bots is essential for maintaining authentic human interactions and trustworthy public opinions. This paper proposes the Multirelational Bot Detection Graph Neural Network method (MultiBotGNNs) to detect bots. It treats the problem as a node classification problem in a graph that has two types of nodes (real and bot users) and multiple types of edges, e.g., the various relations (interactions) between users. To detect bots, we use their characteristics processed along the social network of the different user relations, such as follow, follower, and like. We experimented with the TwiBot22 dataset, which is a big dataset of bots on X (formerly Twitter). Our hypothesis is that by considering just the different relations and their characteristics for the prediction, and by ignoring the tweet contents, we can get good results without the extra process time for the tweets. Experimental results confirm our hypothesis.
+C3  - 2025 IEEE 11th International Conference on Big Data Computing Service and Machine Learning Applications (BigDataService)
+DA  - 2025/07/21/24
+PY  - 2025
+DO  - 10.1109/BigDataService65758.2025.00027
+SP  - 147
+EP  - 154
+SN  - 2690-828X
+KW  - Blogs
+KW  - Bot identification
+KW  - Classification algorithms
+KW  - Data models
+KW  - embedding techniques
+KW  - Fake news
+KW  - graph neural networks
+KW  - Graph neural networks
+KW  - heterogeneous graphs
+KW  - Image edge detection
+KW  - Information exchange
+KW  - Measurement
+KW  - misinformation detection
+KW  - node classification
+KW  - Reliability
+KW  - Social networking (online)
+KW  - TwiBot22
+KW  - Twitter (X)
+ER  - 
+
+TY  - JOUR
+TI  - Using Machine Learning to Detect Fake Identities: Bots vs Humans
+AU  - E. Van Der Walt
+AU  - J. Eloff
+T2  - IEEE Access
+AB  - There are a growing number of people who hold accounts on social media platforms (SMPs) but hide their identity for malicious purposes. Unfortunately, very little research has been done to date to detect fake identities created by humans, especially so on SMPs. In contrast, many examples exist of cases where fake accounts created by bots or computers have been detected successfully using machine learning models. In the case of bots these machine learning models were dependent on employing engineered features, such as the “friend-to-followers ratio.”These features were engineered from attributes, such as “friend-count”and “follower-count,”which are directly available in the account profiles on SMPs. The research discussed in this paper applies these same engineered features to a set of fake human accounts in the hope of advancing the successful detection of fake identities created by humans on SMPs.
+DA  - 2018///
+PY  - 2018
+DO  - 10.1109/ACCESS.2018.2796018
+VL  - 6
+SP  - 6540
+EP  - 6549
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Big data
+KW  - bots
+KW  - Computational modeling
+KW  - data science
+KW  - Electronic mail
+KW  - fake accounts
+KW  - fake identities
+KW  - Feature extraction
+KW  - Filtering
+KW  - identity deception
+KW  - social media
+KW  - Support vector machines
+KW  - Twitter
+KW  - veracity
+ER  - 
+
+TY  - CONF
+TI  - AI or Human: The Socio-ethical Implications of AI-Generated Media Content
+AU  - R. A. Partadiredja
+AU  - C. Entrena-Serrano
+AU  - D. Ljubenkov
+T2  - 2020 13th CMI Conference on Cybersecurity and Privacy (CMI) - Digital Transformation - Potentials and Challenges(51275)
+AB  - Recent artificial intelligence (AI) developments in the way machines learn have now made it possible for AI to generate media content-image, sound, and text. The highly realistic output of AI-generated media content implants the question of whether we can still tell the difference between what is AI or human. In consequence, this paper explores the socio-ethical implications of this type of content. As a starting point for the discussion, an illustrative experiment packaged as a game of trivia was conducted and played by 2383 participants which generated a total of 24502 guesses in differentiating between AI or humans. The socio-ethical analysis provides insights into how this phenomenon unfolds and its implications for our future.
+C3  - 2020 13th CMI Conference on Cybersecurity and Privacy (CMI) - Digital Transformation - Potentials and Challenges(51275)
+DA  - 2020/11/26/27
+PY  - 2020
+DO  - 10.1109/CMI51275.2020.9322673
+SP  - 1
+EP  - 6
+KW  - AI-generated media content
+KW  - artificial intelligence
+KW  - Artificial intelligence
+KW  - deepfakes
+KW  - Deepfakes
+KW  - Ethics
+KW  - Games
+KW  - generative pre-trained transformer
+KW  - Human intelligence
+KW  - Implants
+KW  - Prevention and mitigation
+KW  - Privacy
+KW  - real vs fake
+KW  - Stakeholders
+KW  - Transformers
+ER  - 
+
+TY  - JOUR
+TI  - How Relevant Is the Turing Test in the Age of Sophisbots?
+AU  - D. Boneh
+AU  - A. J. Grotto
+AU  - P. McDaniel
+AU  - N. Papernot
+T2  - IEEE Security & Privacy
+AB  - Popular culture has contemplated societies of intelligent machines for generations. Today, we find ourselves at the doorstep of technology that can at least simulate thinking, feeling, and other behaviors. The question is: Now what?
+DA  - 2019/12//Nov
+PY  - 2019
+DO  - 10.1109/MSEC.2019.2934193
+VL  - 17
+IS  - 6
+SP  - 64
+EP  - 71
+J2  - IEEE Security & Privacy
+SN  - 1558-4046
+KW  - Detectors
+KW  - Generative adversarial networks
+KW  - Generators
+KW  - Information integrity
+KW  - Social networking (online)
+KW  - Videos
+ER  - 
+
+TY  - CONF
+TI  - The Legislative Combating of Deepfake using Artificial Intelligence Applications: A Comparative Study
+AU  - T. A. Kameel
+AU  - N. M. Soboh
+AU  - A. A. Alnuaimi
+AU  - H. N. Alblooshi
+AU  - M. A. Alblooshi
+AU  - S. I. Alblooshi
+T2  - 2025 Global Congress on Emerging Technologies (GCET)
+AB  - This research examines of Deep fake crime, which has become one of the most dangerous and threatening crimes emerging in the digital world as a result of employing advanced Artificial Intelligence algorithms. This study elucidates the serious damages and destruction that have led to the loss of trust in everything that can be heard or seen due to the treacherous manipulation of clips, audio recordings, videos, and images. Therefore, this took a negative toll on societal, economic, political, security, and international levels, given that it infringes upon fundamental human rights that are protected by constitutional and international laws. Furthermore, this study reviews the position of comparative legislation on these newly emerging crimes and examines the adequacy of such legislation in confronting this type of crime. It was found that the existing legislation is insufficient to address this type of crime due to its novelty. As a result, it is necessary to enact strict legislation or introduce amendments to existing legislation with specific provisions criminalizing the use of deep fakes for illegal activities, while imposing deterrent penalties on violators
+C3  - 2025 Global Congress on Emerging Technologies (GCET)
+DA  - 2025/12/02/5
+PY  - 2025
+DO  - 10.1109/GCET68529.2025.11450693
+SP  - 129
+EP  - 135
+KW  - Visualization
+KW  - artificial intelligence
+KW  - Deepfakes
+KW  - Watermarking
+KW  - Reviews
+KW  - Monitoring
+KW  - Legislation
+KW  - cybercrimes
+KW  - deep fake
+KW  - deep fake crimes
+KW  - Identity theft
+KW  - Law
+KW  - National security
+KW  - Weapons
+ER  - 
+
+TY  - CONF
+TI  - Improving spam detection in Online Social Networks
+AU  - A. Gupta
+AU  - R. Kaushal
+T2  - 2015 International Conference on Cognitive Computing and Information Processing(CCIP)
+AB  - Online Social Networks (OSNs) are deemed to be the most sought-after societal tool used by the masses world over to communicate and transmit information. Our dependence on these platforms for seeking opinions, news, updates, etc. is increasing. While it is true that OSNs have become a new medium for dissemination of information, at the same time, they are also fast becoming a playground for the spread of misinformation, propaganda, fake news, rumors, unsolicited messages, etc. Consequently, we can say that an OSN platform comprises of two kinds of users namely, Spammers and Non-Spammers. Spammers, out of malicious intent, post either unwanted (or irrelevant) information or spread misinformation on OSN platforms. As part of our work, we propose mechanisms to detect such users (Spammers) in Twitter social network (a popular OSN). Our work is based on a number of features at tweet-level and user-level like Followers/Followees, URLs, Spam Words, Replies and HashTags. In our work, we have applied three learning algorithms namely Naive Bayes, Clustering and Decision trees. Furthermore, to improve detection of Spammers, a novel integrated approach is proposed which “combines” the advantages of the three learning algorithms mentioned above. Improvement of spam detection is measured on the basis of Total Accuracy, Spammers Detection Accuracy and Non-Spammers Detection Accuracy. Results, thus obtained, show that our novel integrated approach that combines all algorithms outperforms other classical approaches in terms of overall accuracy and detect Non-Spammers with 99% accuracy with an overall accuracy of 87.9%.
+C3  - 2015 International Conference on Cognitive Computing and Information Processing(CCIP)
+DA  - 2015/03/03/4
+PY  - 2015
+DO  - 10.1109/CCIP.2015.7100738
+SP  - 1
+EP  - 6
+KW  - Accuracy
+KW  - classification algorithm
+KW  - Classification algorithms
+KW  - Clustering algorithms
+KW  - Decision trees
+KW  - online social networking
+KW  - Spam detection
+KW  - Twitter
+KW  - Unsolicited electronic mail
+ER  - 
+
+TY  - CONF
+TI  - Analysis of Ensemble Learning Models for Identifying Spam over Social Networks using Recursive Feature Elimination
+AU  - P. Garg
+AU  - S. N. Singh
+T2  - 2021 11th International Conference on Cloud Computing, Data Science & Engineering (Confluence)
+AB  - Social Networking platforms are regarded as being the reliable and valued communication medium for transferring information and communicating, used by the millions throughout the world. Users’ reliance on these social networking sites is growing to seek perspectives, updates, alerts, news etc. While it is evident that the online social networks have become a way for information sharing, at the same instant they have rapidly become a medium for spreading misinformation, rumors, unsolicited messages, propaganda, fake news, and so on. It can indeed be said that a social networking platform consists of the two types of users, namely Spammers and Non-Spammers. Spammers typically spread misinformation or share undesirable content on social networking websites, out of malicious intents. In this work, a model is proposed to identify Spammers in Twitter network. This work is based on the user behavior-based and content-basedfeatures like Hashtags, URLs, Mentions, Replies, and Retweets. In this work, the Recursive Feature Elimination is used along with Support Vector Machine, Random Forest, Logistic Regression, Adaptive Boosting, and XGBoost. For data pre-processing, Weka is used, and implemented the five classifiers mentioned with Recursive Feature Elimination using sklearn in Python. Performance measures such as TP Rate, FP Rate, Precision, F-Measure and Accuracy are used for evaluating the performance of the proposed model
+C3  - 2021 11th International Conference on Cloud Computing, Data Science & Engineering (Confluence)
+DA  - 2021/01/28/29
+PY  - 2021
+DO  - 10.1109/Confluence51648.2021.9377161
+SP  - 713
+EP  - 718
+KW  - ADABoost
+KW  - Adaptation models
+KW  - Analytical models
+KW  - Logistics
+KW  - Random forests
+KW  - Recursive Feature Elimination
+KW  - Reliability
+KW  - Social Network
+KW  - Social networking (online)
+KW  - Support vector machines
+KW  - XGBoost
+ER  - 
+
+TY  - CONF
+TI  - Scalable and Interpretable Engineering Solutions for Fake Account Detection using GNNs and FactorVAE
+AU  - L. Selvam
+AU  - R. S
+AU  - S. Balamurugan
+AU  - J. R. Francis Raj
+AU  - A. Vegi Fernando
+AU  - S. P. Lavanya
+T2  - 2026 International Conference on AI-Driven Smart Systems and Ubiquitous Computing (ICAUC)
+AB  - The proliferation of social media has introduced complex cybersecurity challenges, particularly due to the widespread presence of fake accounts that manipulate information flow, compromise network integrity, and undermine user trust. Detecting such accounts requires scalable and intelligent engineering solutions capable of analyzing multi-modal data at large scale. This paper presents a hybrid deep learning framework for fake account detection, integrating textual analysis, disentangled representation learning, and graph-based network modeling. Textual content is encoded using RoBERTa embeddings to capture semantic and stylistic features, while FactorVAE disentangles latent factors representing content, style, and intent. Network interactions are modeled through Graph Attention Networks (GAT), capturing relational and structural patterns within social networks. A hybrid MLP-GNN classifier fuses textual and network embeddings to enable high-accuracy detection across large-scale datasets. The framework incorporates explainable AI techniques, including SHAP values and attention maps, to provide interpretable predictions and enhance system reliability. Experimental evaluation demonstrates improved detection accuracy, robustness to adversarial and synthetic accounts, and generalization across multiple social media platforms. By enabling reliable identification of malicious accounts, this approach strengthens cybersecurity measures and ensures safer access to the internet. The proposed system establishes a scalable, interpretable, and efficient engineering solution for fake account detection, providing a benchmark framework for securing social media networks and protecting user interactions in online environments.
+C3  - 2026 International Conference on AI-Driven Smart Systems and Ubiquitous Computing (ICAUC)
+DA  - 2026/01/19/21
+PY  - 2026
+DO  - 10.1109/ICAUC68182.2026.11441089
+SP  - 1127
+EP  - 1135
+KW  - Access to the Internet
+KW  - Account Behavior Modeling
+KW  - Adversarial Detection
+KW  - Analytical models
+KW  - Benchmark testing
+KW  - Computational modeling
+KW  - Computer security
+KW  - Cybersecurity
+KW  - Data models
+KW  - Deep learning
+KW  - Disentangled representation learning
+KW  - Fake Account Detection
+KW  - Intent Detection
+KW  - Latent Factor Modeling
+KW  - Robustness
+KW  - Semantics
+KW  - Social Media Security
+KW  - Social networking (online)
+ER  - 
+
+TY  - CONF
+TI  - In-depth survey of the technologies to combat disinformation
+AU  - L. I. Rodríguez-González
+AU  - M. Arias-González
+AU  - P. Armenteros-Cosme
+AU  - S. Mateos-Plaza
+AU  - J. Curto-Hernandez
+T2  - 2025 7th International Conference on Frontier Technologies of Information and Computer (ICFTIC)
+AB  - This article reviews the state of the art in detecting and mitigating digital disinformation. It covers the classic categories of misinformation, disinformation and malinformation, and moves on to the latest advances in deepfake analysis. Emerging strategies are also examined, drawing on forensic techniques, machine learning, deep learning and blockchain. It also introduces TrueStories, an experimental platform that extends the defence against disinformation to works of fiction based on real events. The system combines three approaches: the automatic generation of an ontology validated by experts; the multimodal comparison of narrative content with a knowledge graph to reveal omissions or misleading dramatic licences; and the analysis of creative intent through metrics of style and emotional charge.
+C3  - 2025 7th International Conference on Frontier Technologies of Information and Computer (ICFTIC)
+DA  - 2025/12/05/7
+PY  - 2025
+DO  - 10.1109/ICFTIC68075.2025.11324595
+SP  - 1440
+EP  - 1448
+KW  - artificial intelligence
+KW  - Deep learning
+KW  - deepfakes
+KW  - Deepfakes
+KW  - detection technologies
+KW  - disinformation
+KW  - fake news
+KW  - Forensics
+KW  - Knowledge graphs
+KW  - Measurement
+KW  - Ontologies
+KW  - Reviews
+KW  - social media
+KW  - Social networking (online)
+KW  - Surveys
+KW  - Synthetic content
+KW  - text analysis
+KW  - Text analysis
+ER  - 
+
+TY  - CONF
+TI  - Combating disinformation with AI: Epistemic and ethical challenges
+AU  - B. Lange
+AU  - T. M. Lechterman
+T2  - 2021 IEEE International Symposium on Technology and Society (ISTAS)
+AB  - AI-supported methods for identifying and combating disinformation are progressing in their development and application. However, these methods face a litany of epistemic and ethical challenges. These include (1) robustly defining disinformation, (2) reliably classifying data according to this definition, and (3) navigating ethical risks in the deployment of countermeasures, which involve a mixture of harms and benefits. This paper seeks to expose and offer preliminary analysis of these challenges.
+C3  - 2021 IEEE International Symposium on Technology and Society (ISTAS)
+DA  - 2021/10/28/31
+PY  - 2021
+DO  - 10.1109/ISTAS52410.2021.9629122
+SP  - 1
+EP  - 5
+SN  - 2158-3412
+KW  - artificial intelligence
+KW  - Artificial intelligence
+KW  - disinformation
+KW  - epistemology
+KW  - ethics
+KW  - Ethics
+KW  - Faces
+KW  - fake news
+KW  - Media
+KW  - Navigation
+KW  - Reliability
+KW  - social media
+KW  - Tools
+ER  - 
+
+TY  - CONF
+TI  - Learn to Play: Lessons Learned Developing Video Games for Entertainment and Education
+AU  - A. Franceschini
+AU  - A. Rodà
+T2  - 2024 IEEE Conference on Games (CoG)
+AB  - We report on the development of two video games with educational intent and entertainment ambitions. The first game – “Cash or Card?” – is a cashier simulation to raise awareness of the issues surrounding cash vs electronic payments, a hotly debated topic shrouded in false information and conspiracy theories. The second game – “Untitled Journalist Game” – is an investigative reporting simulation focusing on the analysis and evaluation of information sources, and on how information is presented in the media. We present the design and development process of the two games, and some preliminary usage data of “Cash or Card?” We found that the synergy of game designers, educators, and game researchers is critical in developing and evaluating games to educate and entertain so that all the actors can contribute confidently according to their expertise, and produce games that communicate important content while challenging and entertaining the players.
+C3  - 2024 IEEE Conference on Games (CoG)
+DA  - 2024/08/05/8
+PY  - 2024
+DO  - 10.1109/CoG60054.2024.10645575
+SP  - 1
+EP  - 4
+SN  - 2325-4289
+KW  - Education
+KW  - Entertainment industry
+KW  - Fake news
+KW  - Focusing
+KW  - Games
+KW  - Video games
+ER  - 
+
+TY  - CHAP
+TI  - A New Hope
+AU  - Perry Carpenter
+T2  - FAIK: A Practical Guide to Living in a World of Deepfakes, Disinformation, and AI-Generated Deceptions
+AB  - Summary <p>AI can be used for some pretty sketchy stuff. It is helping doctors spot diseases early, making education more accessible, pitching in to help some of humanity's biggest problems, and&#x2014;yes&#x2014;even showing promise as a critical aid in the fight against online deception. What is truly eye&#x2010;opening is how AI amplifies the age&#x2010;old tactics, creating a landscape where discerning truth from fiction becomes increasingly challenging. While AI can be a formidable tool for deception, it is ultimately human intent that determines its impact. The digital deception game is only going to get more intense. Practicing extreme empathy is not just about being nice&#x2014;it should be central in our fight against digital deception. It helps us connect, communicate, and ultimately, it makes our efforts to spread digital literacy far more trustworthy and effective.</p>
+DA  - 2025///
+PY  - 2025
+SP  - 217
+EP  - 232
+PB  - Wiley
+SN  - 978-1-394-29990-4
+UR  - http://ieeexplore.ieee.org.inacap.idm.oclc.org/document/10950968
+KW  - Artificial intelligence
+KW  - Deepfakes
+KW  - Games
+KW  - Hands
+KW  - Thumb
+KW  - Tides
+KW  - Transforms
+KW  - Turning
+KW  - Weaving
+KW  - Writing
+ER  - 
+
+TY  - CONF
+TI  - Enhancing Misinformation Detection through Semantic Analysis and Knowledge Graphs
+AU  - S. E. V. S. Pillai
+T2  - 2024 4th International Conference on Data Engineering and Communication Systems (ICDECS)
+AB  - Introducing improvements in technology has caused an exponential increase in the availability and consumption of virtual data. This has also given rise to the spread of misinformation, a problem that has significant consequences for both individuals and society. The ability to correctly locate and combat misinformation is vital in preventing its dangerous outcomes. Traditional methods of detecting misinformation, including truth-checking and source evaluation, have proven to be inadequate in the contemporary digital landscape. To address this problem, researchers have turned to advanced technology, including natural language processing and machine learning, to improve the accuracy and performance of misinformation detection. However, these techniques often depend on surface-level features, such as language patterns and metadata, which can be easily manipulated by those creating and disseminating misinformation. This quandary requires a deeper understanding of the underlying semantic meaning of the facts. Semantic analysis, a branch of natural language processing, focuses on understanding the meaning and context of language. By incorporating this method into misinformation detection, it is possible to go beyond surface-level features and analyze the underlying intent and meaning of the information. This could offer a much better and accurate approach for detecting misinformation. Moreover, the use of knowledge graphs can further enhance this approach by capturing and representing the relationships between entities, ideas, and information.
+C3  - 2024 4th International Conference on Data Engineering and Communication Systems (ICDECS)
+DA  - 2024/03/22/23
+PY  - 2024
+DO  - 10.1109/ICDECS59733.2023.10503553
+SP  - 1
+EP  - 5
+KW  - Capturing
+KW  - Data engineering
+KW  - Feature extraction
+KW  - Information
+KW  - Knowledge graphs
+KW  - Machine learning
+KW  - Metadata
+KW  - Quandary
+KW  - Regularly
+KW  - Relationships
+KW  - Reliability engineering
+KW  - Semantics
+ER  - 
+
+TY  - JOUR
+TI  - Novel Sentiment Majority Voting Classifier and Transfer Learning-Based Feature Engineering for Sentiment Analysis of Deepfake Tweets
+AU  - M. Khalid
+AU  - A. Raza
+AU  - F. Younas
+AU  - F. Rustam
+AU  - M. G. Villar
+AU  - I. Ashraf
+AU  - A. Akhtar
+T2  - IEEE Access
+AB  - Deepfake text known as synthetic text, involves using artificial intelligence (AI)-generated text to create fabricated information or imitate actual individuals. Twitter tweets related to deepfake can be used for many malicious intents, including impersonation, creating fake news, and spreading misinformation. The main goal of this investigation is to detect people’s sentiments related to deepfake technology with an advanced technique. A novel sentiment majority voting classifier (SMVC) is proposed for the sentiment labeling of collected tweets. The proposed SMVC selects the final sentiment from three lexicon-based models TextBlob, valence-aware dictionary and sentiment reasoner (VADER), and AFINN using a majority voting mechanism. For sentiment classification, we propose a novel transfer feature where embedding features are fed to a long short-term memory (LSTM), and decision tree (DT) models and outputs are combined into a single feature set. Extensive experiments show that transfer learning-based feature engineering results in the highest performance. The logistic regression outperforms with the highest accuracy of 98.9% with minimum computational complexity. The sentiment classification performance of each applied model is validated using the k-fold cross-validations. Moreover, performance assessment with existing state-of-the-art models is also carried out to show the robustness of the proposed technique.
+DA  - 2024///
+PY  - 2024
+DO  - 10.1109/ACCESS.2024.3398582
+VL  - 12
+SP  - 67117
+EP  - 67129
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Blogs
+KW  - deep learning
+KW  - Deep learning
+KW  - deepfake tweets
+KW  - Deepfakes
+KW  - feature engineering
+KW  - Long short term memory
+KW  - machine learning
+KW  - Machine learning
+KW  - Natural language processing
+KW  - Reviews
+KW  - sentiment analysis
+KW  - Sentiment analysis
+KW  - Social networking (online)
+KW  - transfer learning
+KW  - Transfer learning
+ER  - 
+
+TY  - JOUR
+TI  - Invisible Stories That Drive Online Social Cognition
+AU  - R. P. Subbanarasimha
+AU  - S. Srinivasa
+AU  - S. Mandyam
+T2  - IEEE Transactions on Computational Social Systems
+AB  - Detection of online subversive activities, such as fake news, concerted campaigns, and bots, is getting increasingly urgent. However, without specific knowledge of underlying facts and disparate valid perspectives of a given issue, it is hard to detect subversive intent in a generic sense. To address this, we approach the problem from a “macro” perspective. Rather than asking whether a specific social media account is acting subversively, we look at the entire discourse around a trending topic, and ask whether the discourse looks “healthy” or is it showing signs of getting hijacked or dominated by one particular perspective. To do this, we break down a social discourse into its constituent narratives. Narratives are in turn modeled as latent stories or worldviews, whose visible characterizations are in the form of specific distributions over different opinions expressed in the discourse. Once the discourse is broken down into narratives, the “health” of the discourse can be addressed using various measures, such as the relative sizes of its constituent narratives, sentiment polarity of internarrative interactions, and presence or absence of dominant players within each narrative. We conduct experiments on several well-known trending topics on Twitter to identify its constituent narratives and provide a report card on the overall discourse quality. We also show how this top-down approach offers the means to delineate roles played by users as drivers of the discourse, the constituent narratives, or their component opinions, determined on the basis of dominance centrality measures and narrative affinities.
+DA  - 2020/10//
+PY  - 2020
+DO  - 10.1109/TCSS.2020.3009474
+VL  - 7
+IS  - 5
+SP  - 1264
+EP  - 1277
+J2  - IEEE Transactions on Computational Social Systems
+SN  - 2329-924X
+KW  - Analytical models
+KW  - Cognition
+KW  - Narratives
+KW  - online social cognition
+KW  - opinion drivers and narrative drivers
+KW  - Predictive models
+KW  - social discourse
+KW  - Stakeholders
+KW  - Tagging
+KW  - Twitter
+ER  - 
+
+TY  - CONF
+TI  - Generative Adversarial Networks for Mitigating Bias in Disinformation
+AU  - R. Walambe
+AU  - P. Chaudhary
+AU  - A. Bajaj
+AU  - A. S. Rathore
+AU  - V. Jain
+AU  - K. Kotecha
+T2  - 2023 IEEE International Conference on Contemporary Computing and Communications (InC4)
+AB  - The increasing use of social platforms has led to the rampant spread of disinformation in a number of domains and hampered the credibility of these sources. Disinformation is a type of information disorder wherein fake information is generated with the intent to harm. Machine learning and deep learning can be used to detect such auto-generated information. The conventional method includes gathering vast volumes of text data in terms of both true and fake news stories, headlines, or any other sources and then labeling the data. This leaves us with the issues of human bias within these existing systems, the quality of the aggregated data from different sources and their accurate labeling. In this paper, we propose and demonstrate a textual deep fake detection and generation framework based on Generative Adversarial Network (GAN). The methods are demonstrated on three separate domains namely, political data, sports-related data, and medical data pertaining to COVID 19. Cosine similarity-based evaluation metric is employed for analyzing the classification accuracy of the discriminator and the performance of the Generator in generating near-true fake articles which are very similar in the style and context to the real datasets. The contribution of this work is threefold; firstly, we have demonstrated the generator network which generates the synthetic textual deep-fakes which are extremely similar to the actual instances of disinformation. Secondly, the development of a discriminator network that detects the system-generated data with the real data and lastly, the composite GAN model which can be used in various applications such as automated labeling and annotation is shown. Additionally, this approach can help in generating balanced datasets required for machine learning tasks and alleviate the problem of bias in AI systems, especially for disinformation detection tasks where the disinformation class instances are typically lesser as compared to the true information instances.
+C3  - 2023 IEEE International Conference on Contemporary Computing and Communications (InC4)
+DA  - 2023/04/21/22
+PY  - 2023
+DO  - 10.1109/InC457730.2023.10262880
+VL  - 1
+SP  - 1
+EP  - 6
+KW  - cosine similarity
+KW  - data bias
+KW  - Data models
+KW  - Deep learning
+KW  - Deepfakes
+KW  - Discriminator
+KW  - Fake
+KW  - GAN
+KW  - Generative adversarial networks
+KW  - Generator
+KW  - Generators
+KW  - Measurement
+KW  - Media
+KW  - Real
+KW  - Textual
+ER  - 
+
+TY  - JOUR
+TI  - Adversary Aware Continual Learning
+AU  - M. Umer
+AU  - R. Polikar
+T2  - IEEE Access
+AB  - Continual learning approaches are useful to help a model learn new information or new tasks sequentially, while also retaining the previously acquired information. However, such approaches are known to be extremely vulnerable to the adversarial backdoor attacks, where an intelligent adversary can introduce small amount of misinformation in the form of imperceptible backdoor pattern during training to cause deliberate forgetting of a specific task or class at test time. In this work, we propose a novel defensive framework to counter such an attack and use the attacker’s primary strength – hiding the backdoor pattern by making it imperceptible to humans – against itself. To do so we train the model to learn a random perceptible pattern as decoy data during training with the deliberate intent to overpower the attacker’s imperceptible pattern. We demonstrate the effectiveness of the proposed defensive mechanism through various commonly used replay-based (both generative and exact replay-based) continual learning algorithms using continual learning benchmark variants of CIFAR-10, CIFAR-100, and MNIST datasets. We show that the proposed defensive framework considerably improves the robustness of continual learning algorithms without having any knowledge of the attacker’s target task, attacker’s target class, shape, size, and location of the attacker’s backdoor pattern. Moreover, our defensive framework does not depend on the underlying continual learning algorithm and does not rely on detecting the attack samples (to subsequently remove them from further consideration), but instead attempts to correctly classify even the attack samples and thus ensuring robustness in continual learning models. We refer to the proposed defensive framework as adversary aware continual learning (AACL).
+DA  - 2024///
+PY  - 2024
+DO  - 10.1109/ACCESS.2024.3455090
+VL  - 12
+SP  - 126108
+EP  - 126121
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - backdoor poisoning attack
+KW  - catastrophic forgetting
+KW  - Computational modeling
+KW  - Continual (incremental) learning
+KW  - Continuing education
+KW  - Data models
+KW  - Fake news
+KW  - false memory
+KW  - Incremental learning
+KW  - misinformation
+KW  - Predictive models
+KW  - Sequential analysis
+KW  - Training
+ER  - 
+
+TY  - CONF
+TI  - Rethinking Multimodal Content Moderation from an Asymmetric Angle with Mixed-modality
+AU  - J. Yuan
+AU  - Y. Yu
+AU  - G. Mittal
+AU  - M. Hall
+AU  - S. Sajeev
+AU  - M. Chen
+T2  - 2024 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+AB  - There is a rapidly growing need for multimodal content moderation (CM) as more and more content on social media is multimodal in nature. Existing unimodal CM systems may fail to catch harmful content that crosses modalities (e.g., memes or videos), which may lead to severe consequences. In this paper, we present a novel CM model, Asymmetric Mixed-Modal Moderation (AM3), to target multimodal and unimodal CM tasks. Specifically, to address the asymmetry in semantics between vision and language, AM3 has a novel asymmetric fusion architecture that is designed to not only fuse the common knowledge in both modalities but also to exploit the unique information in each modality. Unlike previous works that focus on representing the two modalities into a similar feature space while overlooking the intrinsic difference between the information conveyed in multimodality and in unimodality (asymmetry in modalities), we propose a novel cross-modality contrastive loss to learn the unique knowledge that only appears in multimodality. This is critical as some harmful intent may only be conveyed through the intersection of both modalities. With extensive experiments, we show that AM3 outperforms all existing state-of-the-art methods on both multimodal and unimodal CM benchmarks.
+C3  - 2024 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+DA  - 2024/01/03/8
+PY  - 2024
+DO  - 10.1109/WACV57701.2024.00834
+SP  - 8517
+EP  - 8527
+SN  - 2642-9381
+KW  - Algorithms
+KW  - Applications
+KW  - Art
+KW  - Benchmark testing
+KW  - Computer architecture
+KW  - Computer vision
+KW  - Fuses
+KW  - Semantics
+KW  - Social good
+KW  - Social networking (online)
+KW  - Vision + language and/or other modalities
+ER  - 
+
+TY  - CONF
+TI  - A Multimodal Framework For Satire Vs. Sarcasm Detection
+AU  - D. Goyal
+AU  - S. K. Mishra
+AU  - V. K. Rai
+T2  - 2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT)
+AB  - Sarcasm and satire are common ways to communicate complicated ideas with humor and irony, both expressing criticism or mockery. Detecting sarcasm vs. satire in real life can foster better communication by understanding intent, preventing misunderstandings, and promoting critical thinking and empathy. We introduce an innovative dataset for detecting Multi-modal Satire vs. Sarcasm, leveraging the MUStARD dataset for its construction. This dataset includes visual utterances annotated with sarcasm and satire labels, enriching its potential for studying multimodal satire and sarcasm detection. This enriched dataset serves as a robust foundation for training and evaluating machine learning and deep learning architectures that combine textual and visual cues to identify satire and sarcasm in multimedia content. By incorporating this enhanced dataset, the research aims to advance the field of multimodal satire and sarcasm detection and contribute to a deeper understanding of humor and irony in online communication. We carry out experimentation with various architectures like LSTM, GPT2, BERT, SVM, and Logistic Regression. The proposed architecture achieves an F1 score of $\mathbf{0. 9 5 6}$, outperforming other baselines.
+C3  - 2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT)
+DA  - 2024/06/24/28
+PY  - 2024
+DO  - 10.1109/ICCCNT61001.2024.10726230
+SP  - 1
+EP  - 7
+SN  - 2473-7674
+KW  - Classification
+KW  - Computer architecture
+KW  - Deep architecture
+KW  - Logistic regression
+KW  - Long short term memory
+KW  - Machine learning
+KW  - Multimodal
+KW  - MUStARD
+KW  - Sarcasm
+KW  - Satire
+KW  - Support vector machines
+KW  - Training
+KW  - Visualization
+ER  - 
+
+TY  - CONF
+TI  - Evaluating Machine Learning Strategies For The Detection Of Fake Profiles: A Survey
+AU  - A. Negi
+AU  - B. Sharma
+AU  - S. Kumar
+T2  - 2025 International Conference on Emerging Technologies and Innovation for Sustainability (EmergIN)
+AB  - The swift development of social media has transformed various domains like business, communication and the way public discussions take place globally. But along with the benefits comes the downside as it has led to a rapid growth in deceptive profiles which are used for evil motives like harming an individual or an organization, spreading false information, impersonation etc. This weakens trust and authenticity of an online space and creates risk for both users and digital platforms. In this paper, we review the challenges and solutions associated with false profile detection across social media platforms. It highlights the pivotal role of Machine Learning (ML) in automating and improving the detection technique and systems. The paper examines various ML types and discusses various ML algorithm and their application under this domain. Beyond this, the paper also talks about various forms of fake account while exploring their intent and the outcomes they produce. It also focuses on ethical and legal implications of fake profiles. The paper further talks about key application areas and outlines various future research directions such as real-time detection and cross-platform analysis.
+C3  - 2025 International Conference on Emerging Technologies and Innovation for Sustainability (EmergIN)
+DA  - 2025/11/28/29
+PY  - 2025
+DO  - 10.1109/EmergIN67762.2025.11450680
+SP  - 451
+EP  - 459
+KW  - deceptive
+KW  - detection
+KW  - fake account
+KW  - Law
+KW  - machine learning
+KW  - Machine learning
+KW  - Machine learning algorithms
+KW  - Organizations
+KW  - platform
+KW  - profile
+KW  - Real-time systems
+KW  - Reviews
+KW  - social media
+KW  - Social networking (online)
+KW  - Surveys
+KW  - Sustainable development
+KW  - Technological innovation
+ER  - 
+
+TY  - CONF
+TI  - Decoding the Mirage: A Comprehensive Review of DeepFake AI in Image and Video Manipulation
+AU  - S. Sharma
+AU  - G. Ahuja
+AU  - Priyal
+AU  - D. Agarwal
+T2  - 2024 International Conference on Computing, Sciences and Communications (ICCSC)
+AB  - The evolution of deepfake development technology has increased the development of highly realistic digital media content. Nowadays, this technology is being used to manipulate photos and videos of influential personalities such as celebrities, politicians, or businessmen to either harm their reputation or spread false information. Although deepfake AI has both positive and negative application, this technology is mostly used with malicious intent such as to spread misinformation, engage in digital harassment, and undermine societal trust. This review paper provides a comprehensive examination of the available deepfake generation and detection methods, exploring both the opportunities and challenges presented by this emerging innovation. Detection methodologies based on deep learning and conventional methods as well the threats this emerging technology poses on the society are also surveyed. Overall, this review gives various insights of both generation and detection of deepfakes, combining its applications, approaches and future work.
+C3  - 2024 International Conference on Computing, Sciences and Communications (ICCSC)
+DA  - 2024/10/24/25
+PY  - 2024
+DO  - 10.1109/ICCSC62048.2024.10830322
+SP  - 1
+EP  - 6
+KW  - Artificial intelligence
+KW  - Artificial Intelligence
+KW  - Deep learning
+KW  - Deepfake
+KW  - Deepfakes
+KW  - Education
+KW  - Entertainment industry
+KW  - Face manipulation
+KW  - Face reenactment
+KW  - Face swapping GAN
+KW  - Government
+KW  - Image forgery
+KW  - Law enforcement
+KW  - Real-time systems
+KW  - Reviews
+KW  - Technological innovation
+ER  - 
+
+TY  - CONF
+TI  - FakeBuster: Multilingual LLM-Based System for Real-Time Automated Verification of News Claims
+AU  - S. Toorpu
+AU  - V. Vusirikapelly
+AU  - S. Nathi
+AU  - N. S. S. S. G. Kumar
+AU  - M. A. Jabbar
+T2  - 2025 International Conference on Intelligent Communication Networks and Computational Techniques (ICICNCT)
+AB  - This paper introduces a multilingual, real-time fact check framework that integrates a reasoning engine based on a large language model (LLM) with a dynamic web search mechanism for automated verification of news claims. The proposed system, FakeBuster, is designed to process user-submitted claims and validate their authenticity using live data obtained from the Web. The LLM core is powered by LLaMA-4-Scout-17B-16E-Instruct, and is paired with the Tavily search API to retrieve up-to-date and relevant web content. The framework parses the LLM's outputs to identify function call intents, execute contextual web searches, and return exact verdicts: True, False, Partially True, or Insufficient Information. The system offers multilingual support for the following four languages: English, Hindi, Tamil, and Telugu. The performance of FakeBuster is evaluated using a sample dataset consisting of news from all four languages. The system achieves strong accuracy across languages, with English at $\mathbf{9 8. 0 3 \%}$, Hindi at $\mathbf{9 6. 6 3 \%}$, Tamil at $\mathbf{9 5. 0 9 \%}$, and Telugu at $\mathbf{9 5. 4 \%}$, demonstrating consistent multilingual reliability.
+C3  - 2025 International Conference on Intelligent Communication Networks and Computational Techniques (ICICNCT)
+DA  - 2025/09/05/6
+PY  - 2025
+DO  - 10.1109/ICICNCT66124.2025.11232605
+SP  - 01
+EP  - 07
+KW  - Accuracy
+KW  - automated
+KW  - Cognition
+KW  - Faces
+KW  - fact-checking
+KW  - Internet
+KW  - Large language models
+KW  - LLM-based
+KW  - Multilingual
+KW  - Multimedia databases
+KW  - news verification
+KW  - real-time
+KW  - Real-time systems
+KW  - Reliability
+KW  - Web search
+ER  - 
+
+TY  - JOUR
+TI  - An Ontology-Supported Misinformation Model: Toward a Digital Misinformation Library
+AU  - L. Zhou
+AU  - D. Zhang
+T2  - IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans
+AB  - The importance of research on misinformation has received wide recognition. Two major challenges faced by this research community are the lack of theoretical models and the scarcity of misinformation in support of such research. This paper aims to address the aforementioned challenges by conceptualizing misinformation and enabling the interoperability of misinformation. In particular, a representation and a model of misinformation are proposed through surveying, synthesizing, and explicating existing work in the field. Moreover, ontology is used to represent the proposed model. The ontology-supported misinformation model can not only guide future misinformation research but also lay the foundation for building a digital misinformation library by advancing our knowledge on misinformation and by improving its sharing, management, and reuse. In addition, we present a formal methodology for managing misinformation in a digital library, and suggest future research directions related to the misinformation model.
+DA  - 2007/09//
+PY  - 2007
+DO  - 10.1109/TSMCA.2007.902648
+VL  - 37
+IS  - 5
+SP  - 804
+EP  - 813
+J2  - IEEE Transactions on Systems, Man, and Cybernetics - Part A: Systems and Humans
+SN  - 1558-2426
+KW  - misinformation
+KW  - ontology
+KW  - Ontologies
+KW  - Decision making
+KW  - Internet
+KW  - Electronic mail
+KW  - Digital library
+KW  - Face detection
+KW  - Humans
+KW  - Information systems
+KW  - Information technology
+KW  - Knowledge management
+KW  - model
+KW  - Software libraries
+ER  - 
+
+TY  - JOUR
+TI  - Defending Against Malicious Influence Control in Online Leader-Follower Social Networks
+AU  - L. Zhu
+AU  - X. Zhou
+AU  - J. Tian
+AU  - W. Li
+AU  - Z. Zhang
+T2  - IEEE Transactions on Information Forensics and Security
+AB  - The formation of opinions is fundamentally a network-based process, where the opinions of individuals in a social network exchange, evolve, and eventually converge towards a specific distribution. However, this dynamic process may be susceptible to manipulation by adversarial entities, who aim to maliciously influence the opinion formulation. The adversary may engage in extensive influence campaigns, disseminating misinformation among populations, thereby potentially destabilizing societies. It is thus of significance to develop strategies to defend against such attacks, which are essential for fostering a healthy environment for information sharing, social deliberation, and opinion formation. In this paper, we investigate a scenario wherein an external adversary aims to maliciously alter the opinions of a general social graph. This is achieved by targeting several selected nodes, referred to as followers. Concurrently, we explore a counter-strategy, aiming to negate the influence of the adversary with malicious intents. This involves identifying a subset of nodes to act as followers of a defending leader, thereby minimizing the adversary’s impact. Since this problem can be framed as a non-increasing supermodular minimization problem, we develop a  $(1-1/e)$  approximation greedy algorithm consequently. Moreover, to overcome the computation challenge for large-scale networks, we establish an efficient approximation to the key quantity of the greedy algorithm. This refinement significantly enhances computational efficiency and scalability, making the algorithm applicable to networks with millions of nodes. Extensive simulation results on various real-world networks demonstrate the superior performance of our improved algorithm over existing algorithms and other baseline schemes based on centrality measures. In particular, our improved algorithm scales to networks of considerable size, with negligible sacrifice on the quality of solutions.
+DA  - 2024///
+PY  - 2024
+DO  - 10.1109/TIFS.2024.3383244
+VL  - 19
+SP  - 4809
+EP  - 4819
+J2  - IEEE Transactions on Information Forensics and Security
+SN  - 1556-6021
+KW  - Social networking (online)
+KW  - Vectors
+KW  - Heuristic algorithms
+KW  - Optimization
+KW  - defense strategies
+KW  - discrete optimization
+KW  - graph algorithm
+KW  - Greedy algorithms
+KW  - Integrated circuit modeling
+KW  - leader-follower social networks
+KW  - malicious influence control
+KW  - Mathematical models
+KW  - Opinion dynamics
+ER  - 
+
+TY  - CONF
+TI  - Utilizing misleading information for cooperative spectrum sensing in cognitive radio networks
+AU  - S. Bhattacharjee
+AU  - S. Debroy
+AU  - M. Chatterjee
+AU  - K. Kwiat
+T2  - 2013 IEEE International Conference on Communications (ICC)
+AB  - In cognitive radio networks, the radios continuously scan the radio spectrum and create a spectrum usage report. Due to channel uncertainty, there are inaccuracies in these reports. Oftentimes, the radios share and fuse the observed data in order to increase the accuracy of the spectrum usage. However, malicious nodes tend to send false information (i.e., attack) in order to mislead the construction of the spectrum usage report. In this paper, we use a trust model to evaluate the trustworthiness of every node and use the trust values to effectively fuse the information from all nodes. A node compares the information sent by a neighboring node with the predicted information. Based on the ratio of matches (or mismatches), the neighboring node is assigned a trust value. Then, we propose a log-weighted metric utilizing trust values to distinguish malicious nodes from others. Subsequently, we propose threshold based Selective Inversion (SI) fusion and Complete Inversion (CI) fusion to effectively combine not only the information sent by honest nodes but also utilize misleading information sent by malicious nodes. We also propose a combination of the two inversion schemes. We compare the performance of the inversion based fusion schemes with blind and trust-based fusions. Results reveal better performance for inversion based fusion schemes for various intensities of attack. We also conduct simulations to evaluate the optimal thresholds that are used for invoking the inversion based fusion schemes.
+C3  - 2013 IEEE International Conference on Communications (ICC)
+DA  - 2013/06/09/13
+PY  - 2013
+DO  - 10.1109/ICC.2013.6654929
+SP  - 2612
+EP  - 2616
+SN  - 1938-1883
+KW  - Measurement
+KW  - Vectors
+KW  - Fuses
+KW  - Cognitive radio
+KW  - Sensors
+KW  - Silicon
+KW  - Transmitters
+ER  - 
+
+TY  - CONF
+TI  - Queuing the trust: Secure backpressure algorithm against insider threats in wireless networks
+AU  - Z. Lu
+AU  - Y. E. Sagduyu
+AU  - J. H. Li
+T2  - 2015 IEEE Conference on Computer Communications (INFOCOM)
+AB  - The backpressure algorithm is known to provide throughput optimality in routing and scheduling decisions for multi-hop networks with dynamic traffic. The essential assumption in the backpressure algorithm is that all nodes are benign and obey the algorithm rules governing the information exchange and underlying optimization needs. Nonetheless, such an assumption does not always hold in realistic scenarios, especially in the presence of security attacks with intent to disrupt network operations. In this paper, we propose a novel mechanism, called virtual trust queuing, to protect backpressure algorithm based routing and scheduling protocols from various insider threats. Our objective is not to design yet another trust-based routing to heuristically bargain security and performance, but to develop a generic solution with strong guarantees of attack resilience and throughput performance in the backpressure algorithm. To this end, we quantify a node's algorithm-compliance behavior over time and construct a virtual trust queue that maintains deviations from expected algorithm outcomes. We show that by jointly stabilizing the virtual trust queue and the real packet queue, the backpressure algorithm not only achieves resilience, but also sustains the throughput performance under an extensive set of security attacks.
+C3  - 2015 IEEE Conference on Computer Communications (INFOCOM)
+DA  - 2015/05/26/April-1
+PY  - 2015
+DO  - 10.1109/INFOCOM.2015.7218389
+SP  - 253
+EP  - 261
+SN  - 0743-166X
+KW  - Heuristic algorithms
+KW  - Optimization
+KW  - Algorithm design and analysis
+KW  - Queueing analysis
+KW  - Routing
+KW  - Scheduling
+KW  - Throughput
+ER  - 
+
+TY  - CONF
+TI  - An Introduction to the JPEG Fake Media Initiative
+AU  - F. Temmermans
+AU  - D. Bhowmik
+AU  - F. Pereira
+AU  - T. Ebrahimi
+T2  - 2021 IEEE 4th International Conference on Multimedia Information Processing and Retrieval (MIPR)
+AB  - Recent advances in media creation and modification allow to produce near realistic media assets that are almost indistinguishable from original assets to the human eye. These developments open opportunities for creative production of new media in the entertainment and art industry. However, the intentional or unintentional spread of manipulated media, i.e., modified media with the intention to induce misinterpretation, also imposes risks such as social unrest, spread of rumours for political gain or encouraging hate crimes. The clear and transparent annotation of media modifications is considered to be a crucial element in many usage scenarios bringing trust to the users. This has already triggered various organizations to develop mechanisms that can detect and annotate modified media assets when they are shared. However, these annotations should be attached to the media in a secure way to prevent them of being compromised. In addition, to achieve a wide adoption of such an annotation ecosystem, interoperability is essential and this clearly calls for a standard. This paper presents an initiative by the JPEG Committee called JPEG Fake Media. The scope of JPEG Fake Media is the creation of a standard that can facilitate the secure and reliable annotation of media asset creation and modifications. The standard shall support usage scenarios that are in good faith as well as those with malicious intent. This paper gives an overview of the current state of this initiative and introduces already identified use cases and requirements.
+C3  - 2021 IEEE 4th International Conference on Multimedia Information Processing and Retrieval (MIPR)
+DA  - 2021/09/08/10
+PY  - 2021
+DO  - 10.1109/MIPR51284.2021.00075
+SP  - 406
+EP  - 411
+KW  - Annotations
+KW  - authenticity
+KW  - Conferences
+KW  - deepfake
+KW  - fake media
+KW  - JPEG
+KW  - Media
+KW  - media creation and modification
+KW  - media forensics
+KW  - Production
+KW  - Reliability
+KW  - standardisation
+KW  - Standards organizations
+KW  - Transform coding
+ER  - 
+
+TY  - CONF
+TI  - A psychological approach to information technology security
+AU  - I. Enrici
+AU  - M. Ancilli
+AU  - A. Lioy
+T2  - 3rd International Conference on Human System Interaction
+AB  - This paper analyses from a psychological standpoint how human and more generally psychological dimensions were taken in consideration by the recent literature related to information technology security. We discuss three main psychologically relevant dimensions such as cognitive hacking, hackers profiling and human errors and distinguish four distinct levels of psychological approaches to information security.
+C3  - 3rd International Conference on Human System Interaction
+DA  - 2010/05/13/15
+PY  - 2010
+DO  - 10.1109/HSI.2010.5514528
+SP  - 459
+EP  - 466
+SN  - 2158-2254
+KW  - Information security
+KW  - Computer crime
+KW  - Cognition
+KW  - Information technology
+KW  - Cognitive hacking
+KW  - Communication system security
+KW  - Computer errors
+KW  - Data security
+KW  - Human factors
+KW  - human factors in security
+KW  - information technology security
+KW  - Paper technology
+KW  - psychology
+KW  - Psychology
+ER  - 
+
+TY  - JOUR
+TI  - Reputation Evaluation Scheme Based on PUF and Blockchain With Channel Congestion Mitigation in the Internet of Vehicles
+AU  - X. Feng
+AU  - B. Zhang
+T2  - IEEE Internet of Things Journal
+AB  - The Internet of Vehicles (IoV) can significantly enhance the efficiency of message dissemination on roads, playing a vital role in reducing traffic accidents. Due to the limited computational resources of individual vehicles, they must share observed data with roadside unit (RSU) and other vehicles to handle computational tasks that allow for some delay. However, the data provided by vehicles may not always be reliable, and false information can have severe consequences. Additionally, excessive data sharing can lead to channel congestion, preventing critical messages from being disseminated in a timely manner. To address these challenges, we propose a channel congestion mitigation and reputation evaluation scheme based on physically unclonable function (PUF) and blockchain technology. First, we generate a unique ID for each vehicle using the PUF function, and then introduce a digital certificate to ensure that messages originating from a vehicle can be traced back to their source. The vehicle’s identity is verified before any communication with the RSU. Second, we utilize a cuckoo filter to prevent the redundant sharing of identical reports for vehicle parameters. Both vehicles and RSUs can check their local filters to verify whether a data report has already been shared. Moreover, we introduce a specialized buffer structure in RSUs to eliminate false information received during communication and identify potentially malicious vehicles. Finally, we conducted experiments to verify the efficiency and accuracy of our scheme, demonstrating its feasibility and effectiveness.
+DA  - 2025/06/01/
+PY  - 2025
+DO  - 10.1109/JIOT.2025.3538984
+VL  - 12
+IS  - 11
+SP  - 17487
+EP  - 17498
+J2  - IEEE Internet of Things Journal
+SN  - 2327-4662
+KW  - Blockchain
+KW  - Privacy
+KW  - Reliability
+KW  - Collaboration
+KW  - Blockchains
+KW  - Authentication
+KW  - Circuits
+KW  - Internet of Vehicles
+KW  - Physical unclonable function
+KW  - physically unclonable function (PUF)
+KW  - reputation assessment
+KW  - Roads
+KW  - telematics
+KW  - Telematics
+ER  - 
+
+TY  - CONF
+TI  - Analyzing Tiktok's AI and Heuristic Trust in Health Content for Young Parents
+AU  - M. A. Wijaya
+AU  - E. Melissa
+T2  - 2025 International Conference on ICT for Smart Society (ICISS)
+AB  - Today, TikTok is not just a social media platform for sharing trend-based videos, but it has evolved into a trusted source of information, particularly in areas such as health, parenting, and lifestyle. This shift is influenced by TikTok's algorithm and the way users interact with content. Through netnographic analysis and FGD, this study examines how TikTok has influenced the changing ways people build trust in the digital world, using heuristic trust theory. TikTok's AI algorithm shapes new forms of trust through several factors: reputation, endorsement, consistency, emotional relevance and popularity. The algorithm promotes high-engagement content & user interactions in the comment section. The findings reveal that in digital era, trust is formed instantly; relying more on pragmatic short cut than careful cognitive considerations. This makes digital literacy essential to ensure accurate understanding and evaluation of information. While this shift in how trust is formed brings positive impacts for certain parties, it also opens up the possibility for negative consequences to emerge.
+C3  - 2025 International Conference on ICT for Smart Society (ICISS)
+DA  - 2025/09/03/4
+PY  - 2025
+DO  - 10.1109/ICISS66954.2025.11389419
+SP  - 1
+EP  - 6
+KW  - Artificial intelligence
+KW  - Social networking (online)
+KW  - Information and communication technology
+KW  - Video on demand
+KW  - Web sites
+KW  - Pragmatics
+KW  - Digital intelligence
+KW  - Heuristic algorithms
+KW  - Videos
+KW  - AI algorithm
+KW  - digital literacy
+KW  - digital trust
+KW  - heuristic trust
+KW  - Shape
+KW  - TikTok
+ER  - 
+
+TY  - CONF
+TI  - Personalized AI-Generated Video Response and Recommendation System Based on YouTube Search Queries
+AU  - D. Verma
+AU  - G. Sirsat
+AU  - P. Sitap
+AU  - A. C. Jadhav
+AU  - H. Sandeep
+AU  - S. Kulkarni
+T2  - 2025 International Conference on Innovations and Emerging Technologies In AI & Communication Systems (IETACS)
+AB  - The exponential growth of video content on platforms like YouTube has intensified the need for personalized, secure, and dynamic content delivery. This paper proposes an innovative AI-driven frame- work that synthesizes personalized videos in real time based on YouTube search queries and complements them with contextually relevant recommen- dations. By integrating advanced Natural Language Processing (NLP), generative Video Diffusion Models (VDMs), computer vision, and built- in cybersecurity mechanisms, the system delivers high-quality, user- centric, and trustworthy videos tailored to individual intents. Un- like existing synthesis systems that primarily focus on visual fidelity without contextual adaptation, and YouTube's current recommendation engine that only suggests pre-existing content without generating new video material, the proposed framework dynamically creates and recommends secure, intent-specific videos. Exten-sive experiments demonstrate a 25 percent improvement in relevance over existing YouTube recom- men- dations for niche queries, with an average query- to-video latency of 5.2 seconds.
+C3  - 2025 International Conference on Innovations and Emerging Technologies In AI & Communication Systems (IETACS)
+DA  - 2025/11/06/8
+PY  - 2025
+DO  - 10.1109/IETACS68750.2025.11385725
+SP  - 304
+EP  - 310
+KW  - AI
+KW  - Generative AI
+KW  - Natural language processing
+KW  - NLP
+KW  - Ethics
+KW  - Video on demand
+KW  - Web sites
+KW  - Real-time systems
+KW  - Videos
+KW  - Computer security
+KW  - Diffusion models
+KW  - Engines
+KW  - Ethical AI
+KW  - Personalized Content
+KW  - Recommendation Systems
+KW  - Recommender systems
+KW  - Video Diffusion Models
+KW  - Video Synthesis
+KW  - YouTube
+ER  - 
+
+TY  - CONF
+TI  - Text mining for a clear picture of defect reports: a praxis report
+AU  - J. Kreyss
+AU  - S. Selvaggio
+AU  - M. White
+AU  - Z. Zakharian
+T2  - Third IEEE International Conference on Data Mining
+AB  - We applied the text mining categorization technology, in the publicly available, IBM Enterprise Information Portal V8.1 to more than 15,000 customer reported, product problem records. We used a proven software quality category set to categorize these problem records into different areas of interest. Our intent was to develop a clear picture of potential areas for quality improvement in each of the software products reviewed, and to provide this information to development's management. We present the benefits that can be gained from categorizing problem records, as well as the limitations.
+C3  - Third IEEE International Conference on Data Mining
+DA  - 2003/11/22/22
+PY  - 2003
+DO  - 10.1109/ICDM.2003.1251018
+SP  - 727
+EP  - 730
+KW  - Software quality
+KW  - Portals
+KW  - Silicon
+KW  - Customer satisfaction
+KW  - Information management
+KW  - Laboratories
+KW  - Quality management
+KW  - Software development management
+KW  - Technology management
+KW  - Text mining
+ER  - 
+
+TY  - JOUR
+TI  - Automated Metric Analysis of Spanish Poetry: Two Complementary Approaches
+AU  - G. Marco
+AU  - J. De La Rosa
+AU  - J. Gonzalo
+AU  - S. Ros
+AU  - E. González-Blanco
+T2  - IEEE Access
+AB  - The automatic metric analysis (commonly referred to as scansion) of Spanish poetry is not a trivial problem since it combines the nuances of the language, the different poetic traditions related to melodic patterns, and the personal stylistic preferences and intentions of the author. In this paper, we explore two alternative algorithmic approaches tailored to different applications scenarios. The first approach, Rantanplan, is a rule-based method that consists of four Natural Language Processing modules that work together to perform scansion and other related analysis: Part of Speech tagging, syllabification, stress assignment, and metrical adjustment. The second approach, Jumper, explores the possibility of performing scansion without syllabification, with a twofold purpose: to minimize the errors propagated in different parts of the linguistic processing pipeline (including the syllabification step), and to improve the efficiency of the process. Both systems outperform the state of the art and provide either a more informative solution (suitable, for instance, for teaching purposes) or a more efficient processing (when a correct scansion is all the linguistic knowledge required, as in scholar philological studies). The combined use of both systems turns out to provide a practical tool to clean-up manual annotation errors in corpora.
+DA  - 2021///
+PY  - 2021
+DO  - 10.1109/ACCESS.2021.3069635
+VL  - 9
+SP  - 51734
+EP  - 51746
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Natural language processing
+KW  - Annotations
+KW  - Measurement
+KW  - Task analysis
+KW  - Tools
+KW  - automated metric analysis
+KW  - corpus annotation
+KW  - digital humanities
+KW  - Manuals
+KW  - poetry
+KW  - scansion
+KW  - Spanish
+KW  - Stress
+ER  - 
+
+TY  - CONF
+TI  - Hybrid elicitation of latent intent in open societies (HELIOS)
+AU  - J. Palmer
+T2  - 2011 Second Worldwide Cybersecurity Summit (WCS)
+AB  - The reach of ubiquitous social networking tools enabled through new technology is evident in the recent regime change and the increased unrest within the Middle East. Such rapid dissemination of information may engender an equally rapid emergence of virtual communities of interest - some with potentially hostile intent. Twitter's accessibility and popularity have attracted a large number of automated programs, known as bots, which can serve as a double-edged sword within Twitter. While legitimate bots generate a large amount of benign tweets delivering news and updating information, malicious bots spread misinformation with potentially virulent results. This paper blends methods from traditional statistical classification methods with latent Dirichlet allocation with techniques of social network analysis to underpin threat assessment based upon similarities discerned among topic sets that have distilled by semantic analysis of Twitter intercepts.
+C3  - 2011 Second Worldwide Cybersecurity Summit (WCS)
+DA  - 2011/06/01/2
+PY  - 2011
+SP  - 1
+EP  - 7
+KW  - social networks
+KW  - Social network services
+KW  - Feature extraction
+KW  - Semantics
+KW  - Mathematical model
+KW  - Vocabulary
+KW  - Centrality
+KW  - Cyber information
+KW  - Dirichlet
+KW  - document clustering
+KW  - Equations
+KW  - Gibbs sampling
+KW  - Joints
+KW  - Kullback-Leibler
+KW  - multinomial
+KW  - text extraction
+KW  - twitter
+KW  - unsupervised learning
+ER  - 
+
+TY  - CONF
+TI  - Understanding the Threat of Political Deepfakes
+AU  - K. Afroz
+AU  - S. Chittam
+AU  - K. Roy
+T2  - 2025 IEEE 4th International Conference on AI in Cybersecurity (ICAIC)
+AB  - The collective effort to develop Artificial Intelligence has contributed to the creation of Deepfakes. Deepfake employs a machine learning model that uses techniques, like neural networks, to process data humanly. A frequent output includes synthesized material to promote a false narrative. In a time when elections are closing in, the quantity of fabricated media created through numerous Deepfake apps has increased and caused much harm in pursuing campaigns for the candidates. Many politicians are targeted daily due to the use of computer technologies to code a system that mass produces Deepfakes. Every version of Deepfake generation requires an individual method to detect it through a system that analyzes fabricated and authentic material. Deepfakes continue to grow, eventually bypassing these systems, requiring constant development to adapt and create updated generation methods. These detection systems are necessary due to the harmful nature of Deepfakes, especially when created with malicious intent. This can result in forged speeches and dis-honorable videos to defame politicians. The spread of misinformation has greatly affected the general population because of their fear-mongering and libelous tactics. In this paper, the types of Deepfakes and the various methods of replication and detection for each type will be explored to discuss the significance of their impact on political leaders.
+C3  - 2025 IEEE 4th International Conference on AI in Cybersecurity (ICAIC)
+DA  - 2025/02/05/7
+PY  - 2025
+DO  - 10.1109/ICAIC63015.2025.10848832
+SP  - 1
+EP  - 6
+KW  - Deep learning
+KW  - Neural networks
+KW  - Deepfakes
+KW  - detection
+KW  - Software
+KW  - Voting
+KW  - Feature extraction
+KW  - Faces
+KW  - Detectors
+KW  - Sensors
+KW  - Fraud
+KW  - generation
+KW  - politicians
+ER  - 
+
+TY  - JOUR
+TI  - Trust and Ethics in Chatbots: A Framework for Responsible AI Interactions
+AU  - P. Sowmya
+AU  - Vasudeva
+T2  - IEEE Access
+AB  - The increasing deployment of chatbots across sectors such as education, healthcare, and customer service has raised the need for user interactions with the chatbot be safe, fair, responsible and respectful. These expectations from a chatbot could be collectively named as ethical behaviour or ethical concerns in AI applications. Human beings by default are expected to possess moral values, ethics and fairness. Indeed, critical AI applications should also be aligned with these qualities as they deal with real time scenarios and people. Ethical concerns include human agency and oversight, technical robustness and safety, transparency, non-discrimination and fairness, accountability, societal well-being, privacy and data governance. This paper explores the ethical implications of chatbots that exhibit varying responses due to fluctuations in dataset intents and patterns. Inconsistent behaviour can undermine user trust, introduce bias, and compromise decision-making, especially when the chatbot is used in sensitive domains. The study investigates how changes in the structure, labelling, or balance of intent patterns influence chatbot performance, potentially leading to unequal treatment of users or miscommunication on a university chatbot. Ethical principles in context to correctly classifying intent proves that chatbot is technically robust with a accuracy rate of 98% and a safety score of 87.65%, proves diversity and fairness with a fairness score of 84.5%, and existing frame works IBM AIF Fairness 360 and Microsoft RAI Toolkit is used for comparison with accuracy of 99.5% and 99.12% respectively and data governance achieved with a data quality score of 96.8% and contributes Societal and environmental well being with a sustainability score 84%. Recommendations are proposed for implementing auditability, explainability, and robust validation processes to ensure that chatbot systems remain ethically compliant even under dynamic or evolving datasets. The research underscores the need for continuous monitoring and ethical auditing mechanisms to safeguard against unintended harms and promote responsible AI deployment. To add on value two additional domains healthcare and customer service chatbot are used for comparison.
+DA  - 2026///
+PY  - 2026
+DO  - 10.1109/ACCESS.2026.3653763
+VL  - 14
+SP  - 9004
+EP  - 9020
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Artificial intelligence
+KW  - Ethics
+KW  - Chatbots
+KW  - Privacy
+KW  - Accuracy
+KW  - Safety
+KW  - chatbot
+KW  - Customer services
+KW  - Data privacy
+KW  - ethical principles
+KW  - Europe
+KW  - Guidelines
+KW  - sustainability
+KW  - trustworthiness
+ER  - 
+
+TY  - CONF
+TI  - Improved Deepfake Video Detection Using Convolutional Vision Transformer
+AU  - D. W. Deressa
+AU  - P. Lambert
+AU  - G. Van Wallendael
+AU  - S. Atnafu
+AU  - H. Mareen
+T2  - 2024 IEEE Gaming, Entertainment, and Media Conference (GEM)
+AB  - Deepfakes are hyper-realistic videos in which the faces are replaced, swapped, or forged using deep-learning models. This potent media manipulation techniques hold promise for applications across various domains. Yet, they also present a significant risk when employed for malicious intents like iden-tity fraud, phishing, spreading false information, and executing scams. In this work, we propose a novel and improved Deepfake video detector that uses a Convolutional Vision Transformer (CViT2), which builds on the concepts of our previous work (CViT). The CViT architecture consists of two components: a Convolutional Neural Network that extracts learnable features, and a Vision Transformer that categorizes these learned features using an attention mechanism. We trained and evaluted our model on 5 datasets, namely Deepfake Detection Challenge Dataset (DFDC), $\mathbf{FaceForensics++} \ (\text{FF}++)$ I, Celeb-DF v2, Deep-fakeTIMIT, and TrustedMedia. On the test sets unseen during training, we achieved an accuracy of 95 %, 94.8 %, 98.3 % and 76.7% on the DFDC, $\mathbf{FF ++}$, Celeb-DF v2, and TIMIT datasets, respectively. In conclusion, our proposed Deepfake detector can be used in the battle against misinformation and other forensic use cases.
+C3  - 2024 IEEE Gaming, Entertainment, and Media Conference (GEM)
+DA  - 2024/06/05/7
+PY  - 2024
+DO  - 10.1109/GEM61861.2024.10585593
+SP  - 1
+EP  - 6
+SN  - 2766-6530
+KW  - Deepfakes
+KW  - Accuracy
+KW  - Analytical models
+KW  - Training
+KW  - Forensics
+KW  - Detectors
+KW  - Convolutional Neural Network
+KW  - Deepfake Video Detection
+KW  - Misinformation Detection
+KW  - Mul-timedia Forensics
+KW  - Transformer cores
+KW  - Vision Transformer
+ER  - 
+
+TY  - JOUR
+TI  - Authorship Attribution of Social Media Messages
+AU  - A. Theophilo
+AU  - R. Giot
+AU  - A. Rocha
+T2  - IEEE Transactions on Computational Social Systems
+AB  - The world is facing a new era in which social media communication plays a fundamental role in people’s lives. Along with proven benefits, several collateral drawbacks have risen, one being the widespread of false information with malicious intents, oftentimes using anonymous or false identities. Fighting this problem is challenging, especially when considering the nature of text messages involved on social media platforms: a sea of small messages and a myriad of users. Attributing the authorship of such messages is an ambitious endeavor; nevertheless, it is a way to fight this undesired disinformation scenario. In this work, we tackle the problem of authorship attribution of tiny messages, but, different from what has been done with longer texts, we rely upon data-driven approaches, avoiding handcraft features and harnessing recent advances of deep neural networks in the field of pattern recognition. By modeling small texts employed in social media as unidimensional signals, we propose a deep learning model to project these messages onto a manifold suitable for the task of authorship attribution. We provide two state-of-the-art solutions tailored for different setups and strategies for the scenario of authorship verification. These advances were possible, thanks to three additional contributions: an updated dataset based on the Twitter® platform, new sanitization techniques to improve the quality of the training data, and novel visual analytics techniques to help the development of authorship attribution solutions.
+DA  - 2023/02//
+PY  - 2023
+DO  - 10.1109/TCSS.2021.3123895
+VL  - 10
+IS  - 1
+SP  - 10
+EP  - 23
+J2  - IEEE Transactions on Computational Social Systems
+SN  - 2329-924X
+KW  - Art
+KW  - Authorship attribution
+KW  - Blogs
+KW  - Convolutional neural networks
+KW  - deep learning
+KW  - Deep learning
+KW  - manifold learning
+KW  - Media
+KW  - multimedia forensics
+KW  - social media
+KW  - Social networking (online)
+KW  - Task analysis
+KW  - text analysis
+KW  - visual analytics for authorship attribution
+ER  - 
+
+TY  - JOUR
+TI  - Securing the Backpressure Algorithm for Wireless Networks
+AU  - Z. Lu
+AU  - Y. E. Sagduyu
+AU  - J. H. Li
+T2  - IEEE Transactions on Mobile Computing
+AB  - The backpressure algorithm is known to provide throughput optimality in routing and scheduling decisions for multi-hop networks with dynamic traffic. The essential assumption in the backpressure algorithm is that all nodes are benign and obey the algorithm rules governing the information exchange and underlying optimization needs. Nonetheless, such an assumption does not always hold in realistic scenarios, especially in the presence of security attacks with intent to disrupt network operations. In this paper, we propose a novel mechanism, called virtual trust queuing, to protect backpressure algorithm based routing and scheduling protocols against various insider threats. Our objective is not to design yet another trust-based routing to heuristically bargain security and performance, but to develop a generic solution with strong guarantees of attack resilience and throughput performance in the backpressure algorithm. To this end, we quantify a node's algorithm-compliance behavior over time and construct a virtual trust queue that maintains deviations of a give node from expected algorithm outcomes. We show that by jointly stabilizing the virtual trust queue and the real packet queue, the backpressure algorithm not only achieves resilience, but also sustains the throughput performance under an extensive set of security attacks. Our proposed solution clears a major barrier for practical deployment of backpressure algorithm for secure wireless applications.
+DA  - 2017/04/01/
+PY  - 2017
+DO  - 10.1109/TMC.2016.2582161
+VL  - 16
+IS  - 4
+SP  - 1136
+EP  - 1148
+J2  - IEEE Transactions on Mobile Computing
+SN  - 1558-0660
+KW  - Heuristic algorithms
+KW  - Algorithm design and analysis
+KW  - Routing
+KW  - Throughput
+KW  - attacks
+KW  - Backpressure algorithm
+KW  - insider threats
+KW  - network optimization
+KW  - Network security
+KW  - routing and scheduling
+KW  - security trust
+KW  - virtual queue
+KW  - Wireless networks
+ER  - 
+
+TY  - CONF
+TI  - Improving the performance of a neural-machine interface for artificial legs using prior knowledge of walking environment
+AU  - H. Huang
+AU  - Z. Dou
+AU  - F. Zhang
+AU  - M. J. Nunnery
+T2  - 2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society
+AB  - A previously developed neural-machine interface (NMI) based on neuromuscular-mechanical fusion has showed promise for recognizing user locomotion modes; however, errors of NMI during mode transitions were observed, which may challenge its real application. This study aimed to investigate whether or not the prior knowledge of walking environment could further improve the NMI performance. Linear Discriminant Analysis (LDA)-based classifiers were designed to identify user intent based on electromyographic (EMG) signals from residual muscles of leg amputees and ground reaction force (GRF) measured from the prosthetic leg. The prior knowledge of the terrain in front of the user adjusted the prior possibility in the discriminant function. Therefore, the boundaries of LDA were adaptive to the prior knowledge of the walking environment. This algorithm was evaluated on a dataset collected from one patient with a transfemoral (TF) amputation. The preliminary results showed that the NMI with adaptive prior possibilities outperformed the NMI without using the prior knowledge; it produced 98.7% accuracy for identifying tested locomotion modes, accurately predicted all the task transitions with 261–390 ms prediction time, and generated stable decision during task transitions. These results indicate the potential of using prior knowledge about walking environment to further improve the NMI for prosthetic legs.
+C3  - 2011 Annual International Conference of the IEEE Engineering in Medicine and Biology Society
+DA  - 2011/09/30/Aug.-3
+PY  - 2011
+DO  - 10.1109/IEMBS.2011.6091056
+SP  - 4255
+EP  - 4258
+SN  - 1558-4615
+KW  - Accuracy
+KW  - Testing
+KW  - Support vector machine classification
+KW  - Pattern recognition
+KW  - Electromyography
+KW  - Legged locomotion
+KW  - Prosthetics
+ER  - 
+
+TY  - CONF
+TI  - DoctorGPT: A Large Language Model with Chinese Medical Question-Answering Capabilities
+AU  - W. Li
+AU  - L. Yu
+AU  - M. Wu
+AU  - J. Liu
+AU  - M. Hao
+AU  - Y. Li
+T2  - 2023 International Conference on High Performance Big Data and Intelligent Systems (HDIS)
+AB  - Large Language Models (LLMs) have made incredible strides recently in understanding and reacting to user intents. However, these models typically excel in English and have not been specifically trained for medical applications, leading to suboptimal performance in responding to medical inquiries such as diagnostic queries and drug recommendations. In this paper, we propose DoctorGPT, a domain-specific large language model tailored for medical question-answering tasks. DoctorGPT leverages the open-source Baichuan2 as its foundational model, undergoes extensive pre-training on medical encyclopedic data to incorporate medical knowledge, and subsequently undergoes fine-tuning on a dataset consisting of two million medical instruction-dialogue pairs to enhance its question-answering capabilities. When compared to general-purpose large models, DoctorGPT demonstrates significant advantages in Chinese medical question-answerinz (O&A) tasks.
+C3  - 2023 International Conference on High Performance Big Data and Intelligent Systems (HDIS)
+DA  - 2023/12/06/8
+PY  - 2023
+DO  - 10.1109/HDIS60872.2023.10499472
+SP  - 186
+EP  - 193
+KW  - artificial intelligence
+KW  - large language model
+KW  - Big Data
+KW  - Benchmark testing
+KW  - Data models
+KW  - Biomedical equipment
+KW  - Drugs
+KW  - Encyclopedias
+KW  - medical question-answering system
+KW  - Medical services
+ER  - 
+
+TY  - CONF
+TI  - Mitigation of Odometer Fraud for In-Vehicle Security Using the Discrete Hartley Transform
+AU  - G. Baldini
+AU  - R. Giuliani
+AU  - M. Gemo
+T2  - 2020 11th IEEE Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON)
+AB  - Odometer fraud is a serious offense in the automotive sector and indicates the disconnection, resetting, or alteration of a vehicle's odometer and the related sensor with the intent to change the number of miles/Kms indicated or recorded to report false information. This paper focuses specifically on the threat scenario where the odometer sensor (i.e., Hall Sensor) is manipulated or replaced to implement an odometer fraud. This paper proposes a technique to mitigate odometer fraud by performing a physical layer authentication of the Hall Sensor, which takes in consideration the limitation of the in-vehicle networks and microprocessors. In particular, the Discrete Hartley Transform (DHT) in combination with machine learning algorithms is used to perform the authentication on an experimental data set of 12 Hall Sensors, which has been collected by the authors. The results shows that features extracted with DHT have more discriminating power than the original time domain and the frequency domain representations based on the Fast Fourier Transform (FFT) especially in presence of noise.
+C3  - 2020 11th IEEE Annual Ubiquitous Computing, Electronics & Mobile Communication Conference (UEMCON)
+DA  - 2020/10/28/31
+PY  - 2020
+DO  - 10.1109/UEMCON51285.2020.9298039
+SP  - 0479
+EP  - 0485
+KW  - security
+KW  - machine learning
+KW  - Machine learning
+KW  - Machine learning algorithms
+KW  - Support vector machines
+KW  - Transforms
+KW  - Authentication
+KW  - Europe
+KW  - Consumer electronics
+KW  - fraud
+KW  - odometer
+KW  - signal processing
+ER  - 
+
+TY  - CONF
+TI  - Enhancing Code Generation via Bidirectional Comment-Level Mutual Grounding
+AU  - Y. Di
+AU  - T. Zhang
+T2  - 2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)
+AB  - Large Language Models (LLMs) have demonstrated unprecedented capability in code generation. However, LLM-generated code is still plagued with a wide range of functional errors, especially for complex programming tasks that LLMs have not seen before. Recent studies have shown that developers often struggle with inspecting and fixing incorrect code generated by LLMs, diminishing their productivity and trust in LLM-based code generation. Inspired by the mutual grounding theory in communication, we propose an interactive approach that leverages code comments as a medium for developers and LLMs to establish a shared understanding. Our approach facilitates iterative grounding by interleaving code generation, inline comment generation, and contextualized user feedback through editable comments to align generated code with developer intent. We evaluated our approach on two popular benchmarks and demonstrated that our approach significantly improved multiple state-of-the-art LLMs, e.g., 17.1% pass@1 improvement for code-davinci-002 on HumanEval. Furthermore, we conducted a user study with 12 participants in comparison to two baselines: (1) interacting with GitHub Copilot, and (2) interacting with a multi-step code generation paradigm called Multi-Turn Program Synthesis. Participants completed the given programming tasks 16.7% faster and with 10.5% improvement in task success rate when using our approach. Both results show that interactively refining code comments enables the collaborative establishment of mutual grounding, leading to more accurate code generation and higher developer confidence.
+C3  - 2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)
+DA  - 2025/05/26/April-6
+PY  - 2025
+DO  - 10.1109/ICSE55347.2025.00165
+SP  - 1359
+EP  - 1371
+SN  - 1558-1225
+KW  - Accuracy
+KW  - Benchmark testing
+KW  - Collaboration
+KW  - Software development management
+KW  - Code Generation
+KW  - Code Refinement
+KW  - Codes
+KW  - Grounding
+KW  - LLM
+KW  - Productivity
+KW  - Programming
+KW  - Software engineering
+KW  - Usability
+ER  - 
+
+TY  - CONF
+TI  - Theoretical considerations for make-or-buy decisions during ‘product design and engineering’: Three Indian case studies
+AU  - R. Dekkers
+T2  - 2014 IEEE International Conference on Industrial Engineering and Engineering Management
+AB  - Make-or-buy decisions taken during `product design and engineering' often happen based on incomplete and inaccurate information but have tremendous effects on the manufacturing function; this is an under-researched topic. Based on three cases in India, the study examines the processes and decision-making for make-or-buy during new product development from three theoretical perspectives: Transaction Cost Economics, Resource-Based View and notion of core competencies (in chronological order of being established). Driven by both strategic intents and experiences with suppliers, these companies resorted to developing in-house capabilities rather than continuation of supply. That finding leads to reflection on the validity of current theoretical propositions and can be traced back to literature on outsourcing that dates back decades.
+C3  - 2014 IEEE International Conference on Industrial Engineering and Engineering Management
+DA  - 2014/12/09/12
+PY  - 2014
+DO  - 10.1109/IEEM.2014.7058637
+SP  - 243
+EP  - 248
+SN  - 2157-362X
+KW  - Decision making
+KW  - Case studies
+KW  - Companies
+KW  - core competencies
+KW  - Economics
+KW  - Manufacturing
+KW  - new product development
+KW  - outsourcing
+KW  - Outsourcing
+KW  - product design
+KW  - Product design
+KW  - Product development
+KW  - Resource-Based View
+KW  - Transaction Cost Economics
+ER  - 
+
+TY  - CONF
+TI  - Improving IoT Cyber Threat Response with Multi-Agent LLMs and Semantic Retrieval
+AU  - J. A. Williams
+AU  - S. Gyawali
+AU  - Y. Jiang
+AU  - J. Huang
+T2  - 2025 IEEE International Conference on Smart Internet of Things (SmartIoT)
+AB  - The increasing complexity of IoT cybersecurity challenges demands intelligent systems capable of integrating structured domain knowledge with advanced reasoning to deliver accurate and context-aware responses. Traditional LLM-based question-answering systems often produce hallucinated or outdated answers, posing significant risks in IoT environments where vulnerabilities span heterogeneous devices and protocols. To mitigate this, we propose a novel multi-agent framework specifically designed for IoT security applications. This architecture decomposes complex security queries, retrieves evidence from structured repositories such as MITRE ATT&CK for ICS and IoT-specific threat taxonomies, and synthesizes final answers through coordinated reasoning agents. Our demonstration employs a lightweight LLaMA 3.2 model for tasks like intent classification and query parsing, while leveraging Mistral-7B for in-depth reasoning and response generation. These components are integrated with dense-vector and transformer-based retrieval techniques. The framework incorporates iterative feedback loops among agents, allowing for query refinement, evidence validation, and contradiction resolution, ultimately enabling trustworthy and grounded responses for IoT cyber threat detection and mitigation.
+C3  - 2025 IEEE International Conference on Smart Internet of Things (SmartIoT)
+DA  - 2025/11/17/20
+PY  - 2025
+DO  - 10.1109/SmartIoT66867.2025.00067
+SP  - 416
+EP  - 421
+SN  - 2770-2677
+KW  - Transformers
+KW  - Accuracy
+KW  - Robustness
+KW  - Semantics
+KW  - Taxonomy
+KW  - Real-time systems
+KW  - Computer security
+KW  - Cognition
+KW  - iot security
+KW  - multi-agent llm
+KW  - Retrieval augmented generation
+KW  - Threat assessment
+KW  - threat response
+ER  - 
+
+TY  - CONF
+TI  - A Trust-Aware POMDP Framework for Thwarting Data Falsification Attacks in Cooperative Driving
+AU  - Z. Xu
+AU  - J. Li
+AU  - L. Lazos
+AU  - M. Li
+T2  - 2025 IEEE Conference on Communications and Network Security (CNS)
+AB  - We address the problem of data falsification attacks (DFAs) in cooperative autonomous vehicles. In DFAs, compromised or malicious vehicles broadcast false navigation information (acceleration, velocity, position, steering, motion intent) to influence the control algorithm of neighboring vehicles and cause collisions, traffic jams, and passenger discomfort. To maintain safe and efficient driving under DFAs, we propose a trust-aware par-tially observable Markov decision process (POMDP) framework that accounts for the dynamic uncertainty caused by Byzantine behaviors. Compared to traditional POMDP formulations, our framework integrates data fusion between sensing data and V2V messages across different data sampling rates, thereby addressing the challenge of achieving robust real-time control despite delayed data verification. Moreover, the incorporation of trust allows for quickly shifting real-time control between a sensors-only mode (safer but less efficient) to a sensor plus V2V messages mode (less safe but more efficient), depending on the trust level. Extensive simulations with real traffic data demonstrate that our method accurately maintains the vehicle's true state, prevents catastrophic vehicle collisions while ensuring passenger comfort and efficiency.
+C3  - 2025 IEEE Conference on Communications and Network Security (CNS)
+DA  - 2025/09/08/11
+PY  - 2025
+DO  - 10.1109/CNS66487.2025.11195017
+SP  - 1
+EP  - 9
+SN  - 2994-5895
+KW  - Safety
+KW  - Robustness
+KW  - Real-time systems
+KW  - Navigation
+KW  - Sensors
+KW  - Network security
+KW  - Markov decision processes
+KW  - Time-frequency analysis
+KW  - Uncertainty
+KW  - Vehicle dynamics
+ER  - 
+
+TY  - CONF
+TI  - Detecting Bots to Distinguish Hate Speech on Social Media
+AU  - R. Bailurkar
+AU  - N. Raul
+T2  - 2021 12th International Conference on Computing Communication and Networking Technologies (ICCCNT)
+AB  - Social Media Platforms were developed with the intention to bring people together and share their experiences. A social bot is typically engineered to pass as a human, often with the intent to manipulate online discussion. On the other hand they can be designed for doing malicious activities, such as spreading vast misinformation, fake ratings and review or show themselves as fraudulent. Due to rising use of social media activity in users, it has been the need of the hour to take down the bots that manipulate the users on the platform in the wrong direction. For this research work, Twitter tweets were mined by using Tweepy and used for analysis. These raw tweets were preprocessed to find the bots that spread hate speech on the platform through sentimental analysis of data.
+C3  - 2021 12th International Conference on Computing Communication and Networking Technologies (ICCCNT)
+DA  - 2021/07/06/8
+PY  - 2021
+DO  - 10.1109/ICCCNT51525.2021.9579883
+SP  - 1
+EP  - 5
+KW  - Blogs
+KW  - Social networking (online)
+KW  - Analytical models
+KW  - Computational modeling
+KW  - Logistics
+KW  - Bot detection
+KW  - Immune system
+KW  - Information sharing
+KW  - sentimental analysis
+KW  - speech identification
+ER  - 
+
+TY  - CONF
+TI  - Detecting Synthetic Speech Manipulation in Real Audio Recordings
+AU  - M. Hafizur Rahman
+AU  - M. Graciarena
+AU  - D. Castan
+AU  - C. Cobo-Kroenke
+AU  - M. McLaren
+AU  - A. Lawson
+T2  - 2022 IEEE International Workshop on Information Forensics and Security (WIFS)
+AB  - Recent advances in artificial speech and audio technologies have improved the abilities of deep-fake operators to falsify media and spread malicious misinformation. Anyone with limited coding skills can use freely available speech synthesis tools to create convincing simulations of influential speakers’ voices with the malicious intent to distort the original message. With the latest technology, malicious operators do not have to generate an entire audio clip; instead, they can insert a partial manipulation or a segment of synthetic speech into a genuine audio recording to change the entire context and meaning of the original message. Detecting these insertions is especially challenging because partially manipulated audio can more easily avoid synthetic speech detectors than entirely fake messages can. This paper describes a potential synthetic speech detection system based on the x-ResNet architecture with a probabilistic linear discriminant analysis (PLDA) backend. Experimental results suggest that the PLDA backend results in a 25% average error reduction among partially synthesized datasets over a non-PLDA baseline.
+C3  - 2022 IEEE International Workshop on Information Forensics and Security (WIFS)
+DA  - 2022/12/12/16
+PY  - 2022
+DO  - 10.1109/WIFS55849.2022.9975381
+SP  - 1
+EP  - 6
+SN  - 2157-4774
+KW  - Encoding
+KW  - Forensics
+KW  - Detectors
+KW  - Conferences
+KW  - anti-spoof
+KW  - Audio recording
+KW  - Linear discriminant analysis
+KW  - partial synthetic speech
+KW  - PLDA
+KW  - Probabilistic logic
+KW  - synthetic speech detection
+KW  - x-ResNet
+ER  - 
+
+TY  - JOUR
+TI  - Irony Detection, Reasoning, and Understanding in Zero-Shot Learning
+AU  - P. Yi
+AU  - Y. Xia
+AU  - Y. Long
+T2  - IEEE Transactions on Artificial Intelligence
+AB  - Irony is a powerful figurative language (FL) on social media that can potentially mislead various NLP tasks, such as recommendation systems, misinformation checks, and sentiment analysis. Understanding the implicit meaning of this kind of subtle language is an essential step to mitigate the negative impact of irony in NLP tasks. However, existing efforts are limited to domain-specific datasets and struggle to generalize across diverse real-world scenarios. Moreover, reasoning for model decisions that accurately capture semantic and affective meaning remains underexplored. To address these limitations, this article proposes a conceptual framework called irony-focused detection, analysis, and decision prompting (IDADP), which leverages large language models’ (LLMs) in-context learning capabilities to detect irony and generate humanlike explanations across diverse datasets and platforms without prior training on ironic samples. Extensive experiments on six widely used irony detection datasets, utilizing two LLMs (GPT and Gemini), demonstrate that IDADP consistently outperforms six competitive zero-shot baselines and approaches the performance of three fine-tuned supervised learning baselines. Additionally, we examine GPT’s ability to understand the true intent behind ironic text within the IDADP framework, highlighting its strong potential to recognize and interpret statements where the intended meaning differs from or contrasts with the literal meaning. Furthermore, we conduct qualitative analyses to identify remaining challenges. This work, in turn, opens an avenue for transparent decision-making in irony detection.
+DA  - 2026/02//
+PY  - 2026
+DO  - 10.1109/TAI.2025.3579452
+VL  - 7
+IS  - 2
+SP  - 740
+EP  - 754
+J2  - IEEE Transactions on Artificial Intelligence
+SN  - 2691-4581
+KW  - Sentiment analysis
+KW  - Social networking (online)
+KW  - Training
+KW  - Feature extraction
+KW  - Scalability
+KW  - Semantics
+KW  - Prompt engineering
+KW  - Cognition
+KW  - Manuals
+KW  - Large language models (LLMs)
+KW  - prompt engineering
+KW  - Zero shot learning
+KW  - zero-shot learning
+ER  - 
+
+TY  - CONF
+TI  - Intent-Driven Insider Threat Detection in Intelligence Analyses
+AU  - E. Santos Jr.
+AU  - H. Nguyen
+AU  - F. Yu
+AU  - K. Kim
+AU  - D. Li
+AU  - J. T. Wilkinson
+AU  - A. Olson
+AU  - R. Jacob
+T2  - 2008 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology
+AB  - When decisions need to be made in government, the intelligence community (IC) is tasked with analyzing the situation. This analysis is based on a huge amount of information and usually under severe time constraints. As such, it is particularly vulnerable to attacks from insiders with malicious intent. A malicious insider may alter, fabricate, or hide critical information in their analytical products, such as reports, in order to interfere with the decision making process. In this paper, we focus on detecting such malicious insiders. Malicious actions such as disinformation tend to be very subtle and thus difficult to detect. Therefore, we employ a user modeling technique to model an insider based on logged information and documents accessed while accomplishing an intelligence analysis task. We create a computational model for each insider and apply several detection metrics to analyze this model as it changes over time. If any deviation of behavior is detected, alerts can be issued. A pilot test revealed that the computed deviations had a high correlation with insiderspsila cognitive styles. Based on this finding, we designed a framework that minimized the impact of differences in cognitive styles. In our evaluation, we used data collected from intelligence analysts, and simulated malicious insiders based on this data. A high percentage of the simulated malicious insiders were successfully detected.
+C3  - 2008 IEEE/WIC/ACM International Conference on Web Intelligence and Intelligent Agent Technology
+DA  - 2008/12/09/12
+PY  - 2008
+DO  - 10.1109/WIIAT.2008.376
+VL  - 2
+SP  - 345
+EP  - 349
+KW  - Government
+KW  - Computational modeling
+KW  - Decision making
+KW  - insider threats
+KW  - Computational intelligence
+KW  - Educational institutions
+KW  - Information analysis
+KW  - intelligence analyses
+KW  - intelligence community
+KW  - Intelligent agent
+KW  - Interference constraints
+KW  - Jacobian matrices
+KW  - Time factors
+KW  - user modeling
+ER  - 
+
+TY  - JOUR
+TI  - What Will the Future of Cybersecurity Bring Us, and Will It Be Ethical? The Hunt for the Black Swans of Cybersecurity Ethics
+AU  - A. Pawlicka
+AU  - M. Pawlicki
+AU  - R. Kozik
+AU  - M. Choraś
+T2  - IEEE Access
+AB  - Although the ethics of cybersecurity might seem to be simple, the matter can be surprisingly complicated. This paper discusses the results of an extensive study aimed at uncovering the anticipated, emerging ethical issues related to cybersecurity. First, it discusses the “strong signals”, i.e., the “mainstream” worries and concerns. Then, it uncovers the “weak signals” - the hidden, less-discussed concerns, which may still define the upcoming future of the ethics of cybersecurity. The results of the study are also compared to the outcomes of a similar experiment conducted two years ago, in order to see if the upcoming ethical dilemmas anticipated back then have in fact become a reality.
+DA  - 2023///
+PY  - 2023
+DO  - 10.1109/ACCESS.2023.3283791
+VL  - 11
+SP  - 58796
+EP  - 58807
+J2  - IEEE Access
+SN  - 2169-3536
+KW  - Artificial intelligence
+KW  - Ethics
+KW  - Cybersecurity
+KW  - ethics
+KW  - Privacy
+KW  - Computer crime
+KW  - Computer security
+KW  - Data privacy
+KW  - Computer hacking
+KW  - ethical issues
+KW  - weak signals
+ER  - 
+
+TY  - CONF
+TI  - Propaganda Content in Digital Space: Identification Markers
+AU  - V. A. Achkasova
+AU  - N. N. Zhuravleva
+AU  - E. A. Trefilova
+AU  - L. V. Azarova
+T2  - 2019 Communication Strategies in Digital Society Workshop (ComSDS)
+AB  - The article discusses the current forms and channels of propaganda in the network space. Despite the fact that the methods and technologies of propaganda in its classic version are described in detail, in recent decades, the methods of propaganda influence have become more disguised and sophisticated: from the creation of bots in social networks to the fabrication of images and newspaper covers. In such circumstances, it is extremely difficult to distinguish between true and false content, so the problem of selecting criteria for propaganda content is of particular importance today. The aim of the study is to identify the features of propaganda content in a digital society. The objectives of the research project include: the definition of “propaganda content” concept, the forms of its expression, the search for criteria to distinguish propaganda content from other types of information dissemination in social networks. The open materials of such programs as Hamilton 68, Digital Sherlocks, as well as the research of Computational Propaganda Worldwide conducted in Oxford were taken as an object. It is because of these and similar projects that the term “computer propaganda” is firmly entrenched in the scientific lexicon. The research methodology is based on the works of J. Bolsover, F. Howard, and a number of other foreign and domestic authors, indicating the following formats as components of promotional content in online communities: cyberattacks, bot farms, automatic distribution of posts on social networks, theft of data and disinformation. They are usually distributed simultaneously to maximize the coverage of the same information. The main methods of the study were case studies and content analysis. With their help, the case that caused social tension and long-term negative consequences (pension reform of 2018 in Russia) is considered. The analysis of the text format of information about this case, posted on social networks Facebook and Twitter, led to a number of conclusions: the methods used to identify propaganda content, require further serious study. The method of content analysis widely used for this purpose and the relatively recent method of intent analysis, due to the lack of the necessary methodology, are not always able to determine the availability of methods of propaganda influence. The results of the study allow us to state: computer propaganda in the modern world is very effective, including free or very inexpensive distribution. Moreover, the speed and the maximum number of users outreach by propaganda content become major issues. Today, social networks are a real arena of struggle, and the arsenal of propaganda means of influence is increasing exponentially. In these circumstances, the development of propaganda content identification methods can serve as a guarantor of success in the fight. This aspect is especially important in the long term, as in this way you can beat the competition and build the right communication strategy.
+C3  - 2019 Communication Strategies in Digital Society Workshop (ComSDS)
+DA  - 2019/04/10/10
+PY  - 2019
+DO  - 10.1109/COMSDS.2019.8709625
+SP  - 88
+EP  - 92
+KW  - social networks
+KW  - Twitter
+KW  - Internet
+KW  - Tools
+KW  - Tagging
+KW  - computer propaganda
+KW  - digital space
+KW  - Instruments
+KW  - pension reform
+KW  - Pensions
+KW  - political communication
+KW  - propaganda
+ER  - 
+
+TY  - CONF
+TI  - Analyzing Social and Communication Network Structures of Social Bots and Humans
+AU  - T. Khaund
+AU  - K. K. Bandeli
+AU  - M. N. Hussain
+AU  - A. Obadimu
+AU  - S. Al-Khateeb
+AU  - N. Agarwal
+T2  - 2018 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)
+AB  - Recently, several journalistic accounts have suggested that Twitter is becoming a bellwether for mis- and disinformation due to the pervasiveness of bots. These bots are either automated or semi-automated. Understanding the intent and usage of these bots has piqued the scientific curiosity among researchers. To that effect, in this study, we analyze the role of bots in two distinct categories of real-world events, i.e., natural disasters and sports. We collected over 1.2 million tweets that were generated by nearly 800,000 users for Hurricane Harvey, Hurricane Irma, Hurricane Maria, and Mexico Earthquake. We corroborate our analysis by examining bots that engaged with the 2018 Winter Olympics. We collected over 1.4 million tweets generated by nearly 700,000 users based on the hashtags #Olympics2018 and #PyeongChang2018. We examined the social and communication network of bots and humans for the aforementioned events. Our results show distinctive patterns in the network structures of bots when compared with that of humans. Content analysis of the tweets further revealed that bots used hashtags more uniformly than humans, across all the events.
+C3  - 2018 IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)
+DA  - 2018/08/28/31
+PY  - 2018
+DO  - 10.1109/ASONAM.2018.8508665
+SP  - 794
+EP  - 797
+SN  - 2473-991X
+KW  - Twitter
+KW  - Tagging
+KW  - Botnet
+KW  - communication network
+KW  - Communication networks
+KW  - coordination
+KW  - Hurricane Harvey
+KW  - Hurricane Irma
+KW  - Hurricane Maria
+KW  - Hurricanes
+KW  - Mexico Earthquake
+KW  - natural disasters
+KW  - Olympics
+KW  - PyeongChang
+KW  - Social bots
+KW  - social network
+KW  - Sports
+ER  - 
+

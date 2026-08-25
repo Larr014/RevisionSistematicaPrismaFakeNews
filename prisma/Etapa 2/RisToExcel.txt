@@ -1,0 +1,144 @@
+import re
+import pandas as pd
+import sys
+import os
+
+def parse_ris_file(ris_path):
+    """
+    Parsea un archivo RIS y extrae los campos necesarios.
+    """
+    records = []
+    current_record = {}
+    
+    # Mapeo de etiquetas RIS a campos
+    tag_mapping = {
+        'TI': 'Title',
+        'T1': 'Title',
+        'AU': 'Authors',
+        'A1': 'Authors',
+        'PY': 'Year',
+        'Y1': 'Year',
+        'DO': 'DOI',
+        'JO': 'Source',
+        'JF': 'Source',
+        'T2': 'Source',
+        'SO': 'Source',
+        'J2': 'Source',
+        'C3': 'Source',
+    }
+    
+    with open(ris_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+    
+    authors_list = []
+    
+    for line in lines:
+        line = line.strip()
+        
+        # Detectar fin de registro
+        if line == 'ER  -':
+            if current_record:
+                # Unir autores con punto y coma
+                if authors_list:
+                    current_record['Authors'] = '; '.join(authors_list)
+                records.append(current_record)
+                current_record = {}
+                authors_list = []
+            continue
+        
+        # Parsear línea con formato "TAG  - Value"
+        match = re.match(r'^([A-Z][A-Z0-9])\s+-\s+(.*)', line)
+        if match:
+            tag = match.group(1)
+            value = match.group(2).strip()
+            
+            if tag in ('AU', 'A1'):
+                authors_list.append(value)
+            elif tag in tag_mapping:
+                field = tag_mapping[tag]
+                # Solo guardar si no existe (prioridad al primer valor)
+                if field not in current_record:
+                    current_record[field] = value
+    
+    # Por si el último registro no tiene ER
+    if current_record:
+        if authors_list:
+            current_record['Authors'] = '; '.join(authors_list)
+        records.append(current_record)
+    
+    return records
+
+
+def records_to_dataframe(records):
+    """
+    Convierte la lista de registros a un DataFrame con el formato deseado.
+    """
+    columns = ['Title', 'Authors', 'Year', 'DOI', 'Source']
+    
+    rows = []
+    for record in records:
+        row = {col: record.get(col, '') for col in columns}
+        rows.append(row)
+    
+    df = pd.DataFrame(rows, columns=columns)
+    return df
+
+
+def ris_to_excel(ris_path, output_path=None):
+    """
+    Función principal: convierte un archivo RIS a Excel.
+    """
+    # Validar que el archivo existe
+    if not os.path.exists(ris_path):
+        print(f"❌ Error: No se encontró el archivo '{ris_path}'")
+        return
+    
+    # Generar nombre de salida si no se especifica
+    if output_path is None:
+        base = os.path.splitext(ris_path)[0]
+        output_path = f"{base}_output.xlsx"
+    
+    print(f"📂 Leyendo archivo: {ris_path}")
+    
+    # Parsear y convertir
+    records = parse_ris_file(ris_path)
+    
+    if not records:
+        print("⚠️  No se encontraron registros en el archivo.")
+        return
+    
+    df = records_to_dataframe(records)
+    
+    # Guardar Excel con formato
+    with pd.ExcelWriter(output_path, engine='openpyxl') as writer:
+        df.to_excel(writer, index=False, sheet_name='Referencias')
+        
+        # Ajustar ancho de columnas automáticamente
+        worksheet = writer.sheets['Referencias']
+        for col in worksheet.columns:
+            max_length = max(len(str(cell.value or '')) for cell in col)
+            worksheet.column_dimensions[col[0].column_letter].width = min(max_length + 4, 60)
+    
+    print(f"✅ Archivo Excel generado: {output_path}")
+    print(f"📊 Total de registros procesados: {len(df)}")
+    print("\nVista previa:")
+    print(df.to_string(index=False))
+
+
+# ─────────────────────────────────────────────
+# EJECUCIÓN
+# ─────────────────────────────────────────────
+if __name__ == "__main__":
+    
+    # Opción 1: Pasar la ruta como argumento de línea de comandos
+    if len(sys.argv) > 1:
+        ris_path = sys.argv[1]
+        output_path = sys.argv[2] if len(sys.argv) > 2 else None
+        ris_to_excel(ris_path, output_path)
+    
+    # Opción 2: Definir la ruta directamente aquí
+    else:
+        ris_path = input("Ingrese ruta del archivo: ")      # 👈 Cambia esto por tu ruta
+        output_name = input("Ingresa nombre del archivo resultado: ")
+        output_path = f"{output_name}.xlsx" # 👈 Nombre del archivo de salida
+        ris_to_excel(ris_path, output_path)
