@@ -4,7 +4,7 @@
 **Autor:** Luis Rojas Rubio  
 **Afiliación:** Doctorado en Informática, Universidad Americana de Europa   
 **Estado:** Paper en revisión  
-
+**Dashboard:** https://revisionsistematicaprismafakenews.streamlit.app/
 ---
 
 ## Descripción
@@ -130,6 +130,7 @@ py prisma/generar_ambiguous_cases.py
 py prisma/generar_author_contact_log.py
 
 # Visualización interactiva (Streamlit)
+https://revisionsistematicaprismafakenews.streamlit.app/
 py -m streamlit run pipeline/fase2/visor_fase2.py
 ```
 
