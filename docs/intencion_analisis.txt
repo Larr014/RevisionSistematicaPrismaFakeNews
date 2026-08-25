@@ -1,0 +1,269 @@
+====================================================================================================
+I1_FakeNews: Fake News / Desinformacion
+====================================================================================================
+Descripcion: Informacion falsa, engañosa o fabricada
+Tipo:        Negativa
+Prevalencia: 642 articulos (17.96%)
+
+METODOS MAS ASOCIADOS:
+  10 anualAnalysis          330 ( 51.4%)
+  3 Transformers            153 ( 23.8%)
+  9 NLP Traditional         112 ( 17.4%)
+  1 BERT                     76 ( 11.8%)
+  8 RandomForest             66 ( 10.3%)
+
+CO-OCURRENCIA CON OTRAS INTENCIONES:
+  Manipulacion / Control Narrativo         304 ( 47.4%)
+  Polarizacion / Division Social            85 ( 13.2%)
+  Persuasion                                67 ( 10.4%)
+  Emocionalizacion / Apelacion Emocional    34 (  5.3%)
+
+RELEVANCIA PROMEDIO: 0.49/1.0
+  Alta (>=0.7)         226 ( 35.2%)
+  Media (0.4-0.7)      152 ( 23.7%)
+  Baja (<0.4)          264 ( 41.1%)
+
+TOP 5 ANOS (articulos publicados):
+  2025: 122 ( 19.0%)
+  2024:  97 ( 15.1%)
+  2026:  93 ( 14.5%)
+  2022:  75 ( 11.7%)
+  2023:  74 ( 11.5%)
+
+METRICAS DE EVALUACION:
+  3 Accuracy                     272 ( 42.4%)
+  1 Precision Recall             198 ( 30.8%)
+  4 Confusion Matrix              17 (  2.6%)
+  2 AUC ROC                       14 (  2.2%)
+
+
+====================================================================================================
+I2_Manipulation: Manipulacion / Control Narrativo
+====================================================================================================
+Descripcion: Distorsion intencional de hechos o narrativas
+Tipo:        Negativa
+Prevalencia: 434 articulos (12.14%)
+
+METODOS MAS ASOCIADOS:
+  10 anualAnalysis          276 ( 63.6%)
+  3 Transformers             85 ( 19.6%)
+  9 NLP Traditional          67 ( 15.4%)
+  1 BERT                     44 ( 10.1%)
+  6 SV                       36 (  8.3%)
+
+CO-OCURRENCIA CON OTRAS INTENCIONES:
+  Fake News / Desinformacion               304 ( 70.0%)
+  Persuasion                               112 ( 25.8%)
+  Polarizacion / Division Social            96 ( 22.1%)
+  Emocionalizacion / Apelacion Emocional    30 (  6.9%)
+
+RELEVANCIA PROMEDIO: 0.44/1.0
+  Alta (>=0.7)         100 ( 23.0%)
+  Media (0.4-0.7)      123 ( 28.3%)
+  Baja (<0.4)          211 ( 48.6%)
+
+TOP 5 ANOS (articulos publicados):
+  2026: 101 ( 23.3%)
+  2025:  77 ( 17.7%)
+  2024:  64 ( 14.7%)
+  2023:  48 ( 11.1%)
+  2022:  40 (  9.2%)
+
+METRICAS DE EVALUACION:
+  3 Accuracy                     137 ( 31.6%)
+  1 Precision Recall             104 ( 24.0%)
+  4 Confusion Matrix              10 (  2.3%)
+  2 AUC ROC                        9 (  2.1%)
+
+
+====================================================================================================
+I3_Persuasion: Persuasion
+====================================================================================================
+Descripcion: Convencimiento mediante argumentacion (neutra en valor)
+Tipo:        Neutra/Ambigua
+Prevalencia: 154 articulos (4.31%)
+
+METODOS MAS ASOCIADOS:
+  10 anualAnalysis          134 ( 87.0%)
+  9 NLP Traditional          16 ( 10.4%)
+  3 Transformers             12 (  7.8%)
+  2 GPT                       8 (  5.2%)
+  1 BERT                      5 (  3.2%)
+
+CO-OCURRENCIA CON OTRAS INTENCIONES:
+  Manipulacion / Control Narrativo         112 ( 72.7%)
+  Fake News / Desinformacion                67 ( 43.5%)
+  Polarizacion / Division Social            52 ( 33.8%)
+  Emocionalizacion / Apelacion Emocional    11 (  7.1%)
+
+RELEVANCIA PROMEDIO: 0.36/1.0
+  Alta (>=0.7)          18 ( 11.7%)
+  Media (0.4-0.7)       43 ( 27.9%)
+  Baja (<0.4)           93 ( 60.4%)
+
+TOP 5 ANOS (articulos publicados):
+  2026:  49 ( 31.8%)
+  2025:  19 ( 12.3%)
+  2024:  15 (  9.7%)
+  2023:  14 (  9.1%)
+  2019:  12 (  7.8%)
+
+METRICAS DE EVALUACION:
+  3 Accuracy                      20 ( 13.0%)
+  1 Precision Recall              10 (  6.5%)
+  4 Confusion Matrix               1 (  0.6%)
+
+
+====================================================================================================
+I4_Clickbait: Clickbait / Sensacionalismo
+====================================================================================================
+Descripcion: Titulares exagerados para obtener clics
+Tipo:        Negativa
+Prevalencia: 8 articulos (0.22%)
+
+METODOS MAS ASOCIADOS:
+  1 BERT                      4 ( 50.0%)
+  10 anualAnalysis            3 ( 37.5%)
+  6 SV                        3 ( 37.5%)
+  4 CNN                       2 ( 25.0%)
+  5 RNN LST                   2 ( 25.0%)
+
+CO-OCURRENCIA CON OTRAS INTENCIONES:
+  Fake News / Desinformacion                 4 ( 50.0%)
+  Manipulacion / Control Narrativo           3 ( 37.5%)
+  Emocionalizacion / Apelacion Emocional     3 ( 37.5%)
+  Polarizacion / Division Social             1 ( 12.5%)
+
+RELEVANCIA PROMEDIO: 0.73/1.0
+  Alta (>=0.7)           5 ( 62.5%)
+  Media (0.4-0.7)        3 ( 37.5%)
+  Baja (<0.4)            0 (  0.0%)
+
+TOP 5 ANOS (articulos publicados):
+  2022:   2 ( 25.0%)
+  2025:   2 ( 25.0%)
+  2021:   2 ( 25.0%)
+  2023:   1 ( 12.5%)
+  2020:   1 ( 12.5%)
+
+METRICAS DE EVALUACION:
+  3 Accuracy                       5 ( 62.5%)
+  1 Precision Recall               4 ( 50.0%)
+  4 Confusion Matrix               1 ( 12.5%)
+
+
+====================================================================================================
+I5_Polarization: Polarizacion / Division Social
+====================================================================================================
+Descripcion: Contenido que exacerba divisiones existentes
+Tipo:        Neutra/Fenomeno
+Prevalencia: 140 articulos (3.92%)
+
+METODOS MAS ASOCIADOS:
+  10 anualAnalysis          109 ( 77.9%)
+  9 NLP Traditional          26 ( 18.6%)
+  3 Transformers             21 ( 15.0%)
+  1 BERT                     11 (  7.9%)
+  6 SV                       10 (  7.1%)
+
+CO-OCURRENCIA CON OTRAS INTENCIONES:
+  Manipulacion / Control Narrativo          96 ( 68.6%)
+  Fake News / Desinformacion                85 ( 60.7%)
+  Persuasion                                52 ( 37.1%)
+  Emocionalizacion / Apelacion Emocional    28 ( 20.0%)
+
+RELEVANCIA PROMEDIO: 0.43/1.0
+  Alta (>=0.7)          23 ( 16.4%)
+  Media (0.4-0.7)       54 ( 38.6%)
+  Baja (<0.4)           63 ( 45.0%)
+
+TOP 5 ANOS (articulos publicados):
+  2026:  26 ( 18.6%)
+  2024:  25 ( 17.9%)
+  2025:  23 ( 16.4%)
+  2023:  19 ( 13.6%)
+  2019:  11 (  7.9%)
+
+METRICAS DE EVALUACION:
+  3 Accuracy                      26 ( 18.6%)
+  1 Precision Recall              20 ( 14.3%)
+  4 Confusion Matrix               2 (  1.4%)
+  2 AUC ROC                        2 (  1.4%)
+
+
+====================================================================================================
+I6_Emotion: Emocionalizacion / Apelacion Emocional
+====================================================================================================
+Descripcion: Manipulacion a traves de emociones
+Tipo:        Neutra/Fenomeno
+Prevalencia: 82 articulos (2.29%)
+
+METODOS MAS ASOCIADOS:
+  10 anualAnalysis           39 ( 47.6%)
+  9 NLP Traditional          23 ( 28.0%)
+  3 Transformers             22 ( 26.8%)
+  1 BERT                     18 ( 22.0%)
+  5 RNN LST                  15 ( 18.3%)
+
+CO-OCURRENCIA CON OTRAS INTENCIONES:
+  Fake News / Desinformacion                34 ( 41.5%)
+  Manipulacion / Control Narrativo          30 ( 36.6%)
+  Polarizacion / Division Social            28 ( 34.1%)
+  Persuasion                                11 ( 13.4%)
+
+RELEVANCIA PROMEDIO: 0.48/1.0
+  Alta (>=0.7)          24 ( 29.3%)
+  Media (0.4-0.7)       25 ( 30.5%)
+  Baja (<0.4)           33 ( 40.2%)
+
+TOP 5 ANOS (articulos publicados):
+  2025:  19 ( 23.2%)
+  2026:  17 ( 20.7%)
+  2024:  13 ( 15.9%)
+  2022:  11 ( 13.4%)
+  2023:  10 ( 12.2%)
+
+METRICAS DE EVALUACION:
+  3 Accuracy                      39 ( 47.6%)
+  1 Precision Recall              30 ( 36.6%)
+  2 AUC ROC                        3 (  3.7%)
+  4 Confusion Matrix               2 (  2.4%)
+
+
+====================================================================================================
+I7_Conspiracy: Teorias de Conspiracion
+====================================================================================================
+Descripcion: Narrativas conspirativas o pseudocientificas
+Tipo:        Negativa
+Prevalencia: 30 articulos (0.84%)
+
+METODOS MAS ASOCIADOS:
+  10 anualAnalysis           27 ( 90.0%)
+  9 NLP Traditional           5 ( 16.7%)
+  3 Transformers              4 ( 13.3%)
+  1 BERT                      2 (  6.7%)
+  8 RandomForest              1 (  3.3%)
+
+CO-OCURRENCIA CON OTRAS INTENCIONES:
+  Fake News / Desinformacion                24 ( 80.0%)
+  Manipulacion / Control Narrativo          17 ( 56.7%)
+  Polarizacion / Division Social            13 ( 43.3%)
+  Persuasion                                 8 ( 26.7%)
+
+RELEVANCIA PROMEDIO: 0.47/1.0
+  Alta (>=0.7)           7 ( 23.3%)
+  Media (0.4-0.7)       12 ( 40.0%)
+  Baja (<0.4)           11 ( 36.7%)
+
+TOP 5 ANOS (articulos publicados):
+  2019:   4 ( 13.3%)
+  2026:   4 ( 13.3%)
+  2025:   4 ( 13.3%)
+  2023:   4 ( 13.3%)
+  2022:   3 ( 10.0%)
+
+METRICAS DE EVALUACION:
+  3 Accuracy                       6 ( 20.0%)
+  1 Precision Recall               3 ( 10.0%)
+
+

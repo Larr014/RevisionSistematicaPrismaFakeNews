@@ -1,0 +1,39 @@
+==============================================================================================================
+RESPUESTAS A PREGUNTAS DE INVESTIGACION - REVISION SISTEMATICA
+==============================================================================================================
+
+RQ1: METODOS (COMPUTACIONALES, NLP, MANUALES)
+--------------------------------------------------------------------------------------------------------------
+   691 ( 19.3%) - M10_ManualAnalysis
+   218 (  6.1%) - M3_Transformers
+   180 (  5.0%) - M9_NLP_Traditional
+   110 (  3.1%) - M8_RandomForest
+   108 (  3.0%) - M1_BERT
+   100 (  2.8%) - M6_SVM
+    91 (  2.5%) - M5_RNN_LSTM
+    83 (  2.3%) - M2_GPT
+    68 (  1.9%) - M4_CNN
+    51 (  1.4%) - M7_NaiveBayes
+
+RQ2: BINARIO vs GRANULAR
+--------------------------------------------------------------------------------------------------------------
+Sin intenciones:              2738 ( 76.6%)
+BINARIO (1 intencion):         372 ( 10.4%)
+GRANULAR (2-6 intenciones):    465 ( 13.0%)
+
+RQ3: DIMENSIONES DE INTENCIONES
+--------------------------------------------------------------------------------------------------------------
+   642 ( 18.0%) - I1_FakeNews
+   434 ( 12.1%) - I2_Manipulation
+   154 (  4.3%) - I3_Persuasion
+   140 (  3.9%) - I5_Polarization
+    82 (  2.3%) - I6_Emotion
+    30 (  0.8%) - I7_Conspiracy
+     8 (  0.2%) - I4_Clickbait
+
+RQ4-5: LIMITACIONES Y CARACTERISTICAS
+--------------------------------------------------------------------------------------------------------------
+Manual Analysis prevalencia: 19.3%
+Deep Learning prevalencia: 13.5% (BERT+GPT+Transformers+CNN+LSTM)
+Relevancia promedio: 0.24/1.0
+

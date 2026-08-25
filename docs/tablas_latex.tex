@@ -1,0 +1,109 @@
+% ============================================================
+% TABLAS EN FORMATO LATEX - PARA COMPILACION DIRECTA EN OVERLEAF
+% ============================================================
+
+\usepackage{float}  % Para [H] positioning
+\usepackage{array}  % Para tablas avanzadas
+
+
+\begin{table}[H]
+\centering
+\caption{Distribución de Métodos Específicos Identificados}
+\label{tab:latex_metodos}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Método} & \textbf{N} & \textbf{\%} \\
+\hline
+Manual & 691 & 19.3\% \\
+Transformers & 218 & 6.1\% \\
+NLP Trad. & 180 & 5.0\% \\
+Random Forest & 110 & 3.1\% \\
+BERT & 108 & 3.0\% \\
+SVM & 100 & 2.8\% \\
+RNN/LSTM & 91 & 2.5\% \\
+GPT & 83 & 2.3\% \\
+CNN & 68 & 1.9\% \\
+Naive Bayes & 51 & 1.4\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Distribución de Intenciones Comunicativas Detectadas}
+\label{tab:latex_intenciones}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Intención} & \textbf{N} & \textbf{\%} \\
+\hline
+Fake News & 642 & 18.0\% \\
+Manipulación & 434 & 12.1\% \\
+Persuasión & 154 & 4.3\% \\
+Polarización & 140 & 3.9\% \\
+Emoción & 82 & 2.3\% \\
+Conspiración & 30 & 0.8\% \\
+Clickbait & 8 & 0.2\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Evolución Temporal: Enfoque Binario vs. Granular (2018-2026)}
+\label{tab:latex_temporal}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Año} & \textbf{Total} & \textbf{Binario} & \textbf{Granular} & \textbf{\% Granular} \\
+\hline
+2018 & 74 & 63 & 11 & 14.9\% \\
+2019 & 140 & 110 & 30 & 21.4\% \\
+2020 & 170 & 155 & 15 & 8.8\% \\
+2021 & 265 & 234 & 31 & 11.7\% \\
+2022 & 307 & 260 & 47 & 15.3\% \\
+2023 & 348 & 294 & 54 & 15.5\% \\
+2024 & 486 & 418 & 68 & 14.0\% \\
+2025 & 522 & 434 & 88 & 16.9\% \\
+2026 & 1078 & 984 & 94 & 8.7\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Estudios por Plataforma Digital}
+\label{tab:latex_plataformas}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Plataforma} & \textbf{N} & \textbf{\%} \\
+\hline
+Twitter/X & 241 & 6.7\% \\
+Facebook & 212 & 5.9\% \\
+Noticias & 200 & 5.6\% \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{Limitaciones Metodológicas Identificadas}
+\label{tab:latex_limitaciones}
+\begin{tabular}{|l|c|p{5cm}|}
+\hline
+\textbf{Limitación} & \textbf{Impacto} & \textbf{Descripción} \\
+\hline
+Automatización insuficiente & Alto & Manual Analysis prevalece en granularidad (61.6\%) \\
+\hline
+Baja relevancia granular & Medio & 0.48 vs 0.52 (binario) \\
+\hline
+Cobertura incompleta & Alto & 76.6\% sin intención detectada \\
+\hline
+Métodos especializados & Medio & Sin solución universal \\
+\hline
+Integración emocional & Medio-Alto & Solo 2.3\% integra emoción \\
+\hline
+\end{tabular}
+\end{table}
+
+% ============================================================
+% FIN DE TABLAS
+% ============================================================

@@ -1,0 +1,99 @@
+===============================================
+INSTRUCCIONES PARA CARGAR EN OVERLEAF
+===============================================
+
+ARCHIVO PRINCIPAL:
+- main_v3_overleaf.tex
+
+ARCHIVOS COMPLEMENTARIOS NECESARIOS:
+- TABLAS_README.md (documentación de las 11 tablas)
+
+PASOS PARA OVERLEAF:
+
+1. CREAR NUEVO PROYECTO
+   - Ve a overleaf.com
+   - Clic en "New Project" → "Upload Project"
+   - Carga el archivo ZIP que contiene estos archivos
+
+2. ESTRUCTURA EN OVERLEAF
+   main_v3_overleaf.tex  (archivo principal)
+   ├── references (thebibliography - ya incluidas)
+   ├── tablas/ (JSON files - referenciados pero no compilados)
+   └── figures/ (crear carpeta para PRISMA diagram cuando esté listo)
+
+3. COMPILAR
+   - Compiler: pdfLaTeX
+   - Main file: main_v3_overleaf.tex
+   - Clic en "Recompile"
+
+4. PENDIENTES EN OVERLEAF
+   
+   a) Descomentar figura PRISMA (línea 241):
+      Cambiar:
+      % \includegraphics[width=\columnwidth]{figures/prisma_flow.pdf}
+      
+      Por:
+      \includegraphics[width=\columnwidth]{figures/prisma_flow.pdf}
+      
+      Luego cargar figura en carpeta "figures/"
+   
+   b) Crear archivo de referencias (opcional pero recomendado):
+      - Crear archivo "referencias.bib" en Overleaf
+      - Descomenta línea 437: \bibliography{referencias}
+      - Comenta línea 438-511 (thebibliography manual)
+   
+   c) Referencias a tablas JSON:
+      Las tablas están documentadas en TABLAS_README.md
+      Los archivos JSON están disponibles en:
+      ./tablas/01_*.json ... 11_*.json
+      
+      NO necesitan estar en Overleaf - son para análisis local
+      Las referencias en el paper son puramente textuales
+
+5. DATOS DE LAS TABLAS
+   Ubicación LOCAL: C:\Users\Luis Rojas\.openclaw\workspace\tablas\
+   
+   Si deseas visualizar las tablas en el PDF:
+   - Convierte los JSON a tablas LaTeX (formato tabular)
+   - O incluye tablas como images/PDFs
+   
+   Actualmente están referenciadas como tablas "suplementarias"
+
+6. VALIDACIÓN ANTES DE EXPORTAR
+   - Busca "???" en el PDF (references no resueltas)
+   - Busca errores en el log de compilación
+   - Verifica que todas las citas estén en verde
+
+===============================================
+CONTACTO CON SOPORTE OVERLEAF
+===============================================
+
+Si tienes problemas:
+1. Verifica el compiler sea pdfLaTeX
+2. Revisa errores en "Logs and output files"
+3. Encoding debe ser UTF-8
+4. Paquetes disponibles: ver main_v3_overleaf.tex líneas 10-26
+
+===============================================
+VERSIÓN COMPILADA
+===============================================
+
+Para descargar PDF compilado:
+- Menu Overleaf: "Download PDF"
+- O genera directamente con pdflatex en CLI
+
+Recomendación: Una vez compilado satisfactoriamente en Overleaf,
+descarga el PDF para revisión final antes de enviar a comité.
+
+===============================================
+HISTORIAL Y RESPALDO
+===============================================
+
+Archivos originales disponibles en:
+- Workspace: C:\Users\Luis Rojas\.openclaw\workspace\
+- Datos: ./tablas/ (11 archivos JSON)
+- Documentación: ./TABLAS_README.md
+
+Mantén copias locales antes de hacer cambios en Overleaf.
+
+===============================================
