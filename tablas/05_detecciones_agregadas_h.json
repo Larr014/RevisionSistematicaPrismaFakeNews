@@ -1,0 +1,1493 @@
+{
+  "tipo": "detecciones_agregadas",
+  "fuente": "fase2_relevancia_alta.json",
+  "con_hallazgos_embebidos": true,
+  "patrones_frecuentes": [
+    {
+      "metodos": [
+        "Sin método"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 10,
+      "porcentaje": 3.1,
+      "articulos": [
+        {
+          "id": "articulo_000156",
+          "bibtex_key": "bashardoust2024comparing",
+          "titulo": "Comparing the Willingness to Share for Human-generated vs. AI-generated Fake News",
+          "autores": [
+            "Amirsiavosh Bashardoust",
+            "Stefan Feuerriegel",
+            "Yash Raj Shrestha"
+          ],
+          "year": 2024,
+          "relevancia": 0.8,
+          "hallazgos_nuevos": [
+            "Willingness_to_Share (variable conductual distinta de percepcion de veracidad, correlacion debil r=0.162)",
+            "Comparacion humano-generado vs IA-generado como variable independiente de interes (autoria del contenido, no deteccion algoritmica)",
+            "Cognitive Reflection Test (CRT) como predictor socioeconomico de vulnerabilidad a fake news",
+            "Mann-Whitney-U-test",
+            "Chi-square test para comparar tasas de compartir",
+            "Welch's t-test para tiempos de respuesta y tasas de fallo",
+            "Linear Mixed-Effects Regression con efectos aleatorios a nivel sujeto",
+            "Variance Inflation Factor (VIF) como chequeo de robustez de multicolinealidad"
+          ]
+        },
+        {
+          "id": "articulo_000990",
+          "bibtex_key": "loh2025exploratory",
+          "titulo": "An Exploratory Study of User Perceptions of Information Across Social Media Platforms",
+          "autores": [
+            "Zoe Loh",
+            "Ghazal Zand",
+            "Ahmed Sabbir Arif"
+          ],
+          "year": 2025,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "LinkedIn como plataforma estudiada (no incluida en la lista de valores validos de plataforma)",
+            "Escala Likert de 5 puntos con opcion central 'unsure' en vez de 'neutral'",
+            "Analisis de percepcion a nivel de post individual en lugar de pagina/cuenta/evento",
+            "Correlacion negativa entre educacion/frecuencia de uso y capacidad de deteccion de fake news (usuarios mas educados y frecuentes son menos precisos detectando fake news)"
+          ]
+        },
+        {
+          "id": "articulo_000010",
+          "bibtex_key": "gui2025research",
+          "titulo": "Research on the influence mechanism of heuristic cues of online reviews on news credibility",
+          "autores": [
+            "Chen Gui",
+            "Zhifang He"
+          ],
+          "year": 2025,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "Efecto de verdad ilusoria (illusory truth effect) por exposición repetida a reseñas",
+            "Rasgos de personalidad Big Five (extraversión, responsabilidad) como moderadores de la credibilidad percibida",
+            "Tasa de alienación de confianza (trust alienation rate) - fórmula propia para medir confusión entre noticias verdaderas/falsas",
+            "Modelo Heurístico-Sistemático (Chaiken) aplicado al procesamiento de reseñas en línea"
+          ]
+        },
+        {
+          "id": "articulo_000185",
+          "bibtex_key": "bhagat2025curbing",
+          "titulo": "Curbing Dissemination of Fake News: Role of Information Verification Cost, Trust in Information, Truth-Seeking, and Fake News Awareness on Information Verification Behavior",
+          "autores": [
+            "Sarbottam Bhagat",
+            "Russell R. Torres",
+            "Dan J. Kim"
+          ],
+          "year": 2025,
+          "relevancia": 0.45,
+          "hallazgos_nuevos": [
+            "Perceived Cost of Information Verification (nuevo constructo de costo percibido de verificacion de informacion)",
+            "Truth-Seeking Motive como antecedente psicologico de conciencia de fake news y comportamiento de verificacion",
+            "Aplicacion del Elaboration Likelihood Model (ELM) combinado con Coherence Theory of Truth para explicar verificacion de informacion (no deteccion automatizada)",
+            "Information Verification Behavior como constructo comportamental medido via encuesta (no clasificacion computacional)"
+          ]
+        },
+        {
+          "id": "articulo_003355",
+          "bibtex_key": "kanashina2023fake",
+          "titulo": "Fake news and youngsters' decision journey: An evaluation of the influence of misinformation on social media",
+          "autores": [
+            "Olga Kanashina",
+            "Rubén Huertas Garcia",
+            "Ana Isabel Jiménez-Zarco"
+          ],
+          "year": 2023,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Structural Equation Modeling (SEM) como método de análisis causal, no incluido en las categorías de métodos de ML/NLP listadas",
+            "Media Dependency Theory / Uses and Gratifications Theory / Parasocial Interaction Theory como marcos teóricos explicativos de la aceptación de fake news",
+            "Métricas de ajuste de modelo SEM (R2, CFI, RMSEA, GFI, Chi-cuadrado, AVE, Cronbach's alpha, Composite Reliability) no cubiertas por las métricas D1-D13",
+            "Fake news knowledge (FNK) como variable moderadora del efecto de dependencia de redes sociales sobre la actitud hacia fake news"
+          ]
+        },
+        {
+          "id": "articulo_003397",
+          "bibtex_key": "bayrak2025does",
+          "titulo": "Does reflection increase accuracy rather than bias in the assessments of political fake news?",
+          "autores": [
+            "Fatih Bayrak",
+            "Inci Boyacioglu",
+            "Onurcan Yilmaz"
+          ],
+          "year": 2025,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Debiasing training como técnica de manipulación experimental para activar el pensamiento reflexivo",
+            "Cognitive Reflection Test (CRT) como medida psicométrica de reflexión",
+            "Motivated Reasoning Account (MRA) vs Reflective Reasoning Account (RRA) como marcos teóricos rivales",
+            "Truth discernment score (diferencia entre precisión de noticias falsas y verdaderas) como métrica psicológica",
+            "Manipulación de saliencia de identidad política (priming) como factor experimental adicional"
+          ]
+        },
+        {
+          "id": "articulo_003109",
+          "bibtex_key": "manez2024impact",
+          "titulo": "Impact of fake news on social networks during COVID-19 pandemic in Spain",
+          "autores": [
+            "María Teresa Macarro Máñez",
+            "Antonia Moreno Cano",
+            "Fernando Díez"
+          ],
+          "year": 2024,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Coeficiente de correlación de Pearson como métrica estadística no incluida en el listado de métricas (D1-D13)",
+            "Clasificación manual de noticias por checkers humanos en categorías: 'viral disinformation', 'explanatory', 'fact-checking on public figure', 'fact-checking on media' (no se emplea ningún método computacional/ML de clasificación automática)",
+            "Metodología mixta con focus group cualitativo como complemento al análisis cuantitativo, poco frecuente en estudios centrados en métodos automatizados de detección"
+          ]
+        },
+        {
+          "id": "articulo_003289",
+          "bibtex_key": "lim2023xai",
+          "titulo": "XAI in Automated Fact-Checking? The Benefits Are Modest and There's No One-Explanation-Fits-All",
+          "autores": [
+            "Gionnieve Lim",
+            "Simon T. Perrault"
+          ],
+          "year": 2023,
+          "relevancia": 0.45,
+          "hallazgos_nuevos": [
+            "Framework de evaluacion de usuario propuesto con 5 cualidades: Usefulness, Ease of Understanding, Accuracy, Trustworthiness, Design",
+            "XAI reduce la varianza de los juicios de veracidad (mayor confianza/dependencia en la explicacion) aunque no cambia el promedio de acuerdo",
+            "Preferencias polarizadas entre explicaciones graficas/basadas en contenido (LIME, SHAP, Attention) vs textuales/basadas en contexto (Comments, Evidence)",
+            "Riesgo de 'gaming' del sistema: explicaciones basadas en features podrian permitir a actores maliciosos manipular el texto para evadir la deteccion",
+            "Pruebas estadisticas: Kruskal-Wallis, Mann-Whitney U, Fligner-Killeen (comparacion de varianzas), Aligned Rank Transform con correccion Benjamini-Hochberg"
+          ]
+        },
+        {
+          "id": "articulo_001636",
+          "bibtex_key": "ribeiro2022health",
+          "titulo": "Health communication about COVID-19 and Diabetes Mellitus in social media: true and false",
+          "autores": [
+            "Thalita da Silva Ribeiro",
+            "Gabrielly Stechi",
+            "Paola Cristina de Castro",
+            "Angelina Lettiere Viana"
+          ],
+          "year": 2022,
+          "relevancia": 0.45,
+          "hallazgos_nuevos": [
+            "Análisis temático de contenido cualitativo manual (no computacional) para clasificar publicaciones en cuatro categorías: falsa, en estudio, incorrecta/apresurada (hasty) y verdadera",
+            "Clasificación basada en contraste con evidencia científica y notas de verificación institucionales, sin uso de algoritmos de NLP/ML"
+          ]
+        },
+        {
+          "id": "articulo_002125",
+          "bibtex_key": "stefkovics2026beliefs",
+          "titulo": "Beliefs and sharing intentions of human- and AI-generated fake news: Evidence from 27 European countries",
+          "autores": [
+            "Ádám Stefkovics",
+            "Dömötör Gere"
+          ],
+          "year": 2026,
+          "relevancia": 0.6,
+          "hallazgos_nuevos": [
+            "Comparacion de percepcion humana entre noticias falsas generadas por IA (GPT-4o) vs generadas por humanos, sin uso de clasificadores automaticos",
+            "Uso del Cognitive Reflection Test (CRT) como moderador de la susceptibilidad a desinformacion",
+            "Diseno experimental cross-nacional (27 paises) para medir heterogeneidad geografica en percepcion de desinformacion sobre la guerra Rusia-Ucrania",
+            "Generacion de imagenes sinteticas mediante IA como parte del estimulo experimental (multimodal misinformation)"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Sin método"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 6,
+      "porcentaje": 1.9,
+      "articulos": [
+        {
+          "id": "articulo_000991",
+          "bibtex_key": "biselli2025mitigating",
+          "titulo": "Mitigating Misinformation Sharing on Social Media through Personalised Nudging",
+          "autores": [
+            "Tom Biselli",
+            "Katrin Hartwig",
+            "Christian Reuter"
+          ],
+          "year": 2025,
+          "relevancia": 0.65,
+          "hallazgos_nuevos": [
+            "Personalised Nudging (nudges adaptados a rasgos psicometricos del usuario)",
+            "General Decision-Making Style (GDMS) inventory",
+            "Need for Cognition (NFC) inventory",
+            "Consideration of Future Consequences (CFC) inventory",
+            "Nudge_Hiding",
+            "Nudge_JustInTimePrompt",
+            "Nudge_SocialComparison",
+            "Nudge_RaisingVisibilityOfUserActions",
+            "Nudge_DifferentViewpoints"
+          ]
+        },
+        {
+          "id": "articulo_002012",
+          "bibtex_key": "arechar2023understandin",
+          "titulo": "Understanding and combatting misinformation across 16 countries on six continents",
+          "autores": [
+            "Antonio A. Arechar",
+            "Jennifer Allen",
+            "Adam J. Berinsky",
+            "Rocky Cole",
+            "Ziv Epstein",
+            "Kiran Garimella",
+            "Andrew Gully",
+            "Jackson G. Lu",
+            "Robert M. Ross",
+            "Michael N. Stagnaro",
+            "Yunhao Zhang",
+            "Gordon Pennycook",
+            "David G. Rand"
+          ],
+          "year": 2023,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "accuracy nudge (intervencion de prompt de precision)",
+            "consejos de alfabetizacion digital como intervencion",
+            "wisdom of crowds para discernimiento de veracidad",
+            "estilo cognitivo analitico como predictor psicologico de discernimiento de verdad",
+            "comparacion transcultural de factores psicologicos de susceptibilidad a desinformacion"
+          ]
+        },
+        {
+          "id": "articulo_000857_The Phase Model of Misinformation Interv",
+          "bibtex_key": "heuer2025phase",
+          "titulo": "The Phase Model of Misinformation Interventions",
+          "autores": [
+            "Hendrik Heuer"
+          ],
+          "year": 2025,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "Phase_Model_of_Misinformation_Interventions (marco conceptual de tres fases: antes de creacion, antes de identificacion, despues de identificacion)",
+            "Thematic_Analysis_of_Interviews (analisis cualitativo tematico, no computacional)",
+            "Expert_Survey_Likert_Agreement (encuesta Likert a expertos sobre utilidad percibida de intervenciones, no clasificacion automatica)",
+            "Intervenciones_no_tecnicas: Media_Literacy, Education_in_Schools, Face-to-Face_Conversations, Crowdsourced_Assessment, Deleting_Misinformation, Labeling_News_Sources, Labeling_News_Articles, Finding_Sources_for_Claims, Finding_Information_about_Claims, Finding_Information_about_Sources, Source_Comparison"
+          ]
+        },
+        {
+          "id": "articulo_003278",
+          "bibtex_key": "panizza2022lateral",
+          "titulo": "Lateral reading and monetary incentives to spot disinformation about science",
+          "autores": [
+            "Folco Panizza",
+            "Piero Ronzani",
+            "Carlo Martini",
+            "Simone Mattavelli",
+            "Tiffany Morisseau",
+            "Matteo Motterlini"
+          ],
+          "year": 2022,
+          "relevancia": 0.45,
+          "hallazgos_nuevos": [
+            "Incentivos monetarios como intervencion conductual para mejorar la evaluacion de veracidad (no es un metodo automatizado de deteccion)",
+            "Pop-up educativo con tecnicas de Civic Online Reasoning (lectura lateral y click restraint) como nudge de alfabetizacion digital",
+            "Analisis de mediacion marginal para evaluar si la adopcion de tecnicas de verificacion media el efecto de las intervenciones sobre la precision"
+          ]
+        },
+        {
+          "id": "articulo_001422",
+          "bibtex_key": "sharevski2024debunkityour",
+          "titulo": "'Debunk-It-Yourself': Health Professionals Strategies for Responding to Misinformation on TikTok",
+          "autores": [
+            "Filipo Sharevski",
+            "Jennifer Vander Loop",
+            "Peter Jachim",
+            "Amy Devine",
+            "Sanchari Das"
+          ],
+          "year": 2024,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Debunk-It-Yourself (paradigma de contra-desinformacion impulsado por usuarios expertos, no por la plataforma)",
+            "Inter-Rater Reliability / Cohen's Kappa como metrica de acuerdo en codificacion cualitativa",
+            "Analisis de codebook cualitativo (12 categorias) para clasificar estrategias de debunking",
+            "Comparacion estructural entre Warning Labels, Community Notes y Debunk-It-Yourself como formas de respuesta a la desinformacion"
+          ]
+        },
+        {
+          "id": "articulo_001431",
+          "bibtex_key": "edelson2021understandin",
+          "titulo": "Understanding Engagement with U.S. (Mis)Information News Sources on Facebook",
+          "autores": [
+            "Laura Edelson",
+            "Minh-Kha Nguyen",
+            "Ian Goldstein",
+            "Oana Goga",
+            "Damon McCoy",
+            "Tobias Lauinger"
+          ],
+          "year": 2021,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Metrica de 'ecosystem-wide engagement' (engagement total agregado por categoria politica y factualidad)",
+            "Metrica de 'publisher/audience engagement' (interacciones por pagina normalizadas por numero de seguidores)",
+            "Metrica de 'per-post engagement' independiente de la pagina publicadora",
+            "Uso de conteos de visualizaciones de video como proxy parcial de impresiones (no disponibles en CrowdTangle)",
+            "Harmonizacion de categorias de partidismo entre NewsGuard y Media Bias/Fact Check en una escala comun de cinco niveles (Far Left a Far Right)"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Sin método"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Manipulación",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 4,
+      "porcentaje": 1.2,
+      "articulos": [
+        {
+          "id": "articulo_001971",
+          "bibtex_key": "soares2023falling",
+          "titulo": "Falling for Russian Propaganda: Understanding the Factors that Contribute to Belief in Pro-Kremlin Disinformation on Social Media",
+          "autores": [
+            "Felipe Bonow Soares",
+            "Anatoliy Gruzd",
+            "Philip Mai"
+          ],
+          "year": 2023,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "Regresion lineal stepwise sobre datos de encuesta (no clasificacion automatica de texto/ML)",
+            "Desinformacion patrocinada por el estado (state-sponsored disinformation) como categoria de intencion no listada explicitamente",
+            "Confianza en gobiernos extranjeros (Rusia, Ucrania, EEUU, Canada) como predictor de creencia en desinformacion",
+            "Efecto de verdad ilusoria (illusory truth effect) como marco teorico de exposicion-creencia"
+          ]
+        },
+        {
+          "id": "articulo_001421",
+          "bibtex_key": "moran2023sending",
+          "titulo": "Sending News Back Home: Misinformation Lost in Transnational Social Networks",
+          "autores": [
+            "Rachel E. Moran",
+            "Sarah Nguyễn",
+            "Linh Bui"
+          ],
+          "year": 2023,
+          "relevancia": 0.8,
+          "hallazgos_nuevos": [
+            "Thematic Inductive Analysis (Braun & Clarke) - codificacion cualitativa manual, no computacional",
+            "Analisis de moderacion/flagging de contenido por parte de la plataforma (Facebook) como variable de estudio",
+            "Vietnamita como idioma especifico no cubierto por las categorias linguisticas disponibles (L1-L6)",
+            "Community-led fact-checking (ej. Viet Fact Check) como mecanismo de mitigacion no listado en categorias de intervencion"
+          ]
+        },
+        {
+          "id": "articulo_001446",
+          "bibtex_key": "feng2023examining",
+          "titulo": "Examining the Impact of Provenance-Enabled Media on Trust and Accuracy Perceptions",
+          "autores": [
+            "K. J. Kevin Feng",
+            "Nick Ritchie",
+            "Pia Blumenthal",
+            "Andy Parsons",
+            "Amy X. Zhang"
+          ],
+          "year": 2023,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Cumulative Link Mixed Models (CLMM) para variables ordinales (trust, perceived accuracy)",
+            "C2PA (Coalition for Content Provenance and Authenticity) - estandar tecnico de procedencia criptografica de medios",
+            "Wilcoxon signed-rank test, Mann-Whitney U Test, Kruskal-Wallis test con correccion de Bonferroni",
+            "Diseno de UI de indicadores de procedencia (provenance indicator / provenance details panel)",
+            "Variable de 'Correction' (correccion hacia la verdad tras exposicion a intervencion)"
+          ]
+        },
+        {
+          "id": "articulo_001806",
+          "bibtex_key": "fischer2026zoneflooding",
+          "titulo": "Zone-flooding, public confusion, and signal detection theory: A theoretical framework and registered report",
+          "autores": [
+            "Helen Fischer",
+            "Vladimir Bojarskich",
+            "Carolin-Theresa Ziemer",
+            "Winnifred Louis",
+            "Markus Huff",
+            "Tobias Rothmund"
+          ],
+          "year": 2026,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "Signal Detection Theory (SDT) aplicada a confusión pública y desinformación",
+            "Metacognitive sensitivity (meta-d') y metacognitive efficiency (Mratio) como medidas de confusión metacognitiva",
+            "Truth bias (c) como sesgo de respuesta ante información",
+            "Zone-flooding como estrategia de desinformación distinta a la propaganda clásica (dilución vs. dominio del espacio informativo)",
+            "Diseño experimental tipo Registered Report con manipulación de entornos informativos ruidosos vs. verdaderos/falsos"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Sin método"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News"
+      ],
+      "cantidad_articulos": 4,
+      "porcentaje": 1.2,
+      "articulos": [
+        {
+          "id": "articulo_002689",
+          "bibtex_key": "luo2023fake",
+          "titulo": "Fake News Sharing Among Weibo Users in China",
+          "autores": [
+            "Dong Luo",
+            "Nur Haniz Mohd Nor",
+            "Kai Ge Bai",
+            "Azian Muhamad Adzmi",
+            "Siti Syuhada Abdul Rais"
+          ],
+          "year": 2023,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "Situational Motivation (motivación situacional como predictor de compartir fake news)",
+            "Information Seeking Behaviour (búsqueda de información como predictor)",
+            "Agenda-Setting Theory aplicada a fake news sharing",
+            "Weibo como plataforma específica no cubierta por la lista de plataformas (P1-P10)"
+          ]
+        },
+        {
+          "id": "articulo_003277",
+          "bibtex_key": "jr2021what",
+          "titulo": "What Is (Fake) News? Analyzing News Values (and More) in Fake Stories",
+          "autores": [
+            "Edson C. Tandoc Jr.",
+            "Ryan J. Thomas",
+            "Lauren Bishop"
+          ],
+          "year": 2021,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "Analisis de 'newsness' (grado en que fake news imita convenciones periodisticas): valores noticiosos (timeliness, negativity, prominence, impact), tema, formato periodistico (piramide invertida, listicle, cronologia, narrativa) y objetividad (ausencia de opinion del autor)",
+            "Uso de Krippendorff's alpha como metrica de confiabilidad entre codificadores (no listada en metricas estandar de ML)",
+            "Comparacion cuantitativa directa entre articulos de fake news y articulos de un medio tradicional (The New York Times) sobre las mismas variables de contenido"
+          ]
+        },
+        {
+          "id": "articulo_000684",
+          "bibtex_key": "chua2025factchecking",
+          "titulo": "Fact-checking flagging in the age of AI",
+          "autores": [
+            "Alton Y.K. Chua",
+            "Jiayu Han"
+          ],
+          "year": 2025,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "conspiracy_mentality (mentalidad conspirativa como factor moderador de aceptacion de etiquetas de IA)",
+            "national_context_cultural_dimension (contexto nacional/cultural como variable moderadora, medida via nacionalidad)",
+            "pre-test_post-test_experimental_design (diseno experimental de exposicion a flag de IA, no un metodo de clasificacion automatica)"
+          ]
+        },
+        {
+          "id": "articulo_002157",
+          "bibtex_key": "diehl2022testing",
+          "titulo": "Testing the cognitive involvement hypothesis on social media: 'News finds me' perceptions, partisanship, and fake news credibility",
+          "autores": [
+            "Trevor Diehl",
+            "Sangwon Lee"
+          ],
+          "year": 2022,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "News Finds Me Perception (NFMP) como estilo cognitivo de bajo esfuerzo",
+            "Cognitive Involvement Hypothesis",
+            "Partisan motivated reasoning como moderador de la credibilidad de fake news"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News"
+      ],
+      "cantidad_articulos": 3,
+      "porcentaje": 0.9,
+      "articulos": [
+        {
+          "id": "articulo_000151",
+          "bibtex_key": "yoshida2024faithful",
+          "titulo": "Faithful Fake News Detection Based on Natural Language Explanation Generation",
+          "autores": [
+            "Ko Yoshida",
+            "Jianwei Zhang"
+          ],
+          "year": 2024,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Generación de explicaciones en lenguaje natural (no numéricas) como alternativa a XAI post-hoc (LIME, SHAP)",
+            "Framework NILE (Natural-language Inference over Label-specific Explanations) adaptado a detección de fake news",
+            "Modelo ESM (Enhanced Sequence Model) con red siamesa BERT + credit score del hablante",
+            "Evaluación de fidelidad (faithfulness) del modelo mediante análisis de sensibilidad a perturbaciones (ERASER/DeYoung et al. 2020)",
+            "Comparación de generadores preentrenados (GPT2-small/medium, T5-small/base, BART-base) evaluados con BERTScore para calidad de explicación generada"
+          ]
+        },
+        {
+          "id": "articulo_000683",
+          "bibtex_key": "zhang2025improved",
+          "titulo": "Improved Uni-Modal Chinese Fake News Detection Leveraging User Comments",
+          "autores": [
+            "Le Zhang",
+            "Xin Zhao"
+          ],
+          "year": 2025,
+          "relevancia": 0.8,
+          "hallazgos_nuevos": [
+            "Weibo (plataforma social china) no esta entre las plataformas predefinidas (P1-P11); se trata de una red social equivalente a Twitter/X en el contexto chino",
+            "Uso de Sentence-BERT/Sentence Transformer (frozen) para generar embeddings fijos de comentarios de usuarios, fusionados via Transformer encoder entrenable con el [CLS] de BERT (arquitectura denominada BERT-ST)",
+            "Comparacion con modelos multimodales (CLIP, CAFE) como baseline aunque el enfoque propio es uni-modal (solo texto)",
+            "Analisis de ablacion sobre numero optimo de comentarios de usuario (M-1) mostrando que ~3 comentarios ya mejoran el rendimiento y que demasiados comentarios (255) degradan el desempeno por ruido"
+          ]
+        },
+        {
+          "id": "articulo_001670",
+          "bibtex_key": "busioc2021what",
+          "titulo": "What are the Latest Fake News in Romanian Politics? An Automated Analysis based on BERT Language Models",
+          "autores": [
+            "Costin Busioc",
+            "Vlad Dumitru",
+            "Stefan Ruseti",
+            "Simina Terian-Dan",
+            "Mihai Dascalu",
+            "Traian Rebedea"
+          ],
+          "year": 2021,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Idioma rumano no cubierto por la lista de linguistica (L_Romanian)",
+            "RoBERT (BERT especifico para rumano) como modelo base especifico no listado explicitamente entre las opciones",
+            "Clasificacion de veracidad politica con etiquetas graduales (verdadero, parcialmente verdadero, parcialmente falso, falso) en lugar de deteccion binaria de fake news"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT",
+        "Método Híbrido"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 3,
+      "porcentaje": 0.9,
+      "articulos": [
+        {
+          "id": "articulo_000161",
+          "bibtex_key": "tong2025dapt",
+          "titulo": "DAPT: Domain-Aware Prompt-Tuning for Multimodal Fake News Detection",
+          "autores": [
+            "Yu Tong",
+            "Weihai Lu",
+            "Xiaoxi Cui",
+            "Yifan Mao",
+            "Zhejun Zhao"
+          ],
+          "year": 2025,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "Domain-Aware Prompt Tuning (multimodal prompt tuning para adaptacion de dominio parametro-eficiente)",
+            "Adaptive Domain Debias Module (desentrelazado de estilo de dominio guiado por contenido)",
+            "Uncertainty-Aware Multimodal Fusion basado en Variational Information Bottleneck",
+            "Multi-view Domain Disentanglement con sub-extractores de caracteristicas"
+          ]
+        },
+        {
+          "id": "articulo_000191",
+          "bibtex_key": "ma2025bridging",
+          "titulo": "Bridging Interests and Truth: Towards Mitigating Fake News with Personalized and Truthful Recommendations",
+          "autores": [
+            "Zihan Ma",
+            "Minnan Luo",
+            "Yiran Hao",
+            "Zhi Zeng",
+            "Xiangzheng Kong",
+            "Jiahao Wang"
+          ],
+          "year": 2025,
+          "relevancia": 0.7,
+          "hallazgos_nuevos": [
+            "Diffusion-based sequential recommendation (denoising diffusion probabilistic model aplicado a recomendacion de noticias)",
+            "Disentanglement de representaciones de autenticidad via Optimal Transport y Sinkhorn-Knopp",
+            "Negative prompting con Classifier-Free Diffusion Guidance para suprimir caracteristicas de fake news",
+            "Fake News Suppression Rate (FNSR@K) como nueva metrica ponderada por posicion",
+            "Real News Priority (1-R) y Real News Ratio (RT@K) como metricas de credibilidad en recomendacion"
+          ]
+        },
+        {
+          "id": "articulo_000204",
+          "bibtex_key": "gu2024gatedvae",
+          "titulo": "GatedVAE: Detecting Multimodal Fake News with Gated Variational AutoEncoder",
+          "autores": [
+            "Yimeng Gu",
+            "Ignacio Castro",
+            "Gareth Tyson"
+          ],
+          "year": 2024,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "Mecanismo de compuerta (gating) para suprimir ruido de entrada por modalidad antes de la fusión multimodal",
+            "Compuerta on/off entrenada mediante reinforcement learning (REINFORCE) para bloquear/pasar modalidad textual",
+            "Experimentos de perturbación textual/visual para diagnosticar sesgo de modalidad en clasificadores multimodales existentes",
+            "Uso de los pesos de la compuerta como señal interpretable para guiar a moderadores humanos hacia la modalidad problemática"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Sin método"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Manipulación",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 3,
+      "porcentaje": 0.9,
+      "articulos": [
+        {
+          "id": "articulo_003130",
+          "bibtex_key": "mahony2024concerns",
+          "titulo": "Concerns about the role of artificial intelligence in journalism, and media manipulation",
+          "autores": [
+            "Simon Mahony",
+            "Qing Chen"
+          ],
+          "year": 2024,
+          "relevancia": 0.4,
+          "hallazgos_nuevos": [
+            "Enfoque dialectico/socratico como metodologia de analisis (no computacional)",
+            "BBC Storyline Ontology como marco de organizacion de noticias automatizadas",
+            "Moravec's Paradox aplicado a la dificultad de automatizar tareas periodisticas",
+            "Explainable AI (XAI) como mecanismo para generar confianza publica",
+            "Caso Cambridge Analytica/Facebook como estudio de manipulacion politica via IA",
+            "Sesgo demografico en reconocimiento facial (Uber Eats, Policia Metropolitana de Londres)"
+          ]
+        },
+        {
+          "id": "articulo_000691",
+          "bibtex_key": "nekessova2025multilevel",
+          "titulo": "Multilevel Annotation Model for Detecting Fake News in Kazakh-Language Media",
+          "autores": [
+            "Anargul Nekessova",
+            "Aksaule Nazymkhan",
+            "Madina Sambetbayeva",
+            "Zhaxybayev Darkhan"
+          ],
+          "year": 2025,
+          "relevancia": 0.6,
+          "hallazgos_nuevos": [
+            "Esquema de anotacion multinivel con 9 categorias y 23 subtipos (CLAIM, EVIDENCE, SOURCE, AUTHOR_INTENT, TARGET_AUDIENCE, DISINFORMATION_TECHNIQUE, TIMESTAMP)",
+            "Categoria AUTHOR_INTENT con subtipos: influence_opinion, spread_fear, political_gain, attract_attention, financial_gain",
+            "Categoria TARGET_AUDIENCE con subtipos: elderly, youth, mothers, rural_population, patriots, ethnic_groups",
+            "Categoria DISINFORMATION_TECHNIQUE con subtipos: clickbait, emotional_pressure, exaggeration, downplaying, scapegoating, misattribution",
+            "Relaciones semanticas entre entidades (HAS_CLAIM, MOTIVATED_BY, TARGETS, REFERS_TO_SOURCE, HAS_TIMESPAN, CONTRADICTED_BY, CATEGORIZED_AS, INFLUENCES, SUPPORTED_BY, SPREADS_VIA) para construccion de grafos logico-semanticos",
+            "Primer corpus anotado manualmente en idioma kazajo con esquema de anotacion de 23 categorias/subtipos"
+          ]
+        },
+        {
+          "id": "articulo_001465",
+          "bibtex_key": "david2025everything",
+          "titulo": "\"Everything is believable\". Credibility of disinformation produced by using AI and the perception of Spanish communication students",
+          "autores": [
+            "García-Marín, David",
+            "Suárez-Álvarez, Rebeca",
+            "García-Jiménez, Antonio"
+          ],
+          "year": 2025,
+          "relevancia": 0.62,
+          "hallazgos_nuevos": [
+            "Hybrid_AI_Human_Edited_FakeNews",
+            "Cognitive_Dissonance_Theory_Applied_to_Fake_News_Perception",
+            "Perceived_Accuracy_as_Predictor_of_Perceived_Truthfulness"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT",
+        "Método Híbrido"
+      ],
+      "intenciones": [
+        "Fake News",
+        "Desinformación",
+        "Rumores"
+      ],
+      "cantidad_articulos": 2,
+      "porcentaje": 0.6,
+      "articulos": [
+        {
+          "id": "articulo_000962",
+          "bibtex_key": "sachan2021scate",
+          "titulo": "SCATE: Shared Cross Attention Transformer Encoders for Multimodal Fake News Detection",
+          "autores": [
+            "Tanmay Sachan",
+            "Nikhil Pinnaparaju",
+            "Manish Gupta",
+            "Vasudeva Varma"
+          ],
+          "year": 2021,
+          "relevancia": 0.7,
+          "hallazgos_nuevos": [
+            "Shared Cross Attention Transformer Encoder (SCATE)",
+            "cross-modal attention scaling (post-level, no token-level)",
+            "dot product self scaling layer",
+            "compact bilinear pooling para fusion multimodal",
+            "analisis de contribucion texto/imagen por instancia"
+          ]
+        },
+        {
+          "id": "articulo_000178",
+          "bibtex_key": "qiu2026mygo",
+          "titulo": "MyGO: Modality-incomplete Fake News Video Detection via Prompt-assisted Modality Disentangling Model",
+          "autores": [
+            "Mingjie Qiu",
+            "Zhiyi Tan",
+            "Bing-Kun Bao"
+          ],
+          "year": 2026,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "Incomplete Multimodal Learning (IML) - aprendizaje multimodal con modalidades faltantes de forma incierta/dinamica",
+            "Modality Disentanglement (desenredo de representaciones en partes compartidas y especificas por modalidad)",
+            "Missing-prompt guided attention (prompts explicitos que marcan combinaciones de modalidades faltantes)",
+            "Event-level contrastive learning (aprendizaje contrastivo supervisado a nivel de evento para compensar informacion faltante)",
+            "Video-based Fake News Detection (VFND) como area especifica distinta de deteccion de fake news basada en texto"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT",
+        "Graph Neural Network",
+        "Método Híbrido"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 2,
+      "porcentaje": 0.6,
+      "articulos": [
+        {
+          "id": "articulo_000165_Bridging Thoughts and Words Graph-Based",
+          "bibtex_key": "wang2025bridging",
+          "titulo": "Bridging Thoughts and Words: Graph-Based Intent-Semantic Joint Learning for Fake News Detection",
+          "autores": [
+            "Zhengjia Wang",
+            "Qiang Sheng",
+            "Danding Wang",
+            "Beizhe Hu",
+            "Juan Cao"
+          ],
+          "year": 2025,
+          "relevancia": 0.8,
+          "hallazgos_nuevos": [
+            "Modelado conjunto de intencion y semantica mediante grafos heterogeneos (Intent-Semantic Joint Modeling)",
+            "Extraccion de intencion no estructurada via LLM (coarse-to-fine intent modeling) en lugar de clasificacion fija",
+            "Alineacion dinamica basada en nodos pseudo (Dynamic Pathway-based Graph Alignment) para fusion bidireccional semantica-intencion",
+            "Framework de analisis de intencion basado en teoria interdisciplinaria (belief, plan, desire, outcome) aplicado a deteccion de noticias falsas",
+            "Deteccion temprana de fake news sin depender de contexto social o propagacion (basado solo en contenido individual del articulo)"
+          ]
+        },
+        {
+          "id": "articulo_000199",
+          "bibtex_key": "dai2023eegcn",
+          "titulo": "EEGCN: Event Evolutionary Graph Comparison Network for Multi-Modal Fake News Detection",
+          "autores": [
+            "Xiang Dai",
+            "Yue Wang",
+            "Xin Liu",
+            "Dan Song",
+            "Zhaobo Juan",
+            "Shengze Wang",
+            "Liangyu Lu",
+            "Haibo Liu",
+            "Jing Shen"
+          ],
+          "year": 2023,
+          "relevancia": 0.72,
+          "hallazgos_nuevos": [
+            "Plataforma Weibo (red social china) no incluida explicitamente en el listado de plataformas (P1-P11)",
+            "Metodo especifico: Event Evolutionary Graph Comparison Network (grafo evolutivo de eventos comparado con cadenas de eventos extraidas del texto), no cubierto por las categorias M1-M21",
+            "Uso de CLIP (modelo de vision-lenguaje) como codificador para enlazar nodos de texto e imagen en el grafo",
+            "Uso de GAT (Graph Attention Network) como mecanismo especifico dentro de la categoria de grafos"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT",
+        "Graph Neural Network",
+        "Método Híbrido"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News"
+      ],
+      "cantidad_articulos": 2,
+      "porcentaje": 0.6,
+      "articulos": [
+        {
+          "id": "articulo_000179_Graph with Sequence Broad-Range Semanti",
+          "bibtex_key": "yin2025graph",
+          "titulo": "Graph with Sequence: Broad-Range Semantic Modeling for Fake News Detection",
+          "autores": [
+            "Junwei Yin",
+            "Min Gao",
+            "Kai Shu",
+            "Wentao Li",
+            "Yinqiu Huang",
+            "Zongwei Wang"
+          ],
+          "year": 2025,
+          "relevancia": 0.65,
+          "hallazgos_nuevos": [
+            "bi-level optimization para denoising conjunto de estructura y caracteristicas",
+            "edge weight inference mechanism basado en similitud coseno",
+            "semantic feature diversification via KL-divergence entre codificador de grafo y de secuencia"
+          ]
+        },
+        {
+          "id": "articulo_000217",
+          "bibtex_key": "yang2025macro",
+          "titulo": "A Macro- and Micro-Hierarchical Transfer Learning Framework for Cross-Domain Fake News Detection",
+          "autores": [
+            "Xuankai Yang",
+            "Yan Wang",
+            "Xiuzhen Zhang",
+            "Shoujin Wang",
+            "Huaxiong Wang",
+            "Kwok Yan Lam"
+          ],
+          "year": 2025,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "Adversarial autoencoder-based disentanglement (veracity-relevant vs veracity-irrelevant, domain-shared vs domain-specific features)",
+            "Co-attention mechanism para relaciones a nivel de oracion en el contenido",
+            "GPT-2 fine-tuned para embeddings de contenido de noticias",
+            "GPT-4o mini usado como baseline LLM ligero para deteccion de fake news",
+            "Modelado de 'common users' (usuarios compartidos entre dominios) para transferencia de conocimiento de engagement"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Sin método"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Manipulación",
+        "Desinformación",
+        "Rumores"
+      ],
+      "cantidad_articulos": 2,
+      "porcentaje": 0.6,
+      "articulos": [
+        {
+          "id": "articulo_003205",
+          "bibtex_key": "samaras2026under",
+          "titulo": "Under New Stewardship: Affective–Algorithmic Dynamics of Conspiracy Memes on X during the 2024 US Election",
+          "autores": [
+            "Georgios Samaras"
+          ],
+          "year": 2026,
+          "relevancia": 0.45,
+          "hallazgos_nuevos": [
+            "Marco teórico Affective-Algorithmic Memetic Circulation (AAMC) que vincula análisis multimodal (composición visual, tipografía, intertextualidad) con amplificación algorítmica/de recomendación",
+            "Mecanismos de 'softening' (suavización mediante humor/ironía), 'legitimisation' (apropiación de textos culturales) y 'dissonance' (yuxtaposición texto-imagen paradójica) como estrategias retóricas específicas para normalizar contenido conspirativo",
+            "Análisis del rol dual de un propietario de plataforma como creador de memes y diseñador de las reglas de moderación/algoritmo ('owner-influencer')",
+            "No emplea métodos computacionales de ML/NLP ni métricas cuantitativas de desempeño; es un estudio cualitativo de análisis de contenido/discurso visual"
+          ]
+        },
+        {
+          "id": "articulo_000808",
+          "bibtex_key": "scantamburlo2026scoping",
+          "titulo": "A Scoping Review of Misinformation Research: Definitions, Conceptualizations, and Measurement Approaches",
+          "autores": [
+            "Teresa Scantamburlo",
+            "Fabiana Zollo"
+          ],
+          "year": 2026,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "Tipologia de definicion operacional de desinformacion: content-based, source-based, unspecified",
+            "Aplicacion del concepto de 'Ballung concepts' (Neurath) a la ambiguedad definicional de la desinformacion",
+            "Diagrama Sankey WHO-WHAT-HOW-WHY que mapea disciplina -> definicion -> metodo -> objetivo de investigacion",
+            "Esquema de codificacion de 9 categorias (terminologia, definicion conceptual, definicion operacional, clasificacion, proposito, datos, metodos, alcance geografico, alcance temporal, area tematica) util como marco de referencia para revisiones sistematicas similares"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Ensemble",
+        "Análisis Estilométrico",
+        "Gradient Boosting",
+        "SVM",
+        "Random Forest",
+        "NLP Tradicional"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Desinformación",
+        "Sátira"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000001",
+          "bibtex_key": "yang2024stylometryba",
+          "titulo": "Stylometry-based Fake News Classification Using Text Mining Techniques",
+          "autores": [
+            "Hsin-Chang Yang",
+            "Yi-Ling Hung",
+            "Ling-Ciao Wang"
+          ],
+          "year": 2024,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "AdaBoost como clasificador especifico (no cubierto explicitamente por las categorias de metodo listadas)",
+            "XGBoost como clasificador especifico de gradient boosting",
+            "MTLD (Measure of Textual Lexical Diversity) y Yule's K como metricas de diversidad lexica",
+            "Puntajes de legibilidad (Flesch Reading Ease, Flesch-Kincaid, Gunning Fog, Coleman-Liau, Automated Readability Index) como caracteristicas estructurales",
+            "Deteccion de 'informalidad' mediante frecuencia de palabras indecentes y 'incertidumbre' mediante palabras de cobertura (hedging words) como caracteristicas de contenido",
+            "Clasificacion de intencion de noticias en cuatro categorias segun dos ejes: intencion de engano del autor y calidad de la informacion (Satire, Hoax, Propaganda, Trusted)"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "LSTM/RNN",
+        "Graph Neural Network",
+        "Ensemble",
+        "Regresión Logística",
+        "Naive Bayes",
+        "SVM",
+        "Random Forest"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Desinformación",
+        "Rumores"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000003_Meta-Path-based Fake News Detection Leve",
+          "bibtex_key": "cui2021metapathbase",
+          "titulo": "Meta-Path-based Fake News Detection Leveraging Multi-level Social Context Information",
+          "autores": [
+            "Jian Cui",
+            "Kwanwoo Kim",
+            "Seung Ho Na",
+            "Seungwon Shin"
+          ],
+          "year": 2021,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "Meta-Path como mecanismo para preservar información social multinivel sin pérdida en grafos heterogéneos",
+            "Encoding de instancias de Meta-Path usando métodos de embedding de tripletas de knowledge graphs (TransE, RotatE, ConvE)",
+            "Distinción empírica entre patrones de propagación temporal de desinformación (spikes periódicos, intencional) vs. misinformación (similar a noticias reales, no intencional)",
+            "Hetero-SCAN es inductivo: puede generar embeddings para noticias, usuarios o publishers no vistos en entrenamiento"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Graph Neural Network",
+        "M18_SemanticAnalysis",
+        "Regresión Logística",
+        "NLP Tradicional"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Desinformación",
+        "Contenido Tóxico"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000004",
+          "bibtex_key": "hanley2025substandards",
+          "titulo": "Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit",
+          "autores": [
+            "Hans W. A. Hanley",
+            "Zakir Durumeric"
+          ],
+          "year": 2025,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "LASSO-regularized linear regression para predecir toxicidad de hilos de Reddit",
+            "Regresion binomial negativa inflada en cero (zero-inflated negative binomial regression) para modelar engagement/numero de comentarios",
+            "Exponential Random Graph Model (ERGM) para modelar interacciones toxicas diádicas entre usuarios",
+            "Metodo de embeddings Word2Vec de Waller et al. para estimar partidismo (partisanship) y politicidad (politicalness) de subreddits y usuarios",
+            "Analisis de homofilia y polarizacion afectiva mediante odds ratios de interacciones inter-partidistas vs intra-partidistas"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT",
+        "Método Híbrido",
+        "NLP Tradicional"
+      ],
+      "intenciones": [
+        "Contenido Tóxico"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000005",
+          "bibtex_key": "duong2024fusion",
+          "titulo": "Fusion Network for Multimodal Hate Speech Detection",
+          "autores": [
+            "Phuc H. Duong",
+            "Truc T. Nguyen",
+            "Hien T. Nguyen"
+          ],
+          "year": 2024,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Detección de discurso de odio (hate speech) multimodal texto+imagen, no cubierto explícitamente por la lista de intenciones (se mapeó como ToxicContent)",
+            "Arquitectura de fusión tardía (late fusion) que concatena embeddings de texto e imagen separados por un token artificial [SEP]",
+            "Comparación sistemática entre embeddings context-free (GloVe, fastText) y contextuales (DistilBERT, MPNet) para la misma tarea"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Regresión Logística",
+        "Naive Bayes",
+        "M3_DecisionTree",
+        "SVM",
+        "Random Forest"
+      ],
+      "intenciones": [
+        "Fake News",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000129",
+          "bibtex_key": "sangi2023tackling",
+          "titulo": "Tackling Disinformation: Machine Learning Solutions for Fake News Detection",
+          "autores": [
+            "Abdur Rashid Sangi",
+            "Jyothish Nagaram",
+            "Akshara Sudulagunta",
+            "Sai Sandeep Talari",
+            "Vinay Malla",
+            "Murali Krishna Enduri",
+            "Satish Anamalamudi"
+          ],
+          "year": 2023,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Passive Aggressive Classifier (algoritmo de clasificación binaria para aprendizaje online, no incluido en el listado de métodos específicos, obtuvo el mejor desempeño junto con SVM)"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT",
+        "Método Híbrido"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000130",
+          "bibtex_key": "nguyen2025fusing",
+          "titulo": "Fusing Headline and Content with Dual-BERT and Weighted Fusion for Fake News Detection",
+          "autores": [
+            "Son Thanh Nguyen",
+            "Trong Thua Huynh",
+            "Tuan Anh Le"
+          ],
+          "year": 2025,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Dual-BERT: dos encoders BERT independientes y afinados por separado para titular y contenido",
+            "Weighted Score Fusion a nivel de probabilidad (p_fusion = alpha*p_content + (1-alpha)*p_headline) sin capas de fusion adicionales",
+            "Umbralización basada en validación aplicada uniformemente a todos los modelos (unimodales y fusion) para comparación justa",
+            "Manejo de articulos largos via ventana deslizante con solapamiento y mean-pooling por chunk"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Transformer",
+        "BERT",
+        "M17_TopicModeling",
+        "Regresión Logística",
+        "Análisis Estilométrico",
+        "Naive Bayes",
+        "M3_DecisionTree",
+        "Gradient Boosting",
+        "K-Nearest Neighbors",
+        "SVM",
+        "Random Forest",
+        "NLP Tradicional"
+      ],
+      "intenciones": [
+        "Fake News"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000132",
+          "bibtex_key": "canhasi2022albanian",
+          "titulo": "Albanian Fake News Detection",
+          "autores": [
+            "Ercan Canhasi",
+            "Rexhep Shijaku",
+            "Erblin Berisha"
+          ],
+          "year": 2022,
+          "relevancia": 0.7,
+          "hallazgos_nuevos": [
+            "Albanian (idioma de bajos recursos, no incluido en la lista linguistica estandar)",
+            "clasificador de dialecto albanes (Tosk vs Gheg) como analisis de robustez",
+            "Clickbait como rasgo distintivo de noticias falsas albanesas",
+            "uso de LSI/LDA para alineacion tematica de noticias falsas con sus contrapartes verdaderas"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "LSTM/RNN",
+        "Método Híbrido",
+        "Red Neuronal"
+      ],
+      "intenciones": [
+        "Fake News"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000133_Enhancing Bangla Fake News Detection Usi",
+          "bibtex_key": "roy2024enhancing",
+          "titulo": "Enhancing Bangla Fake News Detection Using Bidirectional Gated Recurrent Units and Deep Learning Techniques",
+          "autores": [
+            "Utsha Roy",
+            "Taminul Islam",
+            "Mst. Sazia Tahosin",
+            "Md. Mahedi Hassan",
+            "Fahim Imtiaz",
+            "Md Rezwane Sadik",
+            "Yassine Maleh",
+            "Rejwan Bin Sulaiman",
+            "Md. Simul Hasan Talukder"
+          ],
+          "year": 2024,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Idioma Bangla/Bengali no cubierto en la lista de linguistica (L*)",
+            "Arquitectura Bidirectional GRU con GlobalAveragePooling1D",
+            "Arquitecturas hibridas CNN+GRU, CNN+LSTM, CNN+LSTM+GlobalMaxPooling1D"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "LSTM/RNN",
+        "BERT",
+        "M16_Clustering",
+        "Análisis de Sentimiento",
+        "Método Híbrido"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Rumores",
+        "Análisis de Emociones",
+        "Análisis de Polaridad"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000134_SARC Sentiment-Augmented Deep Role Clus",
+          "bibtex_key": "wang2025sarc",
+          "titulo": "SARC: Sentiment-Augmented Deep Role Clustering for Fake News Detection",
+          "autores": [
+            "Jingqing Wang",
+            "Jiaxing Shang",
+            "Rong Xu",
+            "Fei Hao",
+            "Tianjin Huang",
+            "Geyong Min"
+          ],
+          "year": 2025,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "Role differentiation clustering (identificacion no supervisada de roles de usuario como blind followers vs rumor debunkers)",
+            "Cluster prototype vectors aprendibles (role prototype vectors) para modelar cognicion colectiva",
+            "Perdida de clustering dual (intra-class + inter-class) integrada con perdida de clasificacion"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "Método Híbrido",
+        "Red Neuronal"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Desinformación"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000135",
+          "bibtex_key": "tao2025multimodal",
+          "titulo": "Multimodal Consistency Suppression Factor for Fake News Detection",
+          "autores": [
+            "Zhulin Tao",
+            "Runze Zhao",
+            "Xin Shi",
+            "Xingyu Gao",
+            "Xi Wang",
+            "Xianglin Huang"
+          ],
+          "year": 2025,
+          "relevancia": 0.7,
+          "hallazgos_nuevos": [
+            "Multimodal Consistency Suppression Factor (MCSF): mecanismo que reduce el peso de la fusión multimodal cuando la consistencia texto-imagen es alta, para contrarrestar la manipulación deliberada de consistencia por parte de creadores de fake news",
+            "Uso de CLIP como codificador dual (texto e imagen) alineado en el mismo espacio para calcular consistencia intermodal sin supervisión adicional",
+            "Fusión de características basada en VAE que reconstruye las representaciones de CLIP para obtener una representación compartida entre modalidades",
+            "Perturbación gaussiana ('noisy tuning') de los pesos preentrenados de CLIP para mejorar generalización y evitar sobreajuste",
+            "Consideración del riesgo de generación de noticias falsas altamente consistentes mediante IA generativa (AIGC) como amenaza emergente"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "M3_DecisionTree",
+        "K-Nearest Neighbors",
+        "Random Forest"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000137",
+          "bibtex_key": "perez2023design",
+          "titulo": "Design and development of an assisted communication system, using machine learning and natural language processing, for the detection of fake news on Twitter",
+          "autores": [
+            "Brayan Omar Altamirano Perez",
+            "Odalis Dayanna Valencia",
+            "Jose Luis Carrillo Medina"
+          ],
+          "year": 2023,
+          "relevancia": 0.8,
+          "hallazgos_nuevos": [
+            "Chrome_Extension_Detection",
+            "Chatbot_Order_Bot_Integration_IBM_Watson",
+            "Radio_Broadcast_Verification_Workflow"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "Transformer",
+        "BERT",
+        "M17_TopicModeling",
+        "M18_SemanticAnalysis",
+        "Análisis de Sentimiento",
+        "SVM",
+        "Red Neuronal",
+        "NLP Tradicional"
+      ],
+      "intenciones": [
+        "Análisis de Emociones",
+        "Análisis de Polaridad",
+        "Contenido Tóxico"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000138",
+          "bibtex_key": "cignarella2025survey",
+          "titulo": "A Survey on Stereotype Detection in Natural Language Processing",
+          "autores": [
+            "Alessandra Teresa Cignarella",
+            "Anastasia Giachanou",
+            "Els Lefever"
+          ],
+          "year": 2025,
+          "relevancia": 0.55,
+          "hallazgos_nuevos": [
+            "Stereotype Detection (deteccion de estereotipos) como categoria de intencion comunicativa no listada explicitamente, relacionada pero distinta de discurso de odio (mas implicita/normalizada)",
+            "Stereotype Content Model (SCM): clasificacion de estereotipos segun dimensiones de calidez (warmth) y competencia (competence)",
+            "ABC Model (Agency-Beliefs-Communion): extension del SCM anadiendo la dimension de creencias compartidas",
+            "Deteccion de deshumanizacion (dehumanizing language) como fenomeno linguistico relacionado",
+            "Pyramid of Hate: marco conceptual que vincula sesgos/estereotipos con actos de prejuicio, discriminacion y violencia",
+            "Homotransfobia como fenomeno especifico analizado en discurso multilingue sobre X/Twitter"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "M17_TopicModeling",
+        "Análisis de Sentimiento",
+        "Método Híbrido",
+        "Naive Bayes",
+        "SVM"
+      ],
+      "intenciones": [
+        "Evaluación de Credibilidad",
+        "Fake News",
+        "Desinformación",
+        "Rumores",
+        "Análisis de Emociones",
+        "Análisis de Polaridad"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000139",
+          "bibtex_key": "huang2022deep",
+          "titulo": "Deep Learning for Fake News Detection: Theories and Models",
+          "autores": [
+            "Lu Huang"
+          ],
+          "year": 2022,
+          "relevancia": 0.65,
+          "hallazgos_nuevos": [
+            "RNN (Recurrent Neural Network) usado en el modelo CSI para representacion temporal de articulos",
+            "CNN (Convolutional Neural Network) en FNFNet y FNDNet",
+            "GloVe word embeddings",
+            "doc2vec y SVD para reduccion de caracteristicas",
+            "Co-Attention Network jerarquico (dEFEND) para explicabilidad de la deteccion",
+            "Explainability/interpretabilidad como objetivo de deteccion (no listado como intencion explicita)",
+            "Knowledge graph embedding mencionado como limitacion/desafio para contenido nuevo"
+          ]
+        }
+      ]
+    },
+    {
+      "metodos": [
+        "Deep Learning",
+        "BERT",
+        "Análisis de Sentimiento",
+        "Regresión Logística",
+        "Método Híbrido",
+        "Red Neuronal"
+      ],
+      "intenciones": [
+        "Fake News",
+        "Rumores",
+        "Análisis de Emociones"
+      ],
+      "cantidad_articulos": 1,
+      "porcentaje": 0.3,
+      "articulos": [
+        {
+          "id": "articulo_000142",
+          "bibtex_key": "toughrai2025fake",
+          "titulo": "Fake News Detection via Intermediate-Layer Emotional Representations",
+          "autores": [
+            "Yassine Toughrai",
+            "David Langlois",
+            "Kamel Smaïli"
+          ],
+          "year": 2025,
+          "relevancia": 0.85,
+          "hallazgos_nuevos": [
+            "ILER (Intermediate-Layer Emotional Representation): técnica de embeddings emocionales extraídos de una capa intermedia (64 unidades) de un clasificador BERT de emociones, en vez de usar features emocionales predefinidas/estáticas",
+            "Fusión a nivel de logits (logit-level fusion) entre un clasificador BERT de contenido y un MLP de señales emocionales combinadas (publisher + comentarios) como estrategia de combinación de modelos"
+          ]
+        }
+      ]
+    }
+  ]
+}

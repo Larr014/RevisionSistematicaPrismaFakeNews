@@ -1,0 +1,1742 @@
+{
+  "tipo": "limitaciones_documentadas",
+  "fuente": "fase2_relevancia_alta.json",
+  "fecha_generacion": "2026-07-27",
+  "total_articulos": 324,
+  "limitaciones": [
+    {
+      "id": "LIM1",
+      "nombre": "Granularidad sin soporte metodológico múltiple",
+      "descripcion": "Artículos que detectan ≥2 intenciones pero emplean un único método — la granularidad no está respaldada por diversidad metodológica",
+      "cantidad": 14,
+      "porcentaje": 4.3,
+      "impacto": "Alto",
+      "rq": "RQ2",
+      "articulos_evidencia": [
+        {
+          "id": "articulo_002683",
+          "bibtex_key": "murayama2022annotationsc",
+          "titulo": "Annotation-Scheme Reconstruction for \"Fake News\" and Japanese Fake News Dataset",
+          "year": 2022,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_001960",
+          "bibtex_key": "song2024misleading",
+          "titulo": "Misleading and correcting: characteristics of online misinformation and refutations in China during the COVID-19 pandemic",
+          "year": 2024,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_000979",
+          "bibtex_key": "sharevski2020wikipediabot",
+          "titulo": "WikipediaBot: Machine Learning Assisted Adversarial Manipulation of Wikipedia Articles",
+          "year": 2020,
+          "relevancia": 0.68
+        },
+        {
+          "id": "articulo_001002",
+          "bibtex_key": "prollochs2023mechanisms",
+          "titulo": "Mechanisms of True and False Rumor Sharing in Social Media: Collective Intelligence or Herd Behavior?",
+          "year": 2023,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_001420",
+          "bibtex_key": "sharevski2025user",
+          "titulo": "User Experiences with Abortion Misinformation on TikTok: Encounters, Assessment Strategies, and Response",
+          "year": 2025,
+          "relevancia": 0.62
+        },
+        {
+          "id": "articulo_000905",
+          "bibtex_key": "lu2022effects",
+          "titulo": "The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence",
+          "year": 2022,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000566",
+          "bibtex_key": "chang2024research",
+          "titulo": "Research on the authenticity evaluation and recognition of social media health communication information based on deep learning algorithms",
+          "year": 2024,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_003141",
+          "bibtex_key": "aprin2024effectivenes",
+          "titulo": "The effectiveness of a virtual learning companion for supporting the critical judgment of social media content",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003293",
+          "bibtex_key": "wecel2023artificial",
+          "titulo": "Artificial intelligence—friend or foe in fake news campaigns",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000491",
+          "bibtex_key": "uddin2021fighting",
+          "titulo": "Fighting Against Fake News During Pandemic Era: Does Providing Related News Help Student Internet Users to Detect COVID-19 Misinformation?",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001618",
+          "bibtex_key": "egler2024extreme",
+          "titulo": "Extreme Right Technopolitical Network and Democracy in Brazil",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000578",
+          "bibtex_key": "pidikiti2020understandin",
+          "titulo": "Understanding How Readers Determine the Legitimacy of Online News Articles in the Era of Fake News",
+          "year": 2020,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_001638",
+          "bibtex_key": "arginano2021rol",
+          "titulo": "El rol de fact-checkers de los influencers españoles de la alimentación en Instagram",
+          "year": 2021,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_001001",
+          "bibtex_key": "evangelatos2025perturbation",
+          "titulo": "A Perturbation-Theoretic Model for Fact-Checker Deployment in Dynamic Disinformation Networks",
+          "year": 2025,
+          "relevancia": 0.4
+        }
+      ]
+    },
+    {
+      "id": "LIM2",
+      "nombre": "Alta relevancia sin clasificación de intención",
+      "descripcion": "Artículos que superan el umbral de relevancia pero no asignan ninguna intención comunicativa",
+      "cantidad": 0,
+      "porcentaje": 0.0,
+      "impacto": "Alto",
+      "rq": "Pregunta Principal",
+      "articulos_evidencia": []
+    },
+    {
+      "id": "LIM3",
+      "nombre": "Sesgo monolingüe (solo inglés)",
+      "descripcion": "Artículos exclusivamente en inglés sin transferencia a otros idiomas — limita generalización de los métodos",
+      "cantidad": 171,
+      "porcentaje": 52.8,
+      "impacto": "Medio-Alto",
+      "rq": "RQ3",
+      "articulos_evidencia": [
+        {
+          "id": "articulo_002020",
+          "bibtex_key": "dash2025persuasive",
+          "titulo": "The persuasive potential of AI-paraphrased information at scale",
+          "year": 2025,
+          "relevancia": 0.92
+        },
+        {
+          "id": "articulo_000958_Down the Rabbit Hole Detecting Online E",
+          "bibtex_key": "govers2021down",
+          "titulo": "Down the Rabbit Hole: Detecting Online Extremism, Radicalisation, and Politicised Hate Speech",
+          "year": 2021,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_001967_Enabling Contextual Soft Moderation on S",
+          "bibtex_key": "paudel2024enabling",
+          "titulo": "Enabling Contextual Soft Moderation on Social Media through Contrastive Textual Deviation",
+          "year": 2024,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000174",
+          "bibtex_key": "sakib2025understandin",
+          "titulo": "Understanding News Consumers' Perceptions of Believability: A Study of Real and Fake News",
+          "year": 2025,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000891_Network-informed Prompt Engineering agai",
+          "bibtex_key": "kanakaris2025networkinfor",
+          "titulo": "Network-informed Prompt Engineering against Organized Astroturf Campaigns under Extreme Class Imbalance",
+          "year": 2025,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000909",
+          "bibtex_key": "joy2024modeling",
+          "titulo": "Modeling the Diffusion of Fake and Real News through the Lens of the Diffusion of Innovations Theory",
+          "year": 2024,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000924",
+          "bibtex_key": "ozcelik2025detecting",
+          "titulo": "Detecting Misinformation on Social Media using Community Insights and Contrastive Learning",
+          "year": 2025,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000592",
+          "bibtex_key": "zhang2020early",
+          "titulo": "Early Automatic Detection of False Information in Twitter Event Considering Occurrence Scale and Time Series",
+          "year": 2020,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000671",
+          "bibtex_key": "guo2023detecting",
+          "titulo": "Detecting Intents of Fake News Using Uncertainty-Aware Deep Reinforcement Learning",
+          "year": 2023,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000003_Meta-Path-based Fake News Detection Leve",
+          "bibtex_key": "cui2021metapathbase",
+          "titulo": "Meta-Path-based Fake News Detection Leveraging Multi-level Social Context Information",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000004",
+          "bibtex_key": "hanley2025substandards",
+          "titulo": "Sub-Standards and Mal-Practices: Misinformation's Role in Insular, Polarized, and Toxic Interactions on Reddit",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000965",
+          "bibtex_key": "lu2025understandin",
+          "titulo": "Understanding the Effects of Large Language Model (LLM)-driven Adversarial Social Influences in Online Information Spread",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001942",
+          "bibtex_key": "clara2026digital",
+          "titulo": "Digital divide and artificial intelligence for health",
+          "year": 2026,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001961",
+          "bibtex_key": "paudel2022lambretta",
+          "titulo": "LAMBRETTA: Learning to Rank for Twitter Soft Moderation",
+          "year": 2022,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000163",
+          "bibtex_key": "ham2025integrating",
+          "titulo": "Integrating Semantic, Sentiment, and Object-Level Cues for Multimodal Video-Based Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000175",
+          "bibtex_key": "reuben2024leveraging",
+          "titulo": "Leveraging Exposure Networks for Detecting Fake News Sources",
+          "year": 2024,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000190",
+          "bibtex_key": "kim2025revisiting",
+          "titulo": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_003189",
+          "bibtex_key": "mehta2021tackling",
+          "titulo": "Tackling Fake News Detection by Interactively Learning Representations using Graph Neural Networks",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_003228",
+          "bibtex_key": "qasim2022finetuned",
+          "titulo": "A Fine-Tuned BERT-Based Transfer Learning Approach for Text Classification",
+          "year": 2022,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_003265",
+          "bibtex_key": "silva2023what",
+          "titulo": "What Makes Disinformation Ads Engaging? A Case Study of Facebook Ads from the Russian Active Measures Campaign",
+          "year": 2023,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_003381",
+          "bibtex_key": "suarezlledo2025unraveling",
+          "titulo": "Unraveling the Use of Disinformation Hashtags by Social Bots During the COVID-19 Pandemic: Social Networks Analysis",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000860_Subverting the Jewtocracy Online Anti",
+          "bibtex_key": "chandra2021subverting",
+          "titulo": "\"Subverting the Jewtocracy\": Online Antisemitism Detection Using Multimodal Deep Learning",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000862",
+          "bibtex_key": "prakash2024unified",
+          "titulo": "A Unified Framework for Analyzing Textual Context and Intent in Social Media",
+          "year": 2024,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000879",
+          "bibtex_key": "felemban2025exaggeration",
+          "titulo": "Exaggeration-based Fake Cybersecurity News Detection",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000890",
+          "bibtex_key": "ali2021pandemic",
+          "titulo": "Pandemic rumor identification on social networking sites: A case study of COVID-19",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000947",
+          "bibtex_key": "peskine2023analyzing",
+          "titulo": "Analyzing COVID-Related Social Discourse on Twitter using Emotion, Sentiment, Political Bias, Stance, Veracity and Conspiracy Theories",
+          "year": 2023,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000953",
+          "bibtex_key": "geissler2024analyzing",
+          "titulo": "Analyzing the Strategy of Propaganda using Inverse Reinforcement Learning: Evidence from the 2022 Russian Invasion of Ukraine",
+          "year": 2024,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_002691",
+          "bibtex_key": "hayawi2022antivax",
+          "titulo": "ANTi-Vax: a novel Twitter dataset for COVID-19 vaccine misinformation detection",
+          "year": 2022,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_003116",
+          "bibtex_key": "mehta2022tackling",
+          "titulo": "Tackling Fake News Detection by Continually Improving Social Context Representations using Graph Neural Networks",
+          "year": 2022,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001426_TrollHunter Evader Automated Detectio",
+          "bibtex_key": "jachim2020trollhunter",
+          "titulo": "TrollHunter [Evader]: Automated Detection [Evasion] of Twitter Trolls During the COVID-19 Pandemic",
+          "year": 2020,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000213",
+          "bibtex_key": "zhu2024propagation",
+          "titulo": "Propagation Structure-Aware Graph Transformer for Robust and Interpretable Fake News Detection",
+          "year": 2024,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000217",
+          "bibtex_key": "yang2025macro",
+          "titulo": "A Macro- and Micro-Hierarchical Transfer Learning Framework for Cross-Domain Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000489",
+          "bibtex_key": "spezzano2021thats",
+          "titulo": "That's Fake News! Investigating How Readers Identify the Reliability of News When Provided Title, Image, Source Bias, and Full Articles",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000800",
+          "bibtex_key": "chen2021mmcovar",
+          "titulo": "MMCoVaR: Multimodal COVID-19 Vaccine Focused Data Repository for Fake News Detection and a Baseline Architecture for Classification",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000808",
+          "bibtex_key": "scantamburlo2026scoping",
+          "titulo": "A Scoping Review of Misinformation Research: Definitions, Conceptualizations, and Measurement Approaches",
+          "year": 2026,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001664",
+          "bibtex_key": "hajli2022social",
+          "titulo": "Social Bots and the Spread of Disinformation in Social Media: The Challenges of Artificial Intelligence",
+          "year": 2022,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001689_Misinformation detection on YouTube usin",
+          "bibtex_key": "jagtap2021misinformati",
+          "titulo": "Misinformation Detection on YouTube Using Video Captions",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001755",
+          "bibtex_key": "ozgobek2022fake",
+          "titulo": "Fake News Detection by Weakly Supervised Learning Based on Content Features",
+          "year": 2022,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_003285",
+          "bibtex_key": "torgheh2021detecting",
+          "titulo": "A Novel Method for Detecting Fake news: Deep Learning Based on Propagation Path Concept",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000911",
+          "bibtex_key": "sikosana2024comparative",
+          "titulo": "A Comparative Study of Hybrid Models in Health Misinformation Text Classification",
+          "year": 2024,
+          "relevancia": 0.82
+        },
+        {
+          "id": "articulo_000156",
+          "bibtex_key": "bashardoust2024comparing",
+          "titulo": "Comparing the Willingness to Share for Human-generated vs. AI-generated Fake News",
+          "year": 2024,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_001399",
+          "bibtex_key": "govers2023promptgancus",
+          "titulo": "Prompt-GAN–Customisable Hate Speech and Extremist Datasets via Radicalised Neural Language Models",
+          "year": 2023,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000177",
+          "bibtex_key": "khan2023fake",
+          "titulo": "Fake News Detection over the Social Media by using Machine Learning Techniques: A Systematic Literature Review",
+          "year": 2023,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_003169",
+          "bibtex_key": "nithya2023metaheuristi",
+          "titulo": "Meta-heuristic Searched-Ensemble Learning for fake news detection with optimal weighted feature selection approach",
+          "year": 2023,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_003223",
+          "bibtex_key": "lotto2022characteriza",
+          "titulo": "Characterization of False or Misleading Fluoride Content on Instagram: Infodemiology Study",
+          "year": 2022,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_003308",
+          "bibtex_key": "mehta2023interactivel",
+          "titulo": "Interactively Learning Social Media Representations Improves News Source Factuality Detection",
+          "year": 2023,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_003364",
+          "bibtex_key": "charqueroballester2021different",
+          "titulo": "Different types of COVID-19 misinformation have different emotional valence on Twitter",
+          "year": 2021,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000926",
+          "bibtex_key": "mazid2022climate",
+          "titulo": "Climate Change Myths Detection Using Dynamically Weighted Ensemble Based Stance Classifier",
+          "year": 2022,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000202",
+          "bibtex_key": "hu2025llmgenerated",
+          "titulo": "LLM-Generated Fake News Induces Truth Decay in News Ecosystem: A Case Study on Neural News Recommendation",
+          "year": 2025,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000203",
+          "bibtex_key": "liu2024decoupled",
+          "titulo": "Decoupled User Preference Enhanced Fake News Detection: Investigating the Function of Decoupled User Preferences in Improving Fake News Detection Algorithms",
+          "year": 2024,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000843",
+          "bibtex_key": "bailurkar2021detecting",
+          "titulo": "Detecting Bots to Distinguish Hate Speech on Social Media",
+          "year": 2021,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000847_Irony Detection Reasoning and Understa",
+          "bibtex_key": "yi2025irony",
+          "titulo": "Irony Detection, Reasoning and Understanding in Zero-shot Learning",
+          "year": 2025,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000689",
+          "bibtex_key": "ma2025teacherstude",
+          "titulo": "A Teacher-Student Model for Multimodal Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000825",
+          "bibtex_key": "theophilo2023authorship",
+          "titulo": "Authorship Attribution of Social Media Messages",
+          "year": 2023,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_001452",
+          "bibtex_key": "rubio2025framework",
+          "titulo": "Un framework para caracterizar Fake News en términos de emociones",
+          "year": 2025,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_002083",
+          "bibtex_key": "saeidnia2026generative",
+          "titulo": "Generative AI and health misinformation: production, propagation, and mitigation—a systematic review",
+          "year": 2026,
+          "relevancia": 0.78
+        },
+        {
+          "id": "articulo_000197",
+          "bibtex_key": "zhou2025gsf",
+          "titulo": "GS2F: Multimodal Fake News Detection Utilizing Graph Structure and Guided Semantic Fusion",
+          "year": 2025,
+          "relevancia": 0.78
+        },
+        {
+          "id": "articulo_000145_Fake News in Sheeps Clothing Robust Fa",
+          "bibtex_key": "wu2024fake",
+          "titulo": "Fake News in Sheep's Clothing: Robust Fake News Detection Against LLM-Empowered Style Attacks",
+          "year": 2024,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_003196",
+          "bibtex_key": "irmak2025integration",
+          "titulo": "A novel integration of multiple learning methods for detecting misleading information from different datasets during the pandemic",
+          "year": 2025,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_000205",
+          "bibtex_key": "mundra2023automated",
+          "titulo": "An Automated Data-driven Machine Intelligence Framework for Mining Knowledge To Classify Fake News Using NLP",
+          "year": 2023,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_001423",
+          "bibtex_key": "boumber2024llms",
+          "titulo": "LLMs for Explainable Few-shot Deception Detection",
+          "year": 2024,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_000624",
+          "bibtex_key": "kulkarni2025cyber",
+          "titulo": "Cyber Social Threats: A Data-centric AI Perspective",
+          "year": 2025,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_002169",
+          "bibtex_key": "hua2023multimodal",
+          "titulo": "Multimodal fake news detection through data augmentation-based contrastive learning",
+          "year": 2023,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_000985",
+          "bibtex_key": "kaati2022machine",
+          "titulo": "A Machine Learning Approach to Identify Toxic Language in the Online Space",
+          "year": 2022,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_001414",
+          "bibtex_key": "chao2024analyzing",
+          "titulo": "An Approach for Analyzing the Spread of Misinformation through Diffusion Patterns in Social Networks",
+          "year": 2024,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_000192",
+          "bibtex_key": "bojjireddy2021machine",
+          "titulo": "Machine Learning Approach to Detect Fake News, Misinformation in COVID-19 Pandemic",
+          "year": 2021,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_003331",
+          "bibtex_key": "passaro2022incontext",
+          "titulo": "In-context annotation of topic-oriented datasets of fake news: A case study on the notre-dame fire event",
+          "year": 2022,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_000888",
+          "bibtex_key": "khasnis2021machine",
+          "titulo": "A Machine Learning Approach for Sentiment Analysis to Nurture Mental Health Amidst COVID-19",
+          "year": 2021,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_000599",
+          "bibtex_key": "grewal2025beyond",
+          "titulo": "Beyond Text: Leveraging Vision-Language Models for Misinformation Detection",
+          "year": 2025,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_000661",
+          "bibtex_key": "ahmad2023managing",
+          "titulo": "Managing Healthcare Infodemic by deep learning in providing healthcare services",
+          "year": 2023,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_001700",
+          "bibtex_key": "dandrea2026linguistic",
+          "titulo": "Linguistic insights, media mechanisms and role of AI in dissemination and impact of disinformation",
+          "year": 2026,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_000012",
+          "bibtex_key": "mirzaei2022this",
+          "titulo": "Is this Question Real? Dataset Collection on Perceived Intentions and Implicit Attack Detection",
+          "year": 2022,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_003177",
+          "bibtex_key": "bernardo2025spreadshot",
+          "titulo": "SPREADSHOT: Analysis of fake news spreading through topic modeling and bipartite weighted graphs",
+          "year": 2025,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_000187_Heterogeneous Subgraph Transformer for F",
+          "bibtex_key": "zhang2024heterogeneou",
+          "titulo": "Heterogeneous Subgraph Transformer for Fake News Detection",
+          "year": 2024,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_000528",
+          "bibtex_key": "oza2021deep",
+          "titulo": "Deep Learning Driven System to Analyze Reliability of COVID Infodemic and News Articles",
+          "year": 2021,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_000979",
+          "bibtex_key": "sharevski2020wikipediabot",
+          "titulo": "WikipediaBot: Machine Learning Assisted Adversarial Manipulation of Wikipedia Articles",
+          "year": 2020,
+          "relevancia": 0.68
+        },
+        {
+          "id": "articulo_001002",
+          "bibtex_key": "prollochs2023mechanisms",
+          "titulo": "Mechanisms of True and False Rumor Sharing in Social Media: Collective Intelligence or Herd Behavior?",
+          "year": 2023,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000167",
+          "bibtex_key": "shen2025gamed",
+          "titulo": "GAMED: Knowledge Adaptive Multi-Experts Decoupling for Multimodal Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000179_Graph with Sequence Broad-Range Semanti",
+          "bibtex_key": "yin2025graph",
+          "titulo": "Graph with Sequence: Broad-Range Semantic Modeling for Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_003161",
+          "bibtex_key": "przybya2021when",
+          "titulo": "When classification accuracy is not enough: Explaining news credibility assessment",
+          "year": 2021,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_003310",
+          "bibtex_key": "maathuis2023social",
+          "titulo": "Social Media Manipulation Awareness through Deep Learning based Disinformation Generation",
+          "year": 2023,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000913",
+          "bibtex_key": "ravi2025alert",
+          "titulo": "ALERT: Active Learning and Explainable AI for Robust Threat Detection in Telegram",
+          "year": 2025,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000956",
+          "bibtex_key": "berhoum2023intelligent",
+          "titulo": "An Intelligent Approach Based on Cleaning up of Inutile Contents for Extremism Detection and Classification in Social Networks",
+          "year": 2023,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000846",
+          "bibtex_key": "shah2022distinguishi",
+          "titulo": "Distinguishing Fake and Real News of Twitter Data with the help of Machine Learning Techniques",
+          "year": 2022,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000211",
+          "bibtex_key": "sharma2025hybrid",
+          "titulo": "A Novel Hybrid Algorithm for Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_001503",
+          "bibtex_key": "hussain2024hate",
+          "titulo": "Hate speech against women and immigrants: A comparative analysis of machine learning and text embedding techniques",
+          "year": 2024,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_001605",
+          "bibtex_key": "rubio2022una",
+          "titulo": "Una comparación empírica de algoritmos de aprendizaje automático versus aprendizaje profundo para la detección de noticias falsas en redes sociales",
+          "year": 2022,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_001420",
+          "bibtex_key": "sharevski2025user",
+          "titulo": "User Experiences with Abortion Misinformation on TikTok: Encounters, Assessment Strategies, and Response",
+          "year": 2025,
+          "relevancia": 0.62
+        },
+        {
+          "id": "articulo_000147",
+          "bibtex_key": "wang2024bots",
+          "titulo": "Bots Shield Fake News: Adversarial Attack on User Engagement Based Fake News Detection",
+          "year": 2024,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000152",
+          "bibtex_key": "yong2023explainabili",
+          "titulo": "Explainability in NLP model: Detection of Covid-19 Twitter Fake News",
+          "year": 2023,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000153",
+          "bibtex_key": "ahmed2026attack",
+          "titulo": "A New Attack Surface: XAI-guided Adversarial Comment Generation with LLMs to Attack Fake News Detectors",
+          "year": 2026,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000188",
+          "bibtex_key": "raj2023true",
+          "titulo": "True and Fair: Robust and Unbiased Fake News Detection via Interpretable Machine Learning",
+          "year": 2023,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_003214",
+          "bibtex_key": "essa2023fake",
+          "titulo": "Fake news detection based on a hybrid BERT and LightGBM models",
+          "year": 2023,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000905",
+          "bibtex_key": "lu2022effects",
+          "titulo": "The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence",
+          "year": 2022,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000943",
+          "bibtex_key": "la2022multimodal",
+          "titulo": "Multimodal cheapfakes Detection by Utilizing Image Captioning for Global Context",
+          "year": 2022,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_003111",
+          "bibtex_key": "munusamy2024psychologica",
+          "titulo": "Psychological factors contributing to the creation and dissemination of fake news among social media users: a systematic review",
+          "year": 2024,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000474",
+          "bibtex_key": "thirumuruganathan2021intervene",
+          "titulo": "To Intervene or Not To Intervene: Cost based Intervention for Combating Fake News",
+          "year": 2021,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000632",
+          "bibtex_key": "ding2026feature",
+          "titulo": "Feature Engineering in the Transformer Era: A Controlled Study on Toxic Comment Classification",
+          "year": 2026,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000001",
+          "bibtex_key": "yang2024stylometryba",
+          "titulo": "Stylometry-based Fake News Classification Using Text Mining Techniques",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000005",
+          "bibtex_key": "duong2024fusion",
+          "titulo": "Fusion Network for Multimodal Hate Speech Detection",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000129",
+          "bibtex_key": "sangi2023tackling",
+          "titulo": "Tackling Disinformation: Machine Learning Solutions for Fake News Detection",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000130",
+          "bibtex_key": "nguyen2025fusing",
+          "titulo": "Fusing Headline and Content with Dual-BERT and Weighted Fusion for Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000151",
+          "bibtex_key": "yoshida2024faithful",
+          "titulo": "Faithful Fake News Detection Based on Natural Language Explanation Generation",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000155",
+          "bibtex_key": "nagaraja2021fake",
+          "titulo": "Fake News Detection Using Machine Learning Methods",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000158",
+          "bibtex_key": "jr2021fake",
+          "titulo": "Fake News Detection Using Machine Learning",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000961",
+          "bibtex_key": "vaz2024gans",
+          "titulo": "GANs in the Panorama of Synthetic Data Generation Methods",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000981",
+          "bibtex_key": "hartwig2024landscape",
+          "titulo": "The Landscape of User-centered Misinformation Interventions - A Systematic Literature Review",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000990",
+          "bibtex_key": "loh2025exploratory",
+          "titulo": "An Exploratory Study of User Perceptions of Information Across Social Media Platforms",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001410",
+          "bibtex_key": "vu2024enhancing",
+          "titulo": "Enhancing Cheapfake Detection: An Approach Using Prompt Engineering and Interleaved Text-Image Model",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_002006",
+          "bibtex_key": "marie2024moralization",
+          "titulo": "Moralization of Rationality Can Stimulate Sharing of Hostile and False News on Social Media, but Intellectual Humility Inhibits it",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000164",
+          "bibtex_key": "xu2023fuzzy",
+          "titulo": "Fuzzy Deep Hybrid Network for Fake News Detection",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003193",
+          "bibtex_key": "joseph2022covid",
+          "titulo": "COVID-19 Misinformation on Social Media: A Scoping Review",
+          "year": 2022,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003316",
+          "bibtex_key": "purificato2023facade",
+          "titulo": "FACADE: Fake Articles Classification and Decision Explanation",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003321",
+          "bibtex_key": "zeng2024combining",
+          "titulo": "Combining Large Language Models and Crowdsourcing for Hybrid Human-AI Misinformation Detection",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003335",
+          "bibtex_key": "alzaidi2024efficient",
+          "titulo": "An Efficient Fusion Network for Fake News Classification",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003355",
+          "bibtex_key": "kanashina2023fake",
+          "titulo": "Fake news and youngsters' decision journey: An evaluation of the influence of misinformation on social media",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003368",
+          "bibtex_key": "kaczynski2021homados",
+          "titulo": "HOMADOS at SemEval-2021 Task 6: Multi-Task Learning for Propaganda Detection",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003378",
+          "bibtex_key": "liu2021dtn",
+          "titulo": "DTN: Deep triple network for topic specific fake news detection",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003397",
+          "bibtex_key": "bayrak2025does",
+          "titulo": "Does reflection increase accuracy rather than bias in the assessments of political fake news?",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000903",
+          "bibtex_key": "richards2023poster",
+          "titulo": "Poster: Leveraging Data Analysis and Machine Learning to Authenticate Yelp Reviews through User Metadata Patterns",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000949",
+          "bibtex_key": "vohoang2024detecting",
+          "titulo": "Detecting Out-of-Context Media with LLaMa-Adapter V2 and RoBERTa: An Effective Method for Cheapfakes Detection",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000198_Is Less Really More Fake News Detection",
+          "bibtex_key": "cao2025less",
+          "titulo": "Is Less Really More? Fake News Detection with Limited Information",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000200",
+          "bibtex_key": "manya2023exploring",
+          "titulo": "Exploring Advanced Neural Networks for Cross-Corpus Fake News Detection",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000207",
+          "bibtex_key": "altoe2023personalized",
+          "titulo": "Towards a Personalized Online Fake News Taxonomy",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000840",
+          "bibtex_key": "song2021deep",
+          "titulo": "Deep Learning-Based COVID-19 Twitter Analysis",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000856",
+          "bibtex_key": "kardas2021detecting",
+          "titulo": "Detecting Spam Tweets Using Machine Learning and Effective Preprocessing",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001422",
+          "bibtex_key": "sharevski2024debunkityour",
+          "titulo": "'Debunk-It-Yourself': Health Professionals Strategies for Responding to Misinformation on TikTok",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000212",
+          "bibtex_key": "gereme2020fighting",
+          "titulo": "Fighting Fake News Using Deep Learning: Pre-trained Word Embeddings and the Embedding Layer Investigated",
+          "year": 2020,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001429",
+          "bibtex_key": "perez2022call",
+          "titulo": "I call BS: Fraud Detection in Crowdfunding Campaigns",
+          "year": 2022,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001431",
+          "bibtex_key": "edelson2021understandin",
+          "titulo": "Understanding Engagement with U.S. (Mis)Information News Sources on Facebook",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000219",
+          "bibtex_key": "ameli2022fake",
+          "titulo": "AI and Fake News: A Conceptual Framework for Fake News Detection",
+          "year": 2022,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000535",
+          "bibtex_key": "ma2022robust",
+          "titulo": "Towards Robust False Information Detection on Social Networks with Contrastive Learning",
+          "year": 2022,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000563",
+          "bibtex_key": "xue2025machine",
+          "titulo": "Using machine learning for toxic text detection on Android",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000652",
+          "bibtex_key": "seo2024multistage",
+          "titulo": "A Multi-Stage Deep Learning Approach Incorporating Text-Image and Image-Image Comparisons for Cheapfake Detection",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000675",
+          "bibtex_key": "mannan2023empirical",
+          "titulo": "An Empirical Study on Theories of Sentiment Analysis in Relation to Fake News Detection",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000819",
+          "bibtex_key": "afroz2025understandin",
+          "titulo": "Understanding the Threat of Political Deepfakes",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000822",
+          "bibtex_key": "la2025knowledge",
+          "titulo": "Knowledge Graphs and Fine-Grained Visual Features: A Potent Duo Against Cheapfakes",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001446",
+          "bibtex_key": "feng2023examining",
+          "titulo": "Examining the Impact of Provenance-Enabled Media on Trust and Accuracy Perceptions",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001603",
+          "bibtex_key": "darad2023sentimental",
+          "titulo": "Sentimental analysis of COVID-19 twitter data using deep learning and machine learning models",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001614",
+          "bibtex_key": "marquezdiaz2024disinformati",
+          "titulo": "Disinformation and Fake News: The Infodemic in the Global Health Field",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001730",
+          "bibtex_key": "lim2026iffyornot",
+          "titulo": "Iffy-or-Not: Critically Evaluating Potential Misinformation Using Fallacy Detection and Socratic Questioning with LLMs",
+          "year": 2026,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000144",
+          "bibtex_key": "wang2025endtoend",
+          "titulo": "End-to-End Explainable Fake News Detection Via Evidence-Claim Variational Causal Inference",
+          "year": 2025,
+          "relevancia": 0.5
+        },
+        {
+          "id": "articulo_003252",
+          "bibtex_key": "shrivastava2022research",
+          "titulo": "A Research on Fake News Detection Using Machine Learning Algorithm",
+          "year": 2022,
+          "relevancia": 0.5
+        },
+        {
+          "id": "articulo_003396",
+          "bibtex_key": "balakrishnan2021share",
+          "titulo": "To share or not to share – The underlying motives of sharing fake news amidst the COVID-19 pandemic in Malaysia",
+          "year": 2021,
+          "relevancia": 0.5
+        },
+        {
+          "id": "articulo_000842",
+          "bibtex_key": "simpson2022some",
+          "titulo": "Some Hands-on Approaches to Fake Political News Detection",
+          "year": 2022,
+          "relevancia": 0.5
+        },
+        {
+          "id": "articulo_000555_GPT Assisted Annotation of Rhetorical an",
+          "bibtex_key": "hamilton2024gpt",
+          "titulo": "GPT Assisted Annotation of Rhetorical and Linguistic Features for Interpretable Propaganda Technique Detection in News Text",
+          "year": 2024,
+          "relevancia": 0.5
+        },
+        {
+          "id": "articulo_000557",
+          "bibtex_key": "robillard2024critical",
+          "titulo": "Critical Climate Machine: A Visual and Musical Exploration of Climate Misinformation through Machine Learning",
+          "year": 2024,
+          "relevancia": 0.5
+        },
+        {
+          "id": "articulo_001673",
+          "bibtex_key": "xiao2025detecting",
+          "titulo": "Detecting Persuasion Techniques in Online Propaganda: An AI-annotation Intervention",
+          "year": 2025,
+          "relevancia": 0.5
+        },
+        {
+          "id": "articulo_000149",
+          "bibtex_key": "imbwaga2022fake",
+          "titulo": "Fake News Detection Using Machine Learning Algorithms",
+          "year": 2022,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_000977",
+          "bibtex_key": "duong2025resfusionnet",
+          "titulo": "ResFusionNet: A Residual Fusion Network for Multimodal Hate Speech Detection",
+          "year": 2025,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_000978",
+          "bibtex_key": "nguyen2023leveraging",
+          "titulo": "Leveraging Cross-Modals for Cheapfakes Detection",
+          "year": 2023,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_000185",
+          "bibtex_key": "bhagat2025curbing",
+          "titulo": "Curbing Dissemination of Fake News: Role of Information Verification Cost, Trust in Information, Truth-Seeking, and Fake News Awareness on Information Verification Behavior",
+          "year": 2025,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_003205",
+          "bibtex_key": "samaras2026under",
+          "titulo": "Under New Stewardship: Affective–Algorithmic Dynamics of Conspiracy Memes on X during the 2024 US Election",
+          "year": 2026,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_003237",
+          "bibtex_key": "wu2023falsehood",
+          "titulo": "Falsehood and satire on social media: does partisan-motivated reasoning influence fake news sharing?",
+          "year": 2023,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_000955",
+          "bibtex_key": "samuel2021evaluation",
+          "titulo": "Evaluation of Applied Machine Learning for Health Misinformation Detection via Survey of Medical Professionals on Controversial Topics in Pediatrics",
+          "year": 2021,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_003278",
+          "bibtex_key": "panizza2022lateral",
+          "titulo": "Lateral reading and monetary incentives to spot disinformation about science",
+          "year": 2022,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_003289",
+          "bibtex_key": "lim2023xai",
+          "titulo": "XAI in Automated Fact-Checking? The Benefits Are Modest and There's No One-Explanation-Fits-All",
+          "year": 2023,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_000578",
+          "bibtex_key": "pidikiti2020understandin",
+          "titulo": "Understanding How Readers Determine the Legitimacy of Online News Articles in the Era of Fake News",
+          "year": 2020,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_001887",
+          "bibtex_key": "badouch2026emotion",
+          "titulo": "From Emotion to Action: AURORA's Sentiment-Based Model for Tourism Decisions",
+          "year": 2026,
+          "relevancia": 0.45
+        },
+        {
+          "id": "articulo_001971",
+          "bibtex_key": "soares2023falling",
+          "titulo": "Falling for Russian Propaganda: Understanding the Factors that Contribute to Belief in Pro-Kremlin Disinformation on Social Media",
+          "year": 2023,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_000173",
+          "bibtex_key": "li2024analysing",
+          "titulo": "Analysing Psychological Sentiment Prediction Across Modalities: Harnessing Emotion Datasets within Natural Language Processing (NLP)",
+          "year": 2024,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_003366",
+          "bibtex_key": "khanjani2023audio",
+          "titulo": "Audio deepfakes: A survey",
+          "year": 2023,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_003403",
+          "bibtex_key": "kumar2024gated",
+          "titulo": "Gated Recursive and Sequential Deep Hierarchical Encoding for Detecting Incongruent News Articles",
+          "year": 2024,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_003107",
+          "bibtex_key": "dutta2023optimal",
+          "titulo": "Optimal Weighted Extreme Learning Machine for Cybersecurity Fake News Classification",
+          "year": 2023,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_003130",
+          "bibtex_key": "mahony2024concerns",
+          "titulo": "Concerns about the role of artificial intelligence in journalism, and media manipulation",
+          "year": 2024,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_003277",
+          "bibtex_key": "jr2021what",
+          "titulo": "What Is (Fake) News? Analyzing News Values (and More) in Fake Stories",
+          "year": 2021,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_000483",
+          "bibtex_key": "lopez2022artificial",
+          "titulo": "Artificial Intelligence Model to Predict the Virality of Press Articles",
+          "year": 2022,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_000490",
+          "bibtex_key": "bensassi2024integrated",
+          "titulo": "Integrated Approach for Detecting Fake Profiles Utilizing a Hybrid of K-means Clustering with Some Supervised Machine Learning Algorithms",
+          "year": 2024,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_000518",
+          "bibtex_key": "pataranutaporn2025slip",
+          "titulo": "Slip Through the Chat: Subtle Injection of False Information in LLM Chatbot Conversations Increases False Memory Formation",
+          "year": 2025,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_002141",
+          "bibtex_key": "bhandari2025ensemble",
+          "titulo": "Ensemble based Technique to detect Fake News",
+          "year": 2025,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_002157",
+          "bibtex_key": "diehl2022testing",
+          "titulo": "Testing the cognitive involvement hypothesis on social media: 'News finds me' perceptions, partisanship, and fake news credibility",
+          "year": 2022,
+          "relevancia": 0.4
+        }
+      ]
+    },
+    {
+      "id": "LIM4",
+      "nombre": "Falta de especificidad de plataforma",
+      "descripcion": "Artículos sin plataforma específica o con clasificación genérica — dificulta la aplicabilidad contextual",
+      "cantidad": 44,
+      "porcentaje": 13.6,
+      "impacto": "Medio",
+      "rq": "RQ1",
+      "articulos_evidencia": [
+        {
+          "id": "articulo_000194",
+          "bibtex_key": "deng2022detecting",
+          "titulo": "Detecting Fake News on Social Media by CSIBERT",
+          "year": 2022,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000195",
+          "bibtex_key": "zhu2025ken",
+          "titulo": "KEN: Knowledge Augmentation and Emotion Guidance Network for Multimodal Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000859",
+          "bibtex_key": "guo2025evaluating",
+          "titulo": "Evaluating the Zero-Shot Chinese Rumor Detection Capability of Large Language Models Based on Chain-of-Thought Prompting",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000808",
+          "bibtex_key": "scantamburlo2026scoping",
+          "titulo": "A Scoping Review of Misinformation Research: Definitions, Conceptualizations, and Measurement Approaches",
+          "year": 2026,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000156",
+          "bibtex_key": "bashardoust2024comparing",
+          "titulo": "Comparing the Willingness to Share for Human-generated vs. AI-generated Fake News",
+          "year": 2024,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000181",
+          "bibtex_key": "tong2024mmdfnd",
+          "titulo": "MMDFND: Multi-modal Multi-Domain Fake News Detection",
+          "year": 2024,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000683",
+          "bibtex_key": "zhang2025improved",
+          "titulo": "Improved Uni-Modal Chinese Fake News Detection Leveraging User Comments",
+          "year": 2025,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000162",
+          "bibtex_key": "sun2025emotionenhan",
+          "titulo": "Emotion-enhanced Cross-modal Contrastive Learning for Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_000624",
+          "bibtex_key": "kulkarni2025cyber",
+          "titulo": "Cyber Social Threats: A Data-centric AI Perspective",
+          "year": 2025,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_000199",
+          "bibtex_key": "dai2023eegcn",
+          "titulo": "EEGCN: Event Evolutionary Graph Comparison Network for Multi-Modal Fake News Detection",
+          "year": 2023,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_001960",
+          "bibtex_key": "song2024misleading",
+          "titulo": "Misleading and correcting: characteristics of online misinformation and refutations in China during the COVID-19 pandemic",
+          "year": 2024,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_000012",
+          "bibtex_key": "mirzaei2022this",
+          "titulo": "Is this Question Real? Dataset Collection on Perceived Intentions and Implicit Attack Detection",
+          "year": 2022,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_003177",
+          "bibtex_key": "bernardo2025spreadshot",
+          "titulo": "SPREADSHOT: Analysis of fake news spreading through topic modeling and bipartite weighted graphs",
+          "year": 2025,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_000979",
+          "bibtex_key": "sharevski2020wikipediabot",
+          "titulo": "WikipediaBot: Machine Learning Assisted Adversarial Manipulation of Wikipedia Articles",
+          "year": 2020,
+          "relevancia": 0.68
+        },
+        {
+          "id": "articulo_001635",
+          "bibtex_key": "tarullo2022asustar",
+          "titulo": "Asustar para desestabilizar: desinformación sobre la COVID-19 en Argentina y España",
+          "year": 2022,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000905",
+          "bibtex_key": "lu2022effects",
+          "titulo": "The Effects of AI-based Credibility Indicators on the Detection and Spread of Misinformation under Social Influence",
+          "year": 2022,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000566",
+          "bibtex_key": "chang2024research",
+          "titulo": "Research on the authenticity evaluation and recognition of social media health communication information based on deep learning algorithms",
+          "year": 2024,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000632",
+          "bibtex_key": "ding2026feature",
+          "titulo": "Feature Engineering in the Transformer Era: A Controlled Study on Toxic Comment Classification",
+          "year": 2026,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_001410",
+          "bibtex_key": "vu2024enhancing",
+          "titulo": "Enhancing Cheapfake Detection: An Approach Using Prompt Engineering and Interleaved Text-Image Model",
+          "year": 2024,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_002006",
+          "bibtex_key": "marie2024moralization",
+          "titulo": "Moralization of Rationality Can Stimulate Sharing of Hostile and False News on Social Media, but Intellectual Humility Inhibits it",
+          "year": 2024,
+          "relevancia": 0.55
+        }
+      ]
+    },
+    {
+      "id": "LIM5",
+      "nombre": "Limitaciones explícitas reportadas en los propios hallazgos",
+      "descripcion": "Artículos cuyos hallazgos_nuevos mencionan limitaciones, sesgos o gaps — evidencia directa extraída de los PDFs",
+      "cantidad": 35,
+      "porcentaje": 10.8,
+      "impacto": "Alto",
+      "rq": "Pregunta Principal",
+      "articulos_evidencia": [
+        {
+          "id": "articulo_000521",
+          "bibtex_key": "srba2026survey",
+          "titulo": "A Survey on Automatic Credibility Assessment Using Textual Credibility Signals in the Era of Large Language Models",
+          "year": 2026,
+          "relevancia": 0.97
+        },
+        {
+          "id": "articulo_000958_Down the Rabbit Hole Detecting Online E",
+          "bibtex_key": "govers2021down",
+          "titulo": "Down the Rabbit Hole: Detecting Online Extremism, Radicalisation, and Politicised Hate Speech",
+          "year": 2021,
+          "relevancia": 0.9
+        },
+        {
+          "id": "articulo_000161",
+          "bibtex_key": "tong2025dapt",
+          "titulo": "DAPT: Domain-Aware Prompt-Tuning for Multimodal Fake News Detection",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001942",
+          "bibtex_key": "clara2026digital",
+          "titulo": "Digital divide and artificial intelligence for health",
+          "year": 2026,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000190",
+          "bibtex_key": "kim2025revisiting",
+          "titulo": "Revisiting Fake News Detection: Towards Temporality-aware Evaluation by Leveraging Engagement Earliness",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_003265",
+          "bibtex_key": "silva2023what",
+          "titulo": "What Makes Disinformation Ads Engaging? A Case Study of Facebook Ads from the Russian Active Measures Campaign",
+          "year": 2023,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000859",
+          "bibtex_key": "guo2025evaluating",
+          "titulo": "Evaluating the Zero-Shot Chinese Rumor Detection Capability of Large Language Models Based on Chain-of-Thought Prompting",
+          "year": 2025,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000947",
+          "bibtex_key": "peskine2023analyzing",
+          "titulo": "Analyzing COVID-Related Social Discourse on Twitter using Emotion, Sentiment, Political Bias, Stance, Veracity and Conspiracy Theories",
+          "year": 2023,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000204",
+          "bibtex_key": "gu2024gatedvae",
+          "titulo": "GatedVAE: Detecting Multimodal Fake News with Gated Variational AutoEncoder",
+          "year": 2024,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000489",
+          "bibtex_key": "spezzano2021thats",
+          "titulo": "That's Fake News! Investigating How Readers Identify the Reliability of News When Provided Title, Image, Source Bias, and Full Articles",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_000800",
+          "bibtex_key": "chen2021mmcovar",
+          "titulo": "MMCoVaR: Multimodal COVID-19 Vaccine Focused Data Repository for Fake News Detection and a Baseline Architecture for Classification",
+          "year": 2021,
+          "relevancia": 0.85
+        },
+        {
+          "id": "articulo_001671",
+          "bibtex_key": "rodrigogines2024systematic",
+          "titulo": "A systematic review on media bias detection: What is media bias, how it is expressed, and how to detect it",
+          "year": 2024,
+          "relevancia": 0.8
+        },
+        {
+          "id": "articulo_000881",
+          "bibtex_key": "jaidka2025misinformati",
+          "titulo": "Misinformation, Disinformation, and Generative AI: Implications for Perception and Policy",
+          "year": 2025,
+          "relevancia": 0.78
+        },
+        {
+          "id": "articulo_000624",
+          "bibtex_key": "kulkarni2025cyber",
+          "titulo": "Cyber Social Threats: A Data-centric AI Perspective",
+          "year": 2025,
+          "relevancia": 0.75
+        },
+        {
+          "id": "articulo_001000",
+          "bibtex_key": "fung2022battlefront",
+          "titulo": "The Battlefront of Combating Misinformation and Coping with Media Bias",
+          "year": 2022,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_000598_Generalizing to the Future Mitigating E",
+          "bibtex_key": "zhu2022generalizing",
+          "titulo": "Generalizing to the Future: Mitigating Entity Bias in Fake News Detection",
+          "year": 2022,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_001700",
+          "bibtex_key": "dandrea2026linguistic",
+          "titulo": "Linguistic insights, media mechanisms and role of AI in dissemination and impact of disinformation",
+          "year": 2026,
+          "relevancia": 0.72
+        },
+        {
+          "id": "articulo_000966",
+          "bibtex_key": "chan2024clickbait",
+          "titulo": "From Clickbait to Pinoybait: A BERT-Based Analysis of Comments in Foreign-Made Videos About the Philippines",
+          "year": 2024,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_002700",
+          "bibtex_key": "li2026anchorbased",
+          "titulo": "Anchor-Based Multimodal Verification: A Dynamic Query Framework for Fake News Forensics in Short Videos",
+          "year": 2026,
+          "relevancia": 0.7
+        },
+        {
+          "id": "articulo_000210",
+          "bibtex_key": "huang2024creation",
+          "titulo": "From Creation to Clarification: ChatGPT's Journey Through the Fake News Quagmire",
+          "year": 2024,
+          "relevancia": 0.68
+        },
+        {
+          "id": "articulo_000139",
+          "bibtex_key": "huang2022deep",
+          "titulo": "Deep Learning for Fake News Detection: Theories and Models",
+          "year": 2022,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000183_MSynFD Multi-hop Syntax Aware Fake News",
+          "bibtex_key": "xiao2024msynfd",
+          "titulo": "MSynFD: Multi-hop Syntax aware Fake News Detection",
+          "year": 2024,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_003161",
+          "bibtex_key": "przybya2021when",
+          "titulo": "When classification accuracy is not enough: Explaining news credibility assessment",
+          "year": 2021,
+          "relevancia": 0.65
+        },
+        {
+          "id": "articulo_000188",
+          "bibtex_key": "raj2023true",
+          "titulo": "True and Fair: Robust and Unbiased Fake News Detection via Interpretable Machine Learning",
+          "year": 2023,
+          "relevancia": 0.6
+        },
+        {
+          "id": "articulo_000138",
+          "bibtex_key": "cignarella2025survey",
+          "titulo": "A Survey on Stereotype Detection in Natural Language Processing",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003397",
+          "bibtex_key": "bayrak2025does",
+          "titulo": "Does reflection increase accuracy rather than bias in the assessments of political fake news?",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003293",
+          "bibtex_key": "wecel2023artificial",
+          "titulo": "Artificial intelligence—friend or foe in fake news campaigns",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001431",
+          "bibtex_key": "edelson2021understandin",
+          "titulo": "Understanding Engagement with U.S. (Mis)Information News Sources on Facebook",
+          "year": 2021,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000219",
+          "bibtex_key": "ameli2022fake",
+          "titulo": "AI and Fake News: A Conceptual Framework for Fake News Detection",
+          "year": 2022,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001432",
+          "bibtex_key": "azevedo2025thematic",
+          "titulo": "Thematic trends in fact-checking in Brazil's COVID-19 infodemic: the first year in focus",
+          "year": 2025,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001877",
+          "bibtex_key": "pelaez2026narrative",
+          "titulo": "Narrative Divergence and Disinformation: An Entropic Model for Assessing the Informative Utility of Public Information Sources",
+          "year": 2026,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_000675",
+          "bibtex_key": "mannan2023empirical",
+          "titulo": "An Empirical Study on Theories of Sentiment Analysis in Relation to Fake News Detection",
+          "year": 2023,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_001730",
+          "bibtex_key": "lim2026iffyornot",
+          "titulo": "Iffy-or-Not: Critically Evaluating Potential Misinformation Using Fallacy Detection and Socratic Questioning with LLMs",
+          "year": 2026,
+          "relevancia": 0.55
+        },
+        {
+          "id": "articulo_003130",
+          "bibtex_key": "mahony2024concerns",
+          "titulo": "Concerns about the role of artificial intelligence in journalism, and media manipulation",
+          "year": 2024,
+          "relevancia": 0.4
+        },
+        {
+          "id": "articulo_001806",
+          "bibtex_key": "fischer2026zoneflooding",
+          "titulo": "Zone-flooding, public confusion, and signal detection theory: A theoretical framework and registered report",
+          "year": 2026,
+          "relevancia": 0.4
+        }
+      ]
+    }
+  ]
+}

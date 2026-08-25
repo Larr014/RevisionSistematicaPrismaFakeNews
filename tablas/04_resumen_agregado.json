@@ -1,0 +1,23 @@
+{
+  "tipo": "resumen_agregado",
+  "fuente": "fase2_relevancia_alta.json",
+  "fecha_generacion": "2026-07-27",
+  "total_articulos": 324,
+  "rango_temporal": "2020-2026",
+  "estadisticas": {
+    "con_metodo": 273,
+    "con_metodo_pct": 84.3,
+    "con_intencion": 324,
+    "con_intencion_pct": 100.0,
+    "relevancia_promedio": 0.66,
+    "relevancia_alta_n": 102,
+    "relevancia_alta_pct": 31.5,
+    "relevancia_media_n": 93,
+    "relevancia_media_pct": 28.7,
+    "relevancia_baja_n": 129,
+    "relevancia_baja_pct": 39.8,
+    "con_hallazgos_nuevos": 320,
+    "total_hallazgos_nuevos": 1426,
+    "promedio_hallazgos_por_articulo": 4.4
+  }
+}
