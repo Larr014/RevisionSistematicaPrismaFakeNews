@@ -1,3 +1,6 @@
+# NOTA (20-oct-2026): script de la etapa de redaccion. Sus textos fueron alineados con las
+# cifras verificadas (4.073 / 3.708 / 3.575 / 643 / 549 / 324); la version vigente del
+# paper es la del archivo .tex mas reciente.
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -86,11 +89,12 @@ res = extract_between(tex, r'\section{Resultados}', SECTION_ENDS)
 res = re.sub(
     r'\\NRESULT\{Insertar diagrama de flujo PRISMA[^}]*\}',
     ("El proceso de selección siguió el protocolo PRISMA 2020. "
-     "Se identificaron 3.575 registros en las bases de datos consultadas. "
-     "Tras eliminación de duplicados (n=312) quedaron 3.263 registros únicos. "
-     "El cribado por título y abstract excluyó 2.620 registros. "
-     "De los 643 artículos elegibles, 549 superaron la evaluación de calidad "
-     "y fueron incluidos en la síntesis cuantitativa. "
+     "Se exportaron 4.073 registros de las seis bases de datos; tras eliminar duplicados "
+     "dentro de cada base (3.708) y entre bases (133 duplicados) quedaron 3.575 registros únicos. "
+     "El cribado de metadatos excluyó 2.932 registros (sin método NLP/ML, sin intención "
+     "comunicativa o publicación anterior a 2021), resultando en 643 elegibles. "
+     "De estos se obtuvo texto completo de 549 (94 no obtenidos) y 324 con relevancia >= 0.4 "
+     "fueron incluidos en la síntesis cuantitativa. "
      "[Figura 1: Diagrama de flujo PRISMA — pendiente inserción gráfica]"),
     res
 )
@@ -98,12 +102,8 @@ res = re.sub(
 # Reemplazar NRESULT de tabla resumen de estudios
 res = re.sub(
     r'\\NRESULT\{Tabla resumen con:[^}]*\}',
-    ("Los 549 estudios incluidos presentan la siguiente distribución: "
-     "año de publicación 2021--2026 con pico en 2023 (n=187, 34.1\\%); "
-     "bases de datos de origen: Scopus (41.2\\%), Web of Science (28.7\\%), IEEE (18.4\\%), ACM (11.7\\%); "
-     "tipo de venue: journal (62.3\\%), conferencia (37.7\\%). "
-     "El idioma dominante es inglés (85.2\\%), seguido de español (5.1\\%) y chino (3.8\\%). "
-     "Ver Tabla~\\ref{tab:distribucion_estudios}."),
+    ("Los 324 estudios incluidos presentan la distribución por año, idioma y relevancia "
+     "calculada desde tablas/*.json (ver Tabla~\\ref{tab:distribucion_estudios} del paper)."),
     res
 )
 
