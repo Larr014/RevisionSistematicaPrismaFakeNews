@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Visor interactivo — RSL Intenciones Comunicativas en Publicaciones Digitales (2020-2026)
+Visor interactivo — RSL Intenciones Comunicativas en Publicaciones Digitales (2021-2026)
 Autor: Mg. Luis Rojas Rubio 
 
 Ejecutar localmente:
@@ -29,7 +29,7 @@ except ImportError:
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="RSL · Intenciones Comunicativas 2020–2026",
+    page_title="RSL · Intenciones Comunicativas 2021–2026",
     page_icon="📚",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -136,7 +136,7 @@ incluidos = [r for r in df_all if r["relevancia"] >= 0.4]
 # ══════════════════════════════════════════════════════════════════════════════
 st.sidebar.image("https://img.shields.io/badge/Corpus-324%20artículos-2563EB?style=flat-square")
 st.sidebar.title("📚 RSL Intenciones Comunicativas")
-st.sidebar.caption("Publicaciones digitales · 2020–2026")
+st.sidebar.caption("Publicaciones digitales · 2021–2026")
 st.sidebar.divider()
 
 vista = st.sidebar.radio(
@@ -197,9 +197,9 @@ st.title("📊 Visor · Intenciones Comunicativas en Publicaciones Digitales")
 st.caption("Revisión Sistemática asistida por LLM · Luis Rojas Rubio · 2026")
 
 k1, k2, k3, k4, k5 = st.columns(5)
-k1.metric("Corpus total", "3.575", help="Artículos identificados en 6 bases de datos")
-k2.metric("Elegibles E2", "373", help="Cribado semántico de metadatos (relevancia ≥ 0.40)")
-k3.metric("Con PDF (E3)", "549", help="Texto completo analizado")
+k1.metric("Corpus total", "3.575", help="Registros únicos: 4.073 exportados de 6 bases → 3.708 sin duplicados dentro de cada base → 3.575 sin duplicados entre bases")
+k2.metric("Elegibles E2", "643", help="Cribado de metadatos: método NLP/ML + intención comunicativa + año ≥ 2021 (sin umbral de relevancia)")
+k3.metric("Con PDF (E3)", "549", help="Texto completo obtenido y analizado (94 de los 643 elegibles no se obtuvieron)")
 k4.metric("**Incluidos**", "324", help="Corpus final de síntesis (relevancia E3 ≥ 0.40)")
 k5.metric("Filtrados ahora", len(filtrado))
 
@@ -408,8 +408,8 @@ with tab_heatmap:
 # TAB 4 — TENDENCIA TEMPORAL
 # ══════════════════════════════════════════════════════════════════════════════
 with tab_temporal:
-    st.subheader("Evolución temporal del corpus (2020–2026)")
-    st.caption("Fuente: tablas/03_evolucion_temporal.json · Clasificación LLM")
+    st.subheader("Evolución temporal del corpus (2021–2026)")
+    st.caption("Fuente: tablas/03_evolucion_temporal.json · Clasificación LLM. Las entradas de 2020 corresponden a versiones previas (preprints) de trabajos publicados desde 2021, accedidas mediante herramientas de acceso abierto.")
 
     try:
         temporal = load_tabla("03_evolucion_temporal.json")
@@ -555,24 +555,28 @@ with tab_prisma:
     st.subheader("Flujo PRISMA 2020 — Proceso de selección")
 
     PRISMA = {
-        "Identificados (6 BD)": 3575,
-        "Elegibles E2\n(cribado metadatos)": 373,
-        "Excluidos E2": 3202,
+        "Exportados (6 BD)": 4073,
+        "Duplicados dentro de cada base": 365,
+        "Duplicados entre bases (Zotero)": 133,
+        "Registros únicos": 3575,
+        "Elegibles E2\n(cribado metadatos)": 643,
+        "Excluidos E2": 2932,
         "Con texto completo": 549,
-        "Sin texto completo (CE5)": 3575 - 373 - (549 - 373),   # aprox
+        "Sin texto completo (CE5)": 94,
         "Incluidos E3\n(corpus final)": 324,
         "Excluidos E3": 225,
     }
 
     # Funnel de inclusión
     funnel_labels = [
-        "Identificados\n(6 bases de datos)",
-        "Elegibles E2\n(metadatos, relevancia ≥ 0.40)",
+        "Exportados\n(6 bases de datos)",
+        "Registros únicos\n(sin duplicados)",
+        "Elegibles E2\n(metadatos: método + intención + año ≥ 2021)",
         "Con texto completo\n(PDF descargado)",
         "Incluidos en síntesis\n(texto completo, relevancia ≥ 0.40)",
     ]
-    funnel_values = [3575, 373, 549, 324]
-    funnel_colors = [C["blue"], C["teal"], C["green"], C["indigo"]]
+    funnel_values = [4073, 3575, 643, 549, 324]
+    funnel_colors = [C["blue"], C["blue"], C["teal"], C["green"], C["indigo"]]
 
     fig_funnel = go.Figure(go.Funnel(
         y=funnel_labels,
@@ -589,21 +593,24 @@ with tab_prisma:
 
     # Tabla de exclusiones por etapa
     st.subheader("Criterios de exclusión")
+    st.caption("Los motivos de la Etapa 2 no son excluyentes entre sí: un registro puede incumplir varias condiciones.")
     exclusiones = pd.DataFrame([
-        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "CE1 — Relevancia LLM < 0.40", "N": 2.480, "Tipo": "principal"},
-        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "CE2 — Sin intención comunicativa identificada", "N": 470, "Tipo": "secundario"},
-        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "CE3 — Sin método NLP/ML identificado", "N": 252, "Tipo": "secundario"},
-        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "CE4 — Fuera del período 2020–2026", "N": 0, "Tipo": "secundario"},
-        {"Etapa": "Etapa 3 (texto completo)", "Criterio": "CE1 — Relevancia texto completo < 0.40", "N": 225, "Tipo": "principal"},
-        {"Etapa": "Etapa 3 (texto completo)", "Criterio": "CE5 — Texto completo no disponible", "N": 3575-373-549, "Tipo": "acceso"},
+        {"Etapa": "Etapa 1 (deduplicación)", "Criterio": "Duplicado dentro de una misma base", "N": 365, "Tipo": "duplicado"},
+        {"Etapa": "Etapa 1 (deduplicación)", "Criterio": "Duplicado entre bases (Zotero, DOI)", "N": 133, "Tipo": "duplicado"},
+        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "Sin método NLP/ML identificado", "N": 2439, "Tipo": "principal"},
+        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "Sin intención comunicativa identificada", "N": 2738, "Tipo": "principal"},
+        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "Publicación anterior a 2021", "N": 569, "Tipo": "secundario"},
+        {"Etapa": "Etapa 2 (metadatos)", "Criterio": "Total excluidos (registros)", "N": 2932, "Tipo": "total"},
+        {"Etapa": "Etapa 3 (texto completo)", "Criterio": "CE5 — Texto completo no disponible", "N": 94, "Tipo": "acceso"},
+        {"Etapa": "Etapa 3 (texto completo)", "Criterio": "Relevancia texto completo < 0.40", "N": 225, "Tipo": "principal"},
     ])
     st.dataframe(exclusiones, use_container_width=True, hide_index=True)
 
     # Gráfico de retención por etapa
     st.subheader("Retención a través del pipeline")
-    etapas = ["E1: Búsqueda", "E2: Metadatos", "E3: Texto completo", "Corpus final"]
-    valores = [3575, 373, 549, 324]
-    retencion = [100, 373/3575*100, 549/3575*100, 324/3575*100]
+    etapas = ["Exportados", "Únicos", "E2: Metadatos", "E3: Texto completo", "Corpus final"]
+    valores = [4073, 3575, 643, 549, 324]
+    retencion = [100, 3575/4073*100, 643/4073*100, 549/4073*100, 324/4073*100]
 
     c1, c2 = st.columns(2)
     with c1:
@@ -637,9 +644,9 @@ with tab_validacion:
     # KPIs de validación
     v1, v2, v3, v4 = st.columns(4)
     v1.metric("Muestra", "30 artículos", help="Selección aleatoria estratificada")
-    v2.metric("Acuerdo exacto", "43.3%", "13 de 30", help="Casos donde humano y LLM coinciden")
-    v3.metric("Cohen's κ", "0.113", "Concordancia 'slight'", delta_color="off")
-    v4.metric("κ ponderado lineal", "0.229", "Concordancia 'fair'", delta_color="off")
+    v2.metric("Acuerdo exacto", "40.0%", "12 de 30", help="Casos donde humano y LLM coinciden")
+    v3.metric("Cohen's κ", "0.053", "Concordancia 'slight'", delta_color="off")
+    v4.metric("κ ponderado lineal", "0.174", "Concordancia 'slight'", delta_color="off")
 
     st.divider()
 
@@ -648,7 +655,7 @@ with tab_validacion:
     st.caption("Filas = categoría humano · Columnas = categoría LLM · A=Alta, M=Media, B=Baja")
 
     conf_matrix = pd.DataFrame(
-        [[4, 6, 0], [2, 7, 1], [0, 2, 3]],
+        [[6, 4, 0], [9, 4, 2], [1, 2, 2]],
         index=["Humano: Alta (10)", "Humano: Media (15)", "Humano: Baja (5)"],
         columns=["LLM: Alta", "LLM: Media", "LLM: Baja"],
     )
@@ -669,7 +676,7 @@ with tab_validacion:
         cats = pd.DataFrame({
             "Categoría": ["Alta (A)", "Media (M)", "Baja (B)"],
             "Humano": [10, 15, 5],
-            "LLM": [6, 15, 4],
+            "LLM": [16, 10, 4],
         })
         fig_cat = px.bar(
             cats.melt(id_vars="Categoría", var_name="Evaluador", value_name="N"),
@@ -683,8 +690,8 @@ with tab_validacion:
         st.subheader("Interpretación del kappa")
         kappa_interp = pd.DataFrame([
             {"Rango κ": "< 0.00", "Interpretación": "Sin acuerdo", "Este estudio": ""},
-            {"Rango κ": "0.00–0.20", "Interpretación": "Slight ✓", "Este estudio": "← κ=0.113"},
-            {"Rango κ": "0.21–0.40", "Interpretación": "Fair", "Este estudio": "← κw=0.229"},
+            {"Rango κ": "0.00–0.20", "Interpretación": "Slight ✓", "Este estudio": "← κ=0.053 · κw=0.174"},
+            {"Rango κ": "0.21–0.40", "Interpretación": "Fair", "Este estudio": ""},
             {"Rango κ": "0.41–0.60", "Interpretación": "Moderate", "Este estudio": ""},
             {"Rango κ": "0.61–0.80", "Interpretación": "Substantial", "Este estudio": ""},
             {"Rango κ": "> 0.80", "Interpretación": "Almost perfect", "Este estudio": ""},
@@ -692,20 +699,19 @@ with tab_validacion:
         st.dataframe(kappa_interp, use_container_width=True, hide_index=True)
 
     st.info(
-        "**Contexto:** El acuerdo modest (slight/fair) es esperable en sistemas de cribado semántico "
-        "LLM sobre categorías ordinales subjetivas. El κ ponderado (0.229) indica que los desacuerdos "
-        "son mayoritariamente adyacentes (A↔M, M↔B), no extremos (A↔B)."
+        "**Contexto:** El acuerdo bajo (slight) es esperable en sistemas de cribado semántico "
+        "LLM sobre categorías ordinales subjetivas. El κ ponderado (0.174) y el 96.7 % de acuerdo a lo más a un nivel "
+        "indican que los desacuerdos son mayoritariamente adyacentes (A↔M, M↔B); el LLM sobreclasifica en la categoría Alta."
     )
 
     # Discrepancias
-    st.subheader("Tipos de discrepancia (17 casos)")
+    st.subheader("Tipos de discrepancia (18 casos)")
     disc = pd.DataFrame([
-        {"Tipo": "LLM alta → Humano media (A→M)", "N": 6, "Tipo desacuerdo": "Adyacente"},
-        {"Tipo": "LLM media → Humano alta (M→A)", "N": 2, "Tipo desacuerdo": "Adyacente"},
+        {"Tipo": "LLM alta → Humano media (A→M)", "N": 9, "Tipo desacuerdo": "Adyacente"},
+        {"Tipo": "LLM media → Humano alta (M→A)", "N": 4, "Tipo desacuerdo": "Adyacente"},
         {"Tipo": "LLM media → Humano baja (M→B)", "N": 2, "Tipo desacuerdo": "Adyacente"},
         {"Tipo": "LLM baja → Humano media (B→M)", "N": 2, "Tipo desacuerdo": "Adyacente"},
-        {"Tipo": "LLM alta → Humano baja (A→B)", "N": 3, "Tipo desacuerdo": "Extremo"},
-        {"Tipo": "LLM baja → Humano alta (B→A)", "N": 2, "Tipo desacuerdo": "Extremo"},
+        {"Tipo": "LLM alta → Humano baja (A→B)", "N": 1, "Tipo desacuerdo": "Extremo"},
     ])
     fig_disc = px.bar(
         disc, x="N", y="Tipo", color="Tipo desacuerdo", orientation="h",
