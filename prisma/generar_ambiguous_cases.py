@@ -18,11 +18,16 @@ Hojas:
 """
 
 import json
+import os
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
 
-BASE = "C:/Users/Luis Rojas/.openclaw/workspace"
+BASE = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+
+def nid(i):
+    """ID normalizado: algunos IDs de Etapa 3 llevan sufijo con el titulo."""
+    return "_".join(str(i).split("_")[:2])
 
 # ── Cargar datos ──────────────────────────────────────────────────────────────
 with open(f"{BASE}/clasificacion_pdfs_completos.json", "r", encoding="utf-8") as f:
@@ -32,8 +37,8 @@ with open(f"{BASE}/clasificacion_claude.json", "r", encoding="utf-8") as f:
 
 arts_e3 = e3["articulos"]
 arts_e2 = e2["articulos"]
-idx_e2 = {a["id"]: a for a in arts_e2}
-idx_e3 = {a["id"]: a for a in arts_e3}
+idx_e2 = {nid(a["id"]): a for a in arts_e2}
+idx_e3 = {nid(a["id"]): a for a in arts_e3}
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 def get_autores(art):
@@ -105,8 +110,8 @@ ac1 = sorted([a for a in arts_e3 if 0.40 <= a.get("relevancia_general",0) <= 0.5
 ac2 = sorted([a for a in arts_e3 if 0.30 <= a.get("relevancia_general",0) < 0.40],
              key=lambda x: -x.get("relevancia_general",0))[:50]
 
-elegibles_e2_ids = {a["id"] for a in arts_e2 if a.get("relevancia_general",0) >= 0.4}
-excluidos_e3_ids = {a["id"] for a in arts_e3 if a.get("relevancia_general",0) < 0.4}
+elegibles_e2_ids = {nid(a["id"]) for a in arts_e2 if a.get("relevancia_general",0) >= 0.4}
+excluidos_e3_ids = {nid(a["id"]) for a in arts_e3 if a.get("relevancia_general",0) < 0.4}
 ac3_ids = elegibles_e2_ids & excluidos_e3_ids
 ac3 = [idx_e3[aid] for aid in ac3_ids if aid in idx_e3]
 
@@ -116,26 +121,15 @@ ac4 = [a for a in arts_e3
        and safe_list(a, "variables_principales", "metodos_general")]
 
 # Casos validacion con desacuerdo (replicado de generar_verification_log)
-AC5_DATA = [
-    # (n, id, anio, titulo, score_llm, cat_llm, cat_humano)
-    (3,  "articulo_000127", 2024, "Modality Deep-learning Frameworks for Fake News Detection on Social Networks", None, None, "M"),
-    (4,  "articulo_000521", 2024, "A Survey on Automatic Credibility Assessment Using Textual Credibility Signals", None, None, "M"),
-    (6,  "articulo_001967", 2023, "Enabling Contextual Soft Moderation on Social Media through Contrastive Textual Deviation", None, None, "M"),
-    (7,  "articulo_002683", 2023, "Annotation-Scheme Reconstruction for Fake News and Japanese Fake News Dataset", None, None, "M"),
-    (8,  "articulo_002064", 2023, "DisTrack: a new Tool for Semi-automatic Misinformation Tracking", None, None, "M"),
-    (9,  "articulo_000142", 2023, "Fake News Detection via Intermediate-Layer Emotional Representations", None, None, "M"),
-    (10, "articulo_000213", 2024, "Propagation Structure-Aware Graph Transformer for Robust and Interpretable Fake News Detection", None, None, "B"),
-    (11, "articulo_001671", 2024, "A systematic review on media bias detection", None, None, "M"),
-    (15, "articulo_000992", 2024, "Toward Mitigating Misinformation and Social Media Manipulation in LLM Era", None, None, "M"),
-    (16, "articulo_001423", 2024, "LLMs for Explainable Few-shot Deception Detection", None, None, "M"),
-    (18, "articulo_003331", 2022, "In-context annotation of topic-oriented datasets of fake news", None, None, "M"),
-    (20, "articulo_000146", 2023, "Using Deep Learning Models to Detect Fake News about COVID-19", None, None, "M"),
-    (21, "articulo_000152", 2023, "Explainability in NLP model: Detection of Covid-19 Twitter Fake News", None, None, "B"),
-    (23, "articulo_003259", 2021, "An Improved Multiple Features and ML-Based Approach for Detecting Clickbait News", None, None, "M"),
-    (25, "articulo_003396", 2021, "To share or not to share - motives of sharing fake news amidst COVID-19 Malaysia", None, None, "M"),
-    (26, "articulo_003289", 2023, "XAI in Automated Fact-Checking? The Benefits Are Modest", None, None, "B"),
-    (27, "articulo_001001", 2025, "A Perturbation-Theoretic Model for Fact-Checker Deployment", None, None, "M"),
-]
+# Casos con desacuerdo humano-LLM: se leen de VERIFICATION_LOG_GENERADO.xlsx
+# (ejecutar antes generar_verification_log.py)
+from openpyxl import load_workbook
+_wv = load_workbook(os.path.join(BASE, "prisma", "VERIFICATION_LOG_GENERADO.xlsx"), data_only=True)["1_Comparacion"]
+AC5_DATA = []
+for _r in _wv.iter_rows(min_row=2, values_only=True):
+    _n, _id, _anio, _tit, _score, _cat_llm, _hum, _acuerdo = _r[:8]
+    if _id and "Exacto" not in str(_acuerdo):
+        AC5_DATA.append((int(_n), _id, int(_anio), _tit, None, None, _hum))
 
 def score_to_cat(s):
     if s is None: return "N/D"
@@ -171,7 +165,7 @@ hdr(ws0, ["Tipo", "Código", "N Casos", "Descripción", "Criterio de resolución
 resumen_rows = [
     ("Borde de umbral E3",          "AC1", len(ac1), "Relevancia 0.40–0.55 en análisis texto completo; incluidos pero con certeza baja", "Se mantienen incluidos por superar umbral mínimo (≥ 0.40)"),
     ("Casi-elegibles E3",           "AC2", len(ac2), "Relevancia 0.30–0.39; excluidos pero con señal parcial de intención comunicativa", "Excluidos — no superan umbral 0.40; quedan como muestra de zona gris"),
-    ("Discrepancia E2 → E3",        "AC3", len(ac3), "Elegibles en cribado de metadatos (E2 ≥ 0.40) pero excluidos tras análisis de texto completo (E3 < 0.40)", "Prevalece el análisis de texto completo — metadatos tenían señal superficial que el texto completo no confirmó"),
+    ("Discrepancia E2 → E3",        "AC3", len(ac3), "Puntuación de relevancia E2 (informativa) ≥ 0.40 en metadatos, pero excluidos tras análisis de texto completo (E3 < 0.40)", "Prevalece el análisis de texto completo — metadatos tenían señal superficial que el texto completo no confirmó"),
     ("Señal mixta",                 "AC4", len(ac4), "Relevancia 0.30–0.44 pero con intenciones Y métodos identificados; señal ambivalente", "Excluidos por umbral; requieren revisión manual si el corpus se amplía"),
     ("Desacuerdos en validación",   "AC5", len(AC5_DATA), "Artículos donde evaluador humano y LLM asignaron categorías distintas (A/M/B)", "Se documenta el desacuerdo; se mantiene decisión del pipeline LLM como criterio operativo"),
 ]
@@ -238,11 +232,11 @@ hdr(ws3, ["#", "ID", "Año", "Título", "Autores",
            "Relevancia E2 (metadatos)", "Relevancia E3 (texto completo)",
            "Decisión E2", "Decisión E3", "Análisis de discrepancia"], "h_red")
 
-ac3_sorted = sorted(ac3, key=lambda x: -idx_e2.get(x["id"], {}).get("relevancia_general", 0))
+ac3_sorted = sorted(ac3, key=lambda x: -idx_e2.get(nid(x["id"]), {}).get("relevancia_general", 0))
 
 for i, art in enumerate(ac3_sorted, 1):
     aid = art.get("id","")
-    rel_e2 = idx_e2.get(aid, {}).get("relevancia_general", "N/D")
+    rel_e2 = idx_e2.get(nid(aid), {}).get("relevancia_general", "N/D")
     rel_e3 = art.get("relevancia_general", "N/D")
     diff = round(float(rel_e2) - float(rel_e3), 2) if isinstance(rel_e2, (int,float)) and isinstance(rel_e3,(int,float)) else "N/D"
     analisis = (f"Diferencia E2-E3: {diff}. El abstract sugería relevancia ({rel_e2}) "

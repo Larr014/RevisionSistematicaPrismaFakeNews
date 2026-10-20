@@ -19,13 +19,18 @@ Hojas:
 """
 
 import json
+import os
 import re
 from collections import Counter
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-BASE = "C:/Users/Luis Rojas/.openclaw/workspace"
+BASE = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+
+def nid(i):
+    """ID normalizado: algunos IDs de Etapa 3 llevan sufijo con el titulo."""
+    return "_".join(str(i).split("_")[:2])
 
 # ── Datos hardcodeados de la validacion doble ciego ──────────────────────────
 # Extraidos de paper/validacion_doble_ciego.txt
@@ -67,12 +72,12 @@ MUESTRA = [
 with open(f"{BASE}/clasificacion_pdfs_completos.json", "r", encoding="utf-8") as f:
     etapa3 = json.load(f)
 
-idx_llm = {a["id"]: a.get("relevancia_general", None) for a in etapa3["articulos"]}
+idx_llm = {nid(a["id"]): a.get("relevancia_general", None) for a in etapa3["articulos"]}
 
 # Tambien buscar en clasificacion_claude.json para artículos que no pasaron Etapa 3
 with open(f"{BASE}/clasificacion_claude.json", "r", encoding="utf-8") as f:
     claude_data = json.load(f)
-idx_claude = {a["id"]: a.get("relevancia_general", None) for a in claude_data["articulos"]}
+idx_claude = {nid(a["id"]): a.get("relevancia_general", None) for a in claude_data["articulos"]}
 
 def score_to_cat(score):
     if score is None:
@@ -287,6 +292,7 @@ stats = [
     ("N artículos muestra", n, "Muestreo aleatorio estratificado"),
     ("Acuerdo exacto (po)", f"{exactos}/{n} = {exactos/n*100:.1f}%", "Porcentaje coincidencia de categoría"),
     ("Acuerdo adyacente", f"{adyacentes}/{n} = {adyacentes/n*100:.1f}%", "Diferencia de solo 1 nivel"),
+    ("Acuerdo exacto + adyacente (≤ 1 nivel)", f"{exactos+adyacentes}/{n} = {(exactos+adyacentes)/n*100:.1f}%", "Cifra reportada en el paper como discrepancias adyacentes"),
     ("Desacuerdo extremo", f"{extremos}/{n} = {extremos/n*100:.1f}%", "Diferencia de 2 niveles (A↔B)"),
     ("", None, None),
     ("Cohen's Kappa (κ)", f"{kappa:.3f}", _kappa_label(kappa)),

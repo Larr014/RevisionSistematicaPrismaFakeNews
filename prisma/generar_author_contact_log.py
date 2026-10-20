@@ -1,3 +1,8 @@
+# NOTA (20-oct-2026): este script depende de emails_autores_completo.json y
+# articulos_no_descargados_con_emails.json, que no se distribuyen en el repositorio.
+# El archivo AUTHOR_CONTACT_LOG_GENERADO.xlsx publicado fue corregido manualmente
+# (cronologia 2026, sin referencias a Sci-Hub, cifras 643 / 549 / 94). Volver a
+# ejecutar este script sobreescribiria esas correcciones con el texto anterior.
 """
 Genera AUTHOR_CONTACT_LOG.xlsx para el repositorio PRISMA.
 

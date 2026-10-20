@@ -5,9 +5,11 @@ Fuentes:
   - clasificacion_claude.json   -> Etapa 2 (cribado metadatos, n=3575)
   - clasificacion_pdfs_completos.json -> Etapa 3 (texto completo, n=549)
 
-Logica de decision:
-  Etapa 2: relevancia >= 0.4 AND tiene al menos 1 intencion AND tiene al menos 1 metodo -> ELEGIBLE
-           cualquier condicion que falle -> EXCLUIDO con motivo
+Logica de decision (coincide con pipeline/analisis/filtrar_articulos.py):
+  Etapa 2: al menos 1 metodo NLP/ML (metodos_especifico) AND al menos 1 intencion
+           AND ano de publicacion >= 2021 -> ELEGIBLE. La puntuacion de relevancia
+           se registra pero NO se usa como criterio de exclusion en esta etapa.
+           Cualquier condicion que falle -> EXCLUIDO con motivo
   Etapa 3: relevancia >= 0.4 -> INCLUIDO; < 0.4 -> EXCLUIDO
            articulos elegibles en Etapa 2 sin PDF -> EXCLUIDO (CE5 - texto no disponible)
 """
@@ -18,7 +20,12 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-BASE = "C:/Users/Luis Rojas/.openclaw/workspace"
+# Raiz del repositorio (carpeta que contiene clasificacion_*.json)
+BASE = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+
+def nid(i):
+    """ID normalizado: algunos IDs de Etapa 3 llevan sufijo con el titulo."""
+    return "_".join(str(i).split("_")[:2])
 
 # ── Cargar datos ──────────────────────────────────────────────────────────────
 with open(f"{BASE}/clasificacion_claude.json", "r", encoding="utf-8") as f:
@@ -31,10 +38,10 @@ arts_e2 = claude_data["articulos"]          # 3575
 arts_e3 = etapa3_data["articulos"]          # 549
 
 # Índice Etapa 3 por ID
-idx_e3 = {a["id"]: a for a in arts_e3}
+idx_e3 = {nid(a["id"]): a for a in arts_e3}
 
 # IDs con PDF analizado
-ids_con_pdf = set(idx_e3.keys())
+ids_con_pdf = set(idx_e3.keys())  # IDs normalizados
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 def get_intenciones(art):
@@ -45,7 +52,7 @@ def get_intenciones(art):
 
 def get_metodos(art):
     try:
-        return art["clasificacion"]["variables_principales"]["metodos_general"]
+        return art["clasificacion"]["variables_principales"]["metodos_especifico"]
     except (KeyError, TypeError):
         return []
 
@@ -55,36 +62,24 @@ def get_autores(art):
         return "; ".join(auths[:3]) + (" et al." if len(auths) > 3 else "")
     return str(auths)
 
-def motivo_exclusion_e2(art):
-    rel = art.get("relevancia_general", 0)
-    intenciones = get_intenciones(art)
-    metodos = get_metodos(art)
-    motivos = []
-    if rel < 0.4:
-        motivos.append(f"Relevancia insuficiente ({rel})")
-    if not intenciones:
-        motivos.append("Sin intención comunicativa identificada")
-    if not metodos:
-        motivos.append("Sin método NLP/ML identificado")
-    if not motivos:
-        # Puede ser excluido por periodo
-        year = art.get("year")
-        if year and (int(year) < 2020 or int(year) > 2026):
-            motivos.append(f"Fuera del período 2020-2026 (año: {year})")
-    return "; ".join(motivos) if motivos else "CE1 - No cumple criterios combinados"
+ANO_MINIMO = 2021
 
-def decision_e2(art):
-    rel = art.get("relevancia_general", 0)
+def motivo_exclusion_e2(art):
     intenciones = get_intenciones(art)
     metodos = get_metodos(art)
     year = art.get("year")
-    en_periodo = True
-    if year:
-        try:
-            en_periodo = 2020 <= int(year) <= 2026
-        except ValueError:
-            en_periodo = True
-    if rel >= 0.4 and intenciones and metodos and en_periodo:
+    motivos = []
+    if not metodos:
+        motivos.append("Sin método NLP/ML identificado")
+    if not intenciones:
+        motivos.append("Sin intención comunicativa identificada")
+    if not year or int(year) < ANO_MINIMO:
+        motivos.append(f"Publicación anterior a {ANO_MINIMO} o sin año (año: {year})")
+    return "; ".join(motivos) if motivos else "No cumple criterios combinados"
+
+def decision_e2(art):
+    year = art.get("year")
+    if get_metodos(art) and get_intenciones(art) and year and int(year) >= ANO_MINIMO:
         return "ELEGIBLE"
     return "EXCLUIDO"
 
@@ -100,7 +95,7 @@ for art in arts_e2:
         excluidos_e2.append(art)
 
 # Artículos elegibles sin PDF (excluidos CE5 en Etapa 3)
-sin_pdf = [a for a in elegibles_e2 if a["id"] not in ids_con_pdf]
+sin_pdf = [a for a in elegibles_e2 if nid(a["id"]) not in ids_con_pdf]
 
 print(f"Etapa 2: {len(arts_e2)} totales | {len(elegibles_e2)} elegibles | {len(excluidos_e2)} excluidos")
 print(f"Etapa 3: {len(arts_e3)} con PDF | {len(sin_pdf)} sin PDF (CE5)")
@@ -140,12 +135,15 @@ resumen_data = [
     ("Autor: Luis Rojas Rubio | Doctorado en Informática - UDAEU", None, None),
     ("", None, None),
     ("ETAPA", "N", "Descripción"),
-    ("Registros identificados (6 BD)", len(arts_e2), "Scopus, WoS, ACM, IEEE Xplore, Scholar, SciELO"),
-    ("Excluidos en Etapa 2", len(excluidos_e2), "Relevancia < 0.4 o sin intención/método identificado"),
-    ("Elegibles tras Etapa 2", len(elegibles_e2), "Cribado semántico de metadatos (Claude Sonnet 5, ≥ 0.4)"),
+    ("Registros exportados (6 BD)", 4073, "Scopus 1.051, WoS 1.026, ACM 1.375, IEEE 202, Scholar 200, SciELO 219"),
+    ("Duplicados dentro de cada base", 365, "Fusión de iteraciones de cada base: 4.073 → 3.708"),
+    ("Duplicados entre bases (Zotero)", 133, "Consolidación por DOI: 3.708 → 3.575"),
+    ("Registros únicos cribados", len(arts_e2), "Corpus de partida del cribado de metadatos"),
+    ("Excluidos en Etapa 2", len(excluidos_e2), "Sin método NLP/ML, sin intención identificada o publicación anterior a 2021"),
+    ("Elegibles tras Etapa 2", len(elegibles_e2), "Cribado de metadatos (Claude Sonnet 5): método + intención + año ≥ 2021; sin umbral de relevancia"),
     ("Sin texto completo (CE5)", len(sin_pdf), "Acceso restringido; sin respuesta de autores"),
     ("Con texto completo (Etapa 3)", len(arts_e3), "PDF obtenido y analizado"),
-    ("Excluidos en Etapa 3", len([a for a in arts_e3 if a.get("relevancia_general", 0) < 0.4]), "Relevancia < 0.4 en análisis de texto completo"),
+    ("Excluidos en Etapa 3", len([a for a in arts_e3 if a.get("relevancia_general", 0) < 0.4]), "Relevancia < 0.4 en análisis de texto completo (umbral aplicado solo en Etapa 3)"),
     ("INCLUIDOS en síntesis", len([a for a in arts_e3 if a.get("relevancia_general", 0) >= 0.4]), "Corpus final de síntesis cuantitativa"),
 ]
 
@@ -184,7 +182,7 @@ ws_res.column_dimensions["C"].width = 58
 ws_e2i = wb.create_sheet("Etapa2_Elegibles")
 
 headers_e2 = ["ID", "Título", "Autores", "Año", "DOI",
-               "Relevancia LLM", "Decisión", "Intenciones", "Métodos", "Plataforma", "Idioma"]
+               "Relevancia LLM (informativa)", "Decisión", "Intenciones", "Métodos", "Plataforma", "Idioma"]
 
 for col, h in enumerate(headers_e2, start=1):
     c = ws_e2i.cell(row=1, column=col, value=h)
@@ -248,14 +246,8 @@ for row, art in enumerate(excluidos_e2, start=2):
     metodos = get_metodos(art)
     motivo = motivo_exclusion_e2(art)
 
-    # Asignar criterio SPIDER
-    criterio = "CE1"
-    if not intenciones and not metodos:
-        criterio = "CE1"
-    elif rel < 0.4:
-        criterio = "CE1"
-    else:
-        criterio = "CE2"
+    # Criterio: CE1 (sin método/intención) o CE2 (fuera del período)
+    criterio = "CE1" if (not intenciones or not metodos) else "CE2"
 
     vals = [
         art.get("id", ""),
@@ -302,7 +294,7 @@ incluidos_e3 = [a for a in arts_e3 if a.get("relevancia_general", 0) >= 0.4]
 for row, art in enumerate(incluidos_e3, start=2):
     try:
         intenciones = "; ".join(art["clasificacion"]["variables_principales"].get("intenciones", []))
-        metodos     = "; ".join(art["clasificacion"]["variables_principales"].get("metodos_general", []))
+        metodos     = "; ".join(art["clasificacion"]["variables_principales"].get("metodos_especifico", []))
         datasets    = "; ".join(art["clasificacion"]["variables_principales"].get("dataset", [])[:3])
         metricas    = "; ".join(art["clasificacion"]["variables_principales"].get("metricas", []))
         plataforma  = "; ".join(art["clasificacion"]["variables_adicionales"].get("plataforma", []))

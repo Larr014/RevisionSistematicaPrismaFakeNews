@@ -15,11 +15,16 @@ Hojas:
 """
 
 import json
+import os
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment
 from openpyxl.utils import get_column_letter
 
-BASE = "C:/Users/Luis Rojas/.openclaw/workspace"
+BASE = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+
+def nid(i):
+    """ID normalizado: algunos IDs de Etapa 3 llevan sufijo con el titulo."""
+    return "_".join(str(i).split("_")[:2])
 
 # ── Cargar y filtrar ──────────────────────────────────────────────────────────
 with open(f"{BASE}/clasificacion_pdfs_completos.json", "r", encoding="utf-8") as f:
