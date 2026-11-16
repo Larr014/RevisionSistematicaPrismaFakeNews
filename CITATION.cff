@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "Si utiliza este material, por favor cítelo como se indica a continuación."
+type: dataset
+title: "Identificación Granular de Intenciones Comunicativas en Publicaciones Digitales: Una Revisión Sistemática de Literatura Asistida por LLM (2021-2026)"
+version: 1.0.0
+date-released: 2026-11-16
+authors:
+  - family-names: "Rojas Rubio"
+    given-names: "Luis Alberto"
+    orcid: "https://orcid.org/0009-0000-6997-4928"
+    affiliation: "Doctorado en Informática, Universidad Americana de Europa"
+abstract: "Repositorio con los artefactos reproducibles de una revisión sistemática de literatura (PRISMA 2020) que identifica y clasifica intenciones comunicativas granulares, más allá de la detección binaria real/fake, en publicaciones digitales durante el período 2021-2026. Incluye el paper en LaTeX, figuras, scripts del pipeline de clasificación asistida por LLM, resultados de clasificación (JSON), tablas de síntesis y la documentación PRISMA. Los datos de clasificación se distribuyen bajo CC BY 4.0 y el código bajo licencia MIT."
+keywords:
+  - fake news
+  - desinformación
+  - intenciones comunicativas
+  - revisión sistemática de literatura
+  - PRISMA 2020
+  - LLM
+  - procesamiento de lenguaje natural
+license: CC-BY-4.0
+repository-code: "https://github.com/Larr014/RevisionSistematicaPrismaFakeNews"
+url: "https://revisionsistematicaprismafakenews.streamlit.app/"
